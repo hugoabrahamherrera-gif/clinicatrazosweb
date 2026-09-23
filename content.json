@@ -13,9 +13,12 @@
     { "label": "Contacto", "href": "#contacto" }
   ],
   "hero": {
-    "badge": "Equipo interdisciplinario en Rivera",
+    "place": "Rivera",
+    "badge": "Equipo interdisciplinario",
     "title": "Acompañamos el desarrollo de cada niño, a su ritmo",
     "subtitle": "Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en un mismo equipo, trabajando junto a la familia en cada paso.",
+    "modalidad_presencial": "Atención presencial",
+    "modalidad_online": "Atención online",
     "cta_primary": "Agendar consulta",
     "cta_secondary": "Ver servicios",
     "badge_media": "5 especialidades, un solo equipo"
