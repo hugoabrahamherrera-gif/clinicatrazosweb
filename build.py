@@ -7,6 +7,7 @@ Uso: python3 build.py
 import json
 import re
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).parent
 TEMPLATE = ROOT / "template.html"
@@ -54,6 +55,15 @@ def build_convenios_pills(items):
         <span style="font-size: 14px; font-weight: 600; color: #2E2B15;">{item["label"]}</span>
       </div>''')
     return "\n".join(pills)
+
+
+def build_whatsapp_button(digits):
+    digits = (digits or "").strip()
+    if not digits:
+        return ""
+    return f'''<a href="https://wa.me/{digits}" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" style="position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(0,0,0,0.25); z-index: 100;">
+  <svg viewBox="0 0 24 24" width="30" height="30" fill="#FFFFFF"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.08c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1.01-2.4.26-.28.57-.35.76-.35h.55c.17 0 .41-.03.63.48.24.57.81 1.99.88 2.13.07.14.11.31.02.5-.09.19-.14.31-.28.47-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.92 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.19-.28.37-.23.62-.14.26.09 1.63.77 1.91.91.28.14.47.21.53.33.07.13.07.71-.17 1.39z"></path></svg>
+</a>'''
 
 
 def build_novedades_cards(posts):
@@ -109,7 +119,7 @@ def main():
         "contacto_telefono": content["contacto"]["telefono"],
         "contacto_email": content["contacto"]["email"],
         "contacto_horario": content["contacto"]["horario"],
-        "contacto_mapa_label": content["contacto"]["mapa_label"],
+        "contacto_mapa_embed_url": f"https://www.google.com/maps?q={quote(content['contacto']['direccion'])}&output=embed",
         "contacto_form_title": content["contacto"]["form_title"],
         "contacto_form_button": content["contacto"]["form_button"],
         "contacto_form_email": content["contacto"]["form_email"],
@@ -123,6 +133,7 @@ def main():
     html = html.replace("{{SERVICIOS_CARDS}}", build_servicios_cards(content["servicios"]["items"]))
     html = html.replace("{{CONVENIOS_PILLS}}", build_convenios_pills(content["convenios"]["items"]))
     html = html.replace("{{NOVEDADES_CARDS}}", build_novedades_cards(content["novedades"]["posts"]))
+    html = html.replace("{{WHATSAPP_BUTTON}}", build_whatsapp_button(content["contacto"].get("whatsapp_digits", "")))
 
     remaining = re.findall(r"\{\{[a-zA-Z_]+\}\}", html)
     if remaining:

@@ -69,11 +69,10 @@
     "title": "Trabajamos con distintos convenios",
     "subtitle": "Para que el acceso al tratamiento no sea una barrera. Consultanos por tu situación puntual.",
     "items": [
-      { "label": "BPS", "color": "#69662C" },
+      { "label": "Ayudas extraordinarias de BPS", "color": "#69662C" },
       { "label": "Particular", "color": "#C98271" },
       { "label": "Tutelar Policial", "color": "#F09367" },
-      { "label": "Tutelar Militar", "color": "#8A6A1F" },
-      { "label": "Becado", "color": "#C2CCAB" }
+      { "label": "Tutelar Militar", "color": "#8A6A1F" }
     ]
   },
   "novedades": {
@@ -114,14 +113,14 @@
     "eyebrow": "Contacto",
     "title": "Conversemos sobre tu consulta",
     "subtitle": "Escribinos o llamanos y te ayudamos a coordinar la primera cita con el especialista adecuado.",
-    "direccion": "[Dirección, Rivera, Uruguay]",
+    "direccion": "Av. Sarandí 832, Rivera, Uruguay",
     "telefono": "[+598 XXX XXX]",
-    "email": "[correo@clinicatrazos.uy]",
+    "email": "clinicatrazos@gmail.com",
     "horario": "[Horario de atención]",
-    "mapa_label": "[Mapa — Rivera, Uruguay]",
+    "whatsapp_digits": "",
     "form_title": "Escribinos",
     "form_button": "Enviar mensaje",
-    "form_email": "correo@clinicatrazos.uy"
+    "form_email": "clinicatrazos@gmail.com"
   },
   "footer": {
     "copyright": "© 2026 Clínica Trazos — Rivera, Uruguay"
