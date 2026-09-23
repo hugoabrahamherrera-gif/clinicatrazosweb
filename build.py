@@ -27,7 +27,7 @@ def build_nav(items):
     lines = []
     for item in items:
         lines.append(
-            f'      <a href="{item["href"]}" style="font-size: 15px; font-weight: 500; color: #2E2B15;">{item["label"]}</a>'
+            f'      <a href="{item["href"]}" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">{item["label"]}</a>'
         )
     return "\n".join(lines)
 
@@ -37,7 +37,7 @@ def build_servicios_cards(items):
     for item in items:
         icon_svg = ICONS.get(item["icon"], "")
         cards.append(f'''      <div style="background: #FBF9F4; border: 1px solid #EDE7D8; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px;">
-        <div style="width: 56px; height: 56px; border-radius: 16px; background: {item["bg"]}; display: flex; align-items: center; justify-content: center; color: {item["fg"]};">
+        <div aria-hidden="true" style="width: 56px; height: 56px; border-radius: 16px; background: {item["bg"]}; display: flex; align-items: center; justify-content: center; color: {item["fg"]};">
           {icon_svg}
         </div>
         <h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #2E2B15;">{item["title"]}</h3>
@@ -51,7 +51,7 @@ def build_convenios_pills(items):
     pills = []
     for item in items:
         pills.append(f'''      <div style="background: #FFFFFF; border: 1.5px solid #69662C; border-radius: 999px; padding: 14px 22px; display: flex; align-items: center; gap: 10px;">
-        <div style="width: 8px; height: 8px; border-radius: 50%; background: {item["color"]}; flex-shrink: 0;"></div>
+        <div aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: {item["color"]}; flex-shrink: 0;"></div>
         <span style="font-size: 14px; font-weight: 600; color: #2E2B15;">{item["label"]}</span>
       </div>''')
     return "\n".join(pills)
@@ -77,7 +77,7 @@ def build_novedades_cards(posts):
           <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: {post["cat_color"]};">{post["category"]}</span>
           <h3 style="margin: 0; font-size: 17px; font-weight: 600; color: #2E2B15; line-height: 1.4;">{post["title"]}</h3>
           <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #4A4736;">{post["excerpt"]}</p>
-          <span style="font-size: 13px; color: #8A8567; margin-top: 4px;">{post["date"]}</span>
+          <span style="font-size: 13px; color: #8A5240; margin-top: 4px;">{post["date"]}</span>
         </div>
       </div>
 ''')
