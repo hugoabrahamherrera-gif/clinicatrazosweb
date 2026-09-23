@@ -1,0 +1,129 @@
+{
+  "site_title": "Clínica Trazos",
+  "meta_tagline": "Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en Rivera",
+  "meta_description": "Clínica Trazos: equipo interdisciplinario en Rivera, Uruguay. Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología para acompañar el desarrollo de cada niño.",
+  "logo_light": "assets/logo-circulo-claro.png",
+  "logo_dark": "assets/logo-circulo-oscuro.png",
+  "cta_header": "Agendar consulta",
+  "nav": [
+    { "label": "Inicio", "href": "#inicio" },
+    { "label": "Servicios", "href": "#servicios" },
+    { "label": "Convenios", "href": "#convenios" },
+    { "label": "Novedades", "href": "#novedades" },
+    { "label": "Contacto", "href": "#contacto" }
+  ],
+  "hero": {
+    "badge": "Equipo interdisciplinario en Rivera",
+    "title": "Acompañamos el desarrollo de cada niño, a su ritmo",
+    "subtitle": "Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en un mismo equipo, trabajando junto a la familia en cada paso.",
+    "cta_primary": "Agendar consulta",
+    "cta_secondary": "Ver servicios",
+    "badge_media": "5 especialidades, un solo equipo"
+  },
+  "servicios": {
+    "eyebrow": "Nuestros servicios",
+    "title": "Un abordaje integral para cada etapa",
+    "items": [
+      {
+        "icon": "to",
+        "bg": "#E4E8D9",
+        "fg": "#69662C",
+        "title": "Terapia Ocupacional",
+        "desc": "Favorecemos la autonomía en las actividades de la vida diaria, el juego y el aprendizaje."
+      },
+      {
+        "icon": "psicomotricidad",
+        "bg": "#FBE3D6",
+        "fg": "#B85C3E",
+        "title": "Psicomotricidad",
+        "desc": "Trabajamos el movimiento, el equilibrio y la coordinación como base del aprendizaje."
+      },
+      {
+        "icon": "fono",
+        "bg": "#FCEFD2",
+        "fg": "#8A6A1F",
+        "title": "Fonoaudiología",
+        "desc": "Estimulamos el lenguaje, el habla y la comunicación desde la primera infancia."
+      },
+      {
+        "icon": "psicopedagogia",
+        "bg": "#F5D9CB",
+        "fg": "#A85A3A",
+        "title": "Psicopedagogía",
+        "desc": "Acompañamos los procesos de aprendizaje, atención y desempeño escolar."
+      },
+      {
+        "icon": "psicologia",
+        "bg": "#E7D9D2",
+        "fg": "#7A4A38",
+        "title": "Psicología",
+        "desc": "Sostenemos el bienestar emocional del niño y orientamos a la familia en el proceso."
+      }
+    ],
+    "cta_title": "¿No sabés qué servicio necesitás?",
+    "cta_text": "Escribinos y te orientamos según la edad y la situación del niño o niña.",
+    "cta_button": "Contactanos"
+  },
+  "convenios": {
+    "eyebrow": "Convenios",
+    "title": "Trabajamos con distintos convenios",
+    "subtitle": "Para que el acceso al tratamiento no sea una barrera. Consultanos por tu situación puntual.",
+    "items": [
+      { "label": "BPS", "color": "#69662C" },
+      { "label": "Particular", "color": "#C98271" },
+      { "label": "Tutelar Policial", "color": "#F09367" },
+      { "label": "Tutelar Militar", "color": "#8A6A1F" },
+      { "label": "Becado", "color": "#C2CCAB" }
+    ]
+  },
+  "novedades": {
+    "eyebrow": "Novedades",
+    "title": "Últimas noticias de la clínica",
+    "ver_todas": "Ver todas las novedades →",
+    "posts": [
+      {
+        "bg": "#F5D9CB",
+        "img_color": "#8A5240",
+        "cat_color": "#8A6A1F",
+        "category": "Guías para familias",
+        "title": "Cómo preparamos la primera consulta",
+        "excerpt": "Qué esperar del primer encuentro con el equipo y cómo llegar con más tranquilidad.",
+        "date": "[Fecha]"
+      },
+      {
+        "bg": "#C2CCAB",
+        "img_color": "#3F4A2B",
+        "cat_color": "#69662C",
+        "category": "Desarrollo infantil",
+        "title": "La importancia de la estimulación temprana",
+        "excerpt": "Por qué actuar a tiempo hace la diferencia en el desarrollo de niños y niñas.",
+        "date": "[Fecha]"
+      },
+      {
+        "bg": "#FCEFD2",
+        "img_color": "#8A6A1F",
+        "cat_color": "#B85C3E",
+        "category": "Novedades de la clínica",
+        "title": "Nuevos horarios de atención",
+        "excerpt": "Ampliamos los horarios disponibles para facilitar la coordinación de turnos.",
+        "date": "[Fecha]"
+      }
+    ]
+  },
+  "contacto": {
+    "eyebrow": "Contacto",
+    "title": "Conversemos sobre tu consulta",
+    "subtitle": "Escribinos o llamanos y te ayudamos a coordinar la primera cita con el especialista adecuado.",
+    "direccion": "[Dirección, Rivera, Uruguay]",
+    "telefono": "[+598 XXX XXX]",
+    "email": "[correo@clinicatrazos.uy]",
+    "horario": "[Horario de atención]",
+    "mapa_label": "[Mapa — Rivera, Uruguay]",
+    "form_title": "Escribinos",
+    "form_button": "Enviar mensaje",
+    "form_email": "correo@clinicatrazos.uy"
+  },
+  "footer": {
+    "copyright": "© 2026 Clínica Trazos — Rivera, Uruguay"
+  }
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{site_title}} — {{meta_tagline}}</title>
+<meta name="description" content="{{meta_description}}">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Poppins', sans-serif; }
+  a { color: #69662C; text-decoration: none; }
+  a:hover { color: #4F4C20; }
+  input, textarea { outline: none; }
+  input:focus, textarea:focus { border-color: #69662C; }
+
+  @media (max-width: 900px) {
+    .header-inner { flex-wrap: wrap; row-gap: 12px; }
+    .header-nav { order: 3; width: 100%; justify-content: center; flex-wrap: wrap; gap: 16px !important; }
+    .hero-inner { flex-direction: column; }
+    .hero-inner > div { min-width: 0 !important; width: 100%; }
+    .hero-media { height: auto !important; padding: 24px 0; }
+    .servicios-grid { grid-template-columns: 1fr !important; }
+    .novedades-grid { grid-template-columns: 1fr !important; }
+    .convenios-inner { flex-direction: column; }
+    .contacto-grid { grid-template-columns: 1fr !important; }
+    h1 { font-size: 36px !important; }
+  }
+</style>
+</head>
+<body>
+
+<div style="width: 100%; background: #FBF9F4; color: #2E2B15;">
+
+<div style="width: 100%; background: #FFFFFF; border-bottom: 1px solid #EDE7D8;">
+  <div class="header-inner" style="max-width: 1200px; margin: 0 auto; padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <img src="{{logo_light}}" alt="{{site_title}}" style="width: 56px; height: 56px; border-radius: 50%; flex-shrink: 0;">
+    </div>
+    <nav class="header-nav" style="display: flex; gap: 32px; align-items: center;">
+{{NAV_LINKS}}
+    </nav>
+    <a href="#contacto" style="background: #69662C; color: #FFFFFF; padding: 12px 24px; border-radius: 999px; font-size: 14px; font-weight: 600; flex-shrink: 0;">{{cta_header}}</a>
+  </div>
+</div>
+
+<div id="inicio" style="width: 100%; background: #F3EFE2;">
+  <div class="hero-inner" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; align-items: center; gap: 64px;">
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; min-width: 380px;">
+      <span style="background: #C2CCAB; color: #2E2B15; padding: 6px 16px; border-radius: 999px; font-size: 13px; font-weight: 600;">{{hero_badge}}</span>
+      <h1 style="margin: 0; font-size: 48px; line-height: 1.15; font-weight: 700; color: #2E2B15;">{{hero_title}}</h1>
+      <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A4736; max-width: 480px;">{{hero_subtitle}}</p>
+      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <a href="#contacto" style="background: #69662C; color: #FFFFFF; padding: 16px 32px; border-radius: 999px; font-weight: 600; font-size: 15px;">{{hero_cta_primary}}</a>
+        <a href="#servicios" style="background: transparent; color: #2E2B15; padding: 14px 32px; border-radius: 999px; font-weight: 600; font-size: 15px; border: 2px solid #2E2B15;">{{hero_cta_secondary}}</a>
+      </div>
+    </div>
+    <div class="hero-media" style="flex: 1; display: flex; justify-content: center; align-items: center; position: relative; height: 420px; min-width: 320px;">
+      <div style="width: 360px; height: 360px; border-radius: 50%; background: #FDD0BD; display: flex; align-items: center; justify-content: center; position: relative;">
+        <img src="{{logo_light}}" alt="{{site_title}}" style="width: 260px; height: 260px; border-radius: 50%; box-shadow: 0 24px 48px rgba(46,43,21,0.18);">
+        <div style="position: absolute; bottom: -4px; left: -8px; background: #FFFFFF; border-radius: 16px; padding: 14px 20px; box-shadow: 0 12px 24px rgba(46,43,21,0.14); display: flex; align-items: center; gap: 10px;">
+          <div style="width: 10px; height: 10px; border-radius: 50%; background: #F09367; flex-shrink: 0;"></div>
+          <span style="font-size: 13px; font-weight: 600; color: #2E2B15; white-space: nowrap;">{{hero_badge_media}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="servicios" style="width: 100%; background: #FFFFFF;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 96px 32px;">
+    <div style="max-width: 640px; margin: 0 auto 56px auto; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center;">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #8A5240;">{{servicios_eyebrow}}</span>
+      <h2 style="margin: 0; font-size: 34px; font-weight: 700; color: #2E2B15;">{{servicios_title}}</h2>
+    </div>
+    <div class="servicios-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+{{SERVICIOS_CARDS}}
+      <div style="background: #69662C; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px; justify-content: center;">
+        <h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #FFFFFF;">{{servicios_cta_title}}</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #E4E4D5;">{{servicios_cta_text}}</p>
+        <a href="#contacto" style="background: #FFFFFF; color: #69662C; padding: 12px 20px; border-radius: 999px; font-weight: 600; font-size: 14px; align-self: flex-start;">{{servicios_cta_button}}</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="convenios" style="width: 100%; background: #F3EFE2;">
+  <div class="convenios-inner" style="max-width: 1200px; margin: 0 auto; padding: 80px 32px; display: flex; gap: 48px; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 320px; display: flex; flex-direction: column; gap: 16px; justify-content: center;">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #8A5240;">{{convenios_eyebrow}}</span>
+      <h2 style="margin: 0; font-size: 30px; font-weight: 700; color: #2E2B15;">{{convenios_title}}</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A4736; max-width: 440px;">{{convenios_subtitle}}</p>
+    </div>
+    <div style="flex: 1; min-width: 320px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 12px;">
+{{CONVENIOS_PILLS}}
+    </div>
+  </div>
+</div>
+
+<div id="novedades" style="width: 100%; background: #FFFFFF;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 96px 32px;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; gap: 24px; flex-wrap: wrap;">
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #8A5240;">{{novedades_eyebrow}}</span>
+        <h2 style="margin: 0; font-size: 30px; font-weight: 700; color: #2E2B15;">{{novedades_title}}</h2>
+      </div>
+      <a href="#novedades" style="font-size: 15px; font-weight: 600; color: #69662C;">{{novedades_ver_todas}}</a>
+    </div>
+    <div class="novedades-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+{{NOVEDADES_CARDS}}
+    </div>
+  </div>
+</div>
+
+<div id="contacto" style="width: 100%; background: #2E2B15;">
+  <div class="contacto-grid" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px;">
+
+    <div style="display: flex; flex-direction: column; gap: 24px;">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F09367;">{{contacto_eyebrow}}</span>
+      <h2 style="margin: 0; font-size: 30px; font-weight: 700; color: #FFFFFF;">{{contacto_title}}</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C9C7B4; max-width: 420px;">{{contacto_subtitle}}</p>
+
+      <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 8px;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#F09367" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C12 21 5 14 5 9A7 7 0 0 1 19 9C19 14 12 21 12 21Z"></path><circle cx="12" cy="9" r="2.4"></circle></svg>
+          <span style="font-size: 15px; color: #FFFFFF;">{{contacto_direccion}}</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#F09367" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4H9L11 9L8.5 10.5C9.5 12.8 11.2 14.5 13.5 15.5L15 13L20 15V19C20 20.1 19.1 21 18 21C10.8 21 5 15.2 5 8C5 6.9 5 4 5 4Z"></path></svg>
+          <span style="font-size: 15px; color: #FFFFFF;">{{contacto_telefono}}</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#F09367" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7L12 13L21 7"></path></svg>
+          <span style="font-size: 15px; color: #FFFFFF;">{{contacto_email}}</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#F09367" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"></circle><line x1="12" y1="12" x2="12" y2="7"></line><line x1="12" y1="12" x2="16" y2="14"></line></svg>
+          <span style="font-size: 15px; color: #FFFFFF;">{{contacto_horario}}</span>
+        </div>
+      </div>
+
+      <div style="height: 180px; border-radius: 16px; background: #3D3A22; display: flex; align-items: center; justify-content: center; margin-top: 8px;">
+        <span style="font-size: 14px; color: #C2CCAB; font-weight: 500;">{{contacto_mapa_label}}</span>
+      </div>
+    </div>
+
+    <form action="mailto:{{contacto_form_email}}" method="post" enctype="text/plain" style="background: #FBF9F4; border-radius: 20px; padding: 40px; display: flex; flex-direction: column; gap: 18px; height: fit-content;">
+      <h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #2E2B15;">{{contacto_form_title}}</h3>
+
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        <label for="nombre" style="font-size: 13px; font-weight: 600; color: #2E2B15;">Nombre</label>
+        <input id="nombre" name="Nombre" type="text" placeholder="Tu nombre" style="border: 1px solid #D9D3BE; border-radius: 10px; padding: 12px 14px; font-size: 14px; font-family: 'Poppins', sans-serif; color: #2E2B15;">
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        <label for="email" style="font-size: 13px; font-weight: 600; color: #2E2B15;">Email</label>
+        <input id="email" name="Email" type="email" placeholder="tu@email.com" style="border: 1px solid #D9D3BE; border-radius: 10px; padding: 12px 14px; font-size: 14px; font-family: 'Poppins', sans-serif; color: #2E2B15;">
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        <label for="telefono" style="font-size: 13px; font-weight: 600; color: #2E2B15;">Teléfono</label>
+        <input id="telefono" name="Teléfono" type="tel" placeholder="+598" style="border: 1px solid #D9D3BE; border-radius: 10px; padding: 12px 14px; font-size: 14px; font-family: 'Poppins', sans-serif; color: #2E2B15;">
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        <label for="mensaje" style="font-size: 13px; font-weight: 600; color: #2E2B15;">Mensaje</label>
+        <textarea id="mensaje" name="Mensaje" rows="4" placeholder="Contanos brevemente tu consulta" style="border: 1px solid #D9D3BE; border-radius: 10px; padding: 12px 14px; font-size: 14px; font-family: 'Poppins', sans-serif; color: #2E2B15; resize: none;"></textarea>
+      </div>
+
+      <button type="submit" style="background: #69662C; color: #FFFFFF; border: none; border-radius: 999px; padding: 14px; font-size: 15px; font-weight: 600; font-family: 'Poppins', sans-serif; cursor: pointer;">{{contacto_form_button}}</button>
+    </form>
+
+  </div>
+</div>
+
+<div style="width: 100%; background: #211F10;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 40px 32px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="{{logo_dark}}" alt="{{site_title}}" style="width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0;">
+    </div>
+    <span style="font-size: 13px; color: #A8A48A;">{{footer_copyright}}</span>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
