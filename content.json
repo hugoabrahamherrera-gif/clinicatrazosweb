@@ -2,8 +2,8 @@
   "site_title": "Clínica Trazos",
   "meta_tagline": "Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en Rivera",
   "meta_description": "Clínica Trazos: equipo interdisciplinario en Rivera, Uruguay. Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología para acompañar el desarrollo de cada niño.",
-  "logo_light": "assets/logo-circulo-claro.png",
-  "logo_dark": "assets/logo-circulo-oscuro.png",
+  "logo_mark": "assets/logo-trazos.png",
+  "footer_wordmark": "TRAZOS",
   "cta_header": "Agendar consulta",
   "nav": [
     { "label": "Inicio", "href": "#inicio" },
