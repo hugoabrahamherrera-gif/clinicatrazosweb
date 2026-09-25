@@ -6,7 +6,7 @@ keyword: clínica infantil Rivera contacto
 eyebrow: Contacto
 miga: Contacto
 h1: Contacto y ubicación
-intro: Escribinos o acercate a la clínica y te ayudamos a coordinar la primera consulta con el especialista adecuado.
+intro:
 ---
 
 ## Estamos en el centro de Rivera

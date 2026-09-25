@@ -332,6 +332,24 @@ def pagina_completa(base_tpl, c, base, sitio_url, *, ruta, titulo, descripcion, 
     return out
 
 
+def contacto_bloque(c, en_pagina_contacto=False):
+    ct = c["contacto"]
+    b = (PLANTILLAS / "contacto-bloque.html").read_text(encoding="utf-8")
+    for k, v in {
+        "contacto_eyebrow": ct["eyebrow"], "contacto_title": ct["title"], "contacto_subtitle": ct["subtitle"],
+        "contacto_form_title": ct["form_title"], "contacto_form_button": ct["form_button"],
+        "contacto_form_email": ct["form_email"], "site_title": c["site_title"],
+        "asunto_email": quote("Consulta desde el sitio web"),
+    }.items():
+        b = b.replace("{{" + k + "}}", v)
+    if en_pagina_contacto:
+        # La página ya tiene su H1 "Contacto": sin la etiqueta repetida y con menos aire arriba.
+        b = re.sub(r'\s*<span[^>]*>' + re.escape(ct["eyebrow"]) + r'</span>', "", b, count=1)
+        b = b.replace("padding: 96px 32px;", "padding: 56px 32px 96px;", 1)
+    b = b.replace("{{CONTACTO_ITEMS}}", contacto_items(ct))
+    return b.replace("{{contacto_mapa_embed_url}}", f"https://www.google.com/maps?q={quote(ct['direccion'])}&amp;output=embed")
+
+
 # ---------------------------------------------------------------- Portada
 
 def build_servicios_cards(items, base):
@@ -413,6 +431,15 @@ def aside_cta(c, base, texto_extra=""):
 
 
 def cuerpo_con_aside(prosa_html, aside_html, extra_abajo=""):
+    if not aside_html:
+        return f'''<section style="width: 100%; background: #FFFFFF;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 72px 32px;">
+    <div class="prose" style="max-width: 760px;">
+{prosa_html}
+    </div>
+  </div>
+{extra_abajo}
+</section>'''
     return f'''<section style="width: 100%; background: #FFFFFF;">
   <div class="articulo-grid" style="max-width: 1200px; margin: 0 auto; padding: 72px 32px; display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 64px; align-items: start;">
     <div class="prose" style="max-width: 720px;">
@@ -497,8 +524,7 @@ def main():
         inicio = inicio.replace("{{" + k + "}}", v)
     inicio = inicio.replace("{{SERVICIOS_CARDS}}", build_servicios_cards(servicios, base))
     inicio = inicio.replace("{{CONVENIOS_PILLS}}", build_convenios_pills(c["convenios"]["items"]))
-    inicio = inicio.replace("{{CONTACTO_ITEMS}}", contacto_items(ct))
-    inicio = inicio.replace("{{contacto_mapa_embed_url}}", f"https://www.google.com/maps?q={quote(ct['direccion'])}&output=embed")
+    inicio = inicio.replace("{{CONTACTO_BLOQUE}}", contacto_bloque(c))
     if posts:
         inicio = inicio.replace("{{BLOG_INICIO_ABRE}}", "").replace("{{BLOG_INICIO_CIERRA}}", "")
         inicio = inicio.replace("{{NOVEDADES_CARDS}}", "".join(tarjeta_post(p, base) for p in posts[:3]))
@@ -531,20 +557,13 @@ def main():
     </div>
   </div>'''
         if pg["slug"] == "contacto":
-            aside = f'''<aside style="background: #2E2B15; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 18px;">
-      <h2 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF;">Datos de contacto</h2>
-{contacto_items(ct)}
-    </aside>'''
-            mapa = f'''  <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px 72px;">
-    <div style="border-radius: 20px; overflow: hidden; line-height: 0;">
-      <iframe src="https://www.google.com/maps?q={quote(ct['direccion'])}&amp;output=embed" width="100%" height="360" style="border: 0; display: block;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa: {html.escape(c['site_title'])}, {html.escape(ct['direccion'])}"></iframe>
-    </div>
-  </div>'''
-            extra = mapa + extra
+            aside = ""
         else:
             aside = aside_cta(c, base)
         contenido = cabecera_interior(pg.get("eyebrow", ""), pg.get("h1", pg["title"]),
                                       inline_md(pg.get("intro", ""), base), migas, base)
+        if pg["slug"] == "contacto":
+            contenido += "\n" + contacto_bloque(c, en_pagina_contacto=True)
         contenido += "\n" + cuerpo_con_aside(bloques_a_html(bloques, base), aside, extra)
         lds = [breadcrumb_ld(sitio_url, migas)]
         if serv:
