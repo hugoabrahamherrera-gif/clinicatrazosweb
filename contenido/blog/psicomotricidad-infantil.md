@@ -104,7 +104,7 @@ Las dificultades con el trazo y la escritura son uno de los motivos por los que 
 
 ## Consultá en Clínica Trazos
 
-Si algo del movimiento o del juego de tu hijo te genera dudas, una evaluación te puede dar respuestas. En Clínica Trazos, en Rivera, trabajamos [psicomotricidad infantil](/psicomotricidad-rivera/) en equipo con otras especialidades, con atención presencial y online. [DATO A CONFIRMAR: si psicomotricidad ofrece modalidad online y para qué casos]. Atendemos con distintos [convenios](/convenios/), incluidas las Ayudas Extraordinarias de BPS. [Escribinos](/contacto/) y te orientamos.
+Si algo del movimiento o del juego de tu hijo te genera dudas, una evaluación te puede dar respuestas. En Clínica Trazos, en Rivera, trabajamos [psicomotricidad infantil](/psicomotricidad-rivera/) en equipo con otras especialidades, con atención presencial. Trabajamos con distintos [convenios](/convenios/) y estamos en proceso de habilitación para atender con Ayudas Extraordinarias de BPS. [Escribinos](/contacto/) y te orientamos.
 
 ## Fuentes
 

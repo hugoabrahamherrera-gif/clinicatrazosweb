@@ -80,15 +80,15 @@ Nota: en el frontmatter de cada artículo escrito, `fecha` es la fecha sugerida 
 
 - Rivera y Santana do Livramento forman una sola ciudad de hecho, y muchas familias son bilingües. En las búsquedas en portugués ("fonoaudiologia infantil Santana do Livramento", "terapeuta ocupacional Santana do Livramento") aparecen sobre todo directorios brasileños (BoaConsulta, Guia Cidade) con fichas de profesionales individuales. **No se vio ninguna clínica infantil interdisciplinaria que se posicione con contenido en portugués para la zona.**
 - Propuesta por etapas:
-  1. Confirmar primero si el equipo atiende en portugués. `[DATO A CONFIRMAR: ¿hay profesionales que atiendan en portugués o en portuñol? ¿en qué especialidades?]`
+  1. Confirmar primero si el equipo atiende en portugués. `Confirmado por Abraham (2026-09-24): va a haber profesionales de Livramento para tratamiento particular psicopedagógico y psicológico en portugués.`
   2. Si la respuesta es sí: una página de servicios en portugués ("Clínica infantil em Rivera: fonoaudiologia, psicomotricidade, terapia ocupacional…"), con `hreflang="pt-BR"`, y el perfil de Google Business con descripción también en portugués.
   3. Después, traducir y adaptar (no traducir literalmente) 2-3 artículos: el de bilingüismo (#8) es el candidato natural, luego el #1 y el #3.
-- Precaución: las familias que viven en Brasil y no tienen cobertura uruguaya no acceden a la AYEX de BPS; para ellas la modalidad sería particular. Esto hay que decirlo con claridad en cualquier página en portugués. `[DATO A CONFIRMAR: condiciones para pacientes con domicilio en Brasil]`
+- Precaución: las familias que viven en Brasil y no tienen cobertura uruguaya no acceden a la AYEX de BPS; para ellas la modalidad sería particular. Esto hay que decirlo con claridad en cualquier página en portugués. `(a definir: condiciones para pacientes con domicilio en Brasil)`
 - Palabras clave a probar en Search Console cuando haya datos: "fonoaudióloga Rivera", "psicomotricidade Rivera Uruguai", "terapia ocupacional infantil Livramento", "clínica infantil Rivera".
 
 ## 6. Pautas para los artículos que faltan
 
 - Un tema por artículo, con enlace a la página del servicio correspondiente y a `/contacto/`.
-- Nada de datos de la clínica sin confirmar: usar `[DATO A CONFIRMAR: ...]`.
+- Nada de datos de la clínica sin confirmar: usar `[DATO A CONFIRMAR]`.
 - Toda cifra tiene que salir de una fuente que figure en "Fuentes", verificada con la página abierta.
 - Revisar cada 6-12 meses los artículos de trámites (BPS) y los que citan datos.

@@ -1,7 +1,7 @@
 ---
 title: Psicomotricidad infantil en Rivera | Clínica Trazos
 slug: psicomotricidad-rivera
-description: Psicomotricidad para niños en Rivera: movimiento, equilibrio, coordinación y expresión emocional. Evaluación y tratamiento, también por BPS.
+description: Psicomotricidad para niños en Rivera: movimiento, equilibrio, coordinación y expresión emocional. Evaluación y tratamiento presencial.
 keyword: psicomotricidad Rivera
 eyebrow: Psicomotricidad
 miga: Psicomotricidad
@@ -42,9 +42,9 @@ El tratamiento se desarrolla en una sala preparada para el movimiento y el juego
 
 Compartimos avances y orientaciones con la familia y, con su autorización, coordinamos con los docentes para acompañar el proceso en todos los ámbitos.
 
-## Psicomotricidad con Ayudas Extraordinarias de BPS
+## Psicomotricidad y Ayudas Extraordinarias de BPS
 
-La psicomotricidad es uno de los tratamientos que se pueden financiar a través de las Ayudas Extraordinarias (AYEX) de BPS, si el niño cumple las condiciones que define el organismo. Trabajamos con este convenio en Rivera: en la página de [convenios](/convenios/) te explicamos el trámite paso a paso, y si tenés dudas podés [escribirnos](/contacto/).
+La psicomotricidad es uno de los tratamientos que se pueden financiar a través de las Ayudas Extraordinarias (AYEX) de BPS, si el niño cumple las condiciones que define el organismo. Clínica Trazos está **en proceso de habilitación ante BPS** para atender con AYEX en Rivera; mientras tanto, podés empezar en forma particular. En la página de [convenios](/convenios/) te explicamos el trámite paso a paso, y si tenés dudas podés [escribirnos](/contacto/).
 
 ## Preguntas frecuentes
 
@@ -62,4 +62,4 @@ Puede ayudar cuando las dificultades de conducta están ligadas a la regulación
 
 ### ¿Se puede hacer psicomotricidad por BPS en Rivera?
 
-Sí, si el niño es beneficiario de las Ayudas Extraordinarias de BPS. Trabajamos con este convenio; consultanos y te orientamos con el trámite.
+Sí, si el niño es beneficiario de las Ayudas Extraordinarias de BPS y el tratamiento se hace en un instituto habilitado. Clínica Trazos está en proceso de habilitación; consultanos y te contamos en qué etapa está y cómo orientarte con el trámite.

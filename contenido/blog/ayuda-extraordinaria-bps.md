@@ -68,9 +68,9 @@ Para dudas, BPS atiende en el **0800 1997 desde teléfono fijo** o marcando aste
 
 ## ¿Cuánto cubre?
 
-BPS publica los montos vigentes en su página de ayuda extraordinaria y los actualiza periódicamente. A la fecha de este artículo, la página oficial informa **$8.575,05 mensuales para instituto** (vigencia enero de 2026) y **$4.341,55 mensuales para transporte** y para boletos de acompañante (vigencia julio de 2026). Estos valores cambian, así que revisalos en la [página oficial de BPS](https://www.bps.gub.uy/3555/ayuda-extraordinaria.html) antes de hacer cuentas.
+La AYEX cubre un monto mensual para el instituto y, cuando corresponde, otro para el transporte o los boletos del acompañante. BPS define esos montos y los actualiza varias veces por año, así que la referencia siempre es la [página oficial de BPS](https://www.bps.gub.uy/3555/ayuda-extraordinaria.html).
 
-Si el tratamiento cuesta más que lo que cubre la AYEX, puede haber una diferencia a cargo de la familia. En Clínica Trazos te lo explicamos antes de empezar. [DATO A CONFIRMAR: si la clínica cobra diferencia o complemento sobre el monto AYEX y cómo se informa]
+Algunos institutos cobran una diferencia a cargo de la familia. En Clínica Trazos, la atención por AYEX **no va a tener costo adicional** para la familia.
 
 ## Renovación, cambio de tratamiento y cambio de instituto
 
@@ -86,7 +86,7 @@ Organizar las fechas con tiempo evita cortes en el tratamiento. Anotá cuándo v
 
 El tratamiento tiene que hacerse en un **instituto habilitado por BPS**. BPS publica un listado de institutos habilitados de Montevideo y del interior, ordenado por departamento, en su página de ayuda extraordinaria.
 
-Clínica Trazos trabaja con Ayudas Extraordinarias de BPS. [DATO A CONFIRMAR: qué especialidades de la clínica están habilitadas para AYEX y si la clínica figura en el listado de institutos habilitados de BPS para Rivera]. Si ya tenés la ayuda aprobada o estás por iniciarla, [escribinos](/contacto/) y te orientamos sobre los papeles que tiene que completar la clínica, como los informes de evolución.
+Clínica Trazos está **en proceso de habilitación ante BPS** para atender con Ayudas Extraordinarias en psicomotricidad y fonoaudiología. Mientras tanto, podés empezar en forma particular. Si ya tenés la ayuda aprobada o estás por iniciarla, [escribinos](/contacto/) y te orientamos sobre los papeles que tiene que completar la clínica, como los informes de evolución.
 
 ## Preguntas frecuentes
 
@@ -112,7 +112,7 @@ Sí. BPS tiene un trámite de cambio de proveedor para pasar a otro instituto o 
 
 ## Te acompañamos con el trámite
 
-Los trámites pueden ser lo que más cuesta al empezar un tratamiento. En Clínica Trazos, en Rivera, atendemos con [Ayudas Extraordinarias de BPS y otros convenios](/convenios/), y podemos orientarte sobre qué informes necesita cada etapa. Si querés saber si tu hijo podría empezar, por ejemplo, [psicomotricidad](/psicomotricidad-rivera/) o [fonoaudiología](/fonoaudiologia-rivera/), [consultanos](/contacto/). La decisión final sobre la ayuda siempre la toma BPS.
+Los trámites pueden ser lo que más cuesta al empezar un tratamiento. En Clínica Trazos, en Rivera, estamos en proceso de habilitación para atender con [Ayudas Extraordinarias de BPS](/convenios/), ya trabajamos con otros convenios, y podemos orientarte sobre qué informes necesita cada etapa. Si querés saber si tu hijo podría empezar, por ejemplo, [psicomotricidad](/psicomotricidad-rivera/) o [fonoaudiología](/fonoaudiologia-rivera/), [consultanos](/contacto/). La decisión final sobre la ayuda siempre la toma BPS.
 
 ## Fuentes
 

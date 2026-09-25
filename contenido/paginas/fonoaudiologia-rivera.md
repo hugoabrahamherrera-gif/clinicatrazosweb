@@ -1,7 +1,7 @@
 ---
 title: Fonoaudiología infantil en Rivera | Clínica Trazos
 slug: fonoaudiologia-rivera
-description: Fonoaudióloga para niños en Rivera: lenguaje, habla, pronunciación, tartamudez y alimentación. Evaluación y tratamiento, también por BPS.
+description: Fonoaudióloga para niños en Rivera: lenguaje, habla, pronunciación, tartamudez y alimentación. Atención presencial y online particular.
 keyword: fonoaudióloga Rivera
 eyebrow: Fonoaudiología
 miga: Fonoaudiología
@@ -42,9 +42,9 @@ Las sesiones son dinámicas y lúdicas: el niño aprende jugando. Trabajamos obj
 
 Lo que pasa en casa es clave. Damos a la familia estrategias simples para estimular el lenguaje en la rutina diaria.
 
-## Fonoaudiología por BPS y otros convenios
+## Fonoaudiología, BPS y otros convenios
 
-La fonoaudiología es uno de los tratamientos que se pueden cubrir con las Ayudas Extraordinarias de BPS, si el niño cumple los requisitos del organismo. También atendemos en forma particular y con otros convenios. Te lo explicamos en la página de [convenios](/convenios/).
+La fonoaudiología es uno de los tratamientos que se pueden cubrir con las Ayudas Extraordinarias de BPS, si el niño cumple los requisitos del organismo. Clínica Trazos está **en proceso de habilitación ante BPS** para atender con AYEX. También atendemos en forma particular y con otros convenios. Te lo explicamos en la página de [convenios](/convenios/).
 
 ## Preguntas frecuentes
 
@@ -62,4 +62,4 @@ Sí. La fonoaudióloga evalúa la fluidez del habla y orienta a la familia. En n
 
 ### ¿Atienden online?
 
-Ofrecemos atención online para orientación a familias y seguimiento, cuando el caso lo permite. La evaluación y el tratamiento se hacen, en general, de forma presencial en Rivera.
+Sí, la fonoaudiología se ofrece también online, en modalidad particular. Según la edad del niño y el motivo de consulta, te recomendamos qué modalidad conviene.

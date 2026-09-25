@@ -1,7 +1,7 @@
 ---
 title: Ayudas Extraordinarias BPS en Rivera y convenios | Clínica Trazos
 slug: convenios
-description: Tratamientos infantiles en Rivera con Ayudas Extraordinarias de BPS (AYEX), Tutelar Policial, Tutelar Militar o en forma particular. Cómo acceder.
+description: Ayudas Extraordinarias de BPS (AYEX) en Rivera: qué son, quién accede y el trámite paso a paso. Convenios Tutelar Policial, Militar y particular.
 keyword: ayudas extraordinarias BPS Rivera
 eyebrow: Convenios
 miga: Convenios y BPS
@@ -13,7 +13,7 @@ intro: Queremos que el costo no sea una barrera para empezar un tratamiento. Te 
 
 En Clínica Trazos atendemos a niños y niñas de Rivera y la zona con estas modalidades:
 
-- **Ayudas Extraordinarias de BPS (AYEX)**
+- **Ayudas Extraordinarias de BPS (AYEX)**: en proceso de habilitación
 - **Tutelar Policial**
 - **Tutelar Militar**
 - **Particular**
@@ -32,7 +32,9 @@ Según la información oficial de BPS, pueden acceder, entre otros:
 - Participantes de programas del Mides como Uruguay Crece Contigo o Cercanías.
 - Niños y adolescentes en el sistema de protección de INAU, hasta los 18 años.
 
-Los requisitos y los montos los define BPS y pueden cambiar. Antes de iniciar el trámite, revisá siempre la [información oficial de BPS sobre la Ayuda Extraordinaria](https://www.bps.gub.uy/3555/ayuda-extraordinaria.html).
+Los requisitos y los montos los define BPS y pueden cambiar.
+
+**Clínica Trazos está en proceso de habilitación ante BPS** para atender con Ayudas Extraordinarias en psicomotricidad y fonoaudiología. Cuando la habilitación esté completa, la atención por AYEX no va a tener costo adicional para la familia. Mientras tanto, podés empezar en forma particular. Antes de iniciar el trámite, revisá siempre la [información oficial de BPS sobre la Ayuda Extraordinaria](https://www.bps.gub.uy/3555/ayuda-extraordinaria.html).
 
 ## Cómo es el trámite, paso a paso
 
@@ -51,7 +53,7 @@ Si tu familia tiene cobertura de **Tutelar Policial** o **Tutelar Militar**, con
 
 ### ¿Qué tratamientos cubre la Ayuda Extraordinaria de BPS?
 
-Cubre tratamientos en institutos de rehabilitación habilitados, como fonoaudiología, psicomotricidad o fisiatría, según lo que apruebe el equipo técnico de BPS para cada niño. Consultanos qué tratamientos podemos realizar por AYEX en tu caso.
+Cubre tratamientos en institutos de rehabilitación habilitados, como fonoaudiología, psicomotricidad o fisiatría, según lo que apruebe el equipo técnico de BPS para cada niño. En Clínica Trazos, la habilitación en trámite es para psicomotricidad y fonoaudiología.
 
 ### ¿Cuánto tarda la aprobación de la AYEX?
 
@@ -60,6 +62,10 @@ Depende de BPS y de cada solicitud. Por eso conviene iniciar el trámite apenas 
 ### ¿Hay que renovar la Ayuda Extraordinaria?
 
 Sí. BPS define una fecha de finalización y, si el niño necesita seguir el tratamiento, hay que pedir la renovación. Se puede solicitar hasta tres meses antes del vencimiento.
+
+### ¿La clínica cobra una diferencia sobre la AYEX?
+
+No. Cuando la habilitación esté completa, la atención por Ayudas Extraordinarias en Clínica Trazos no va a tener costo adicional para la familia.
 
 ### ¿Puedo empezar en forma particular mientras sale el trámite de BPS?
 

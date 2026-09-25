@@ -5,7 +5,7 @@
   },
   "site_title": "Clínica Trazos",
   "meta_tagline": "Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en Rivera",
-  "meta_description": "Clínica infantil en Rivera: Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología. Trabajamos con Ayudas Extraordinarias de BPS.",
+  "meta_description": "Clínica infantil en Rivera: Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología para niños y adolescentes. Presencial y online.",
   "footer_wordmark": "TRAZOS",
   "cta_header": "Agendar consulta",
   "nav": [
@@ -36,7 +36,7 @@
     "title": "Acompañamos el desarrollo de cada niño en Rivera, a su ritmo",
     "subtitle": "Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en un mismo equipo, trabajando junto a la familia en cada paso.",
     "modalidad_presencial": "Atención presencial",
-    "modalidad_online": "Atención online",
+    "modalidad_online": "Online: fono y psicología",
     "cta_primary": "Agendar consulta",
     "cta_secondary": "Ver servicios",
     "badge_media": "5 especialidades, un solo equipo"
@@ -92,11 +92,11 @@
   },
   "convenios": {
     "eyebrow": "Convenios",
-    "title": "Trabajamos con distintos convenios",
+    "title": "Convenios y formas de atención",
     "subtitle": "Para que el acceso al tratamiento no sea una barrera. Consultanos por tu situación puntual.",
     "items": [
       {
-        "label": "Ayudas extraordinarias de BPS",
+        "label": "Ayudas extraordinarias de BPS (en habilitación)",
         "color": "#69662C"
       },
       {

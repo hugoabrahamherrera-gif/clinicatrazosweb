@@ -42,7 +42,7 @@ Los adultos son parte central del proceso. Ofrecemos espacios de orientación pa
 
 ## Modalidad
 
-Atendemos de forma **presencial en Rivera** y también **online**, lo que puede facilitar la orientación a madres y padres o el seguimiento de algunos procesos. Consultá los convenios disponibles en la página de [convenios](/convenios/).
+Atendemos a niños y adolescentes de todas las edades, de forma **presencial en Rivera** y también **online en modalidad particular**, lo que puede facilitar la orientación a madres y padres o el seguimiento de algunos procesos. Consultá los convenios disponibles en la página de [convenios](/convenios/).
 
 ## Preguntas frecuentes
 

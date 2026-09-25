@@ -102,7 +102,7 @@ No. Consultar es una forma de cuidar. Muchas consultas son por situaciones comun
 
 ## Consultá en Clínica Trazos
 
-Si algo del ánimo o la conducta de tu hijo te preocupa, podés consultarnos. En Clínica Trazos, en Rivera, contamos con [psicología infantil](/psicologia-infantil-rivera/) y trabajamos en equipo con [psicopedagogía](/psicopedagogia-rivera/) y otras especialidades, con atención presencial y online. [DATO A CONFIRMAR: edad desde la que atiende psicología infantil y si atiende adolescentes]. Podés ver nuestros [convenios](/convenios/) o [escribirnos](/contacto/) para coordinar una primera entrevista.
+Si algo del ánimo o la conducta de tu hijo te preocupa, podés consultarnos. En Clínica Trazos, en Rivera, contamos con [psicología infantil](/psicologia-infantil-rivera/) y trabajamos en equipo con [psicopedagogía](/psicopedagogia-rivera/) y otras especialidades. Atendemos a niños y adolescentes de todas las edades, de forma presencial y también online en modalidad particular. Podés ver nuestros [convenios](/convenios/) o [escribirnos](/contacto/) para coordinar una primera entrevista.
 
 ## Fuentes
 

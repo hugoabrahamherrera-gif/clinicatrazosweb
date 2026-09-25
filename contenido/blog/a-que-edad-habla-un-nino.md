@@ -96,11 +96,11 @@ Hablarlo con el pediatra siempre es buena idea, porque puede indicar una prueba 
 
 ### ¿El fonoaudiólogo atiende online?
 
-Clínica Trazos ofrece atención presencial y online. [DATO A CONFIRMAR: si fonoaudiología ofrece modalidad online y para qué casos]. Qué modalidad conviene depende de la edad del niño y del motivo de consulta, y eso se define con el profesional.
+En Clínica Trazos, la fonoaudiología se ofrece de forma presencial y también online, en modalidad particular. Qué modalidad conviene depende de la edad del niño y del motivo de consulta, y eso se define con el profesional.
 
 ## Consultá en Clínica Trazos
 
-Si tenés dudas sobre cómo habla tu hijo, consultar a tiempo te da información y tranquilidad. En Clínica Trazos, en Rivera, contamos con [fonoaudiología infantil](/fonoaudiologia-rivera/) y trabajamos en equipo con [psicomotricidad](/psicomotricidad-rivera/) y otras especialidades cuando hace falta. Atendemos de forma presencial y online, también a familias de Tranqueras, Vichadero, Minas de Corrales y Tacuarembó. Podés ver con qué [convenios](/convenios/) trabajamos o [escribirnos](/contacto/) para coordinar una consulta.
+Si tenés dudas sobre cómo habla tu hijo, consultar a tiempo te da información y tranquilidad. En Clínica Trazos, en Rivera, contamos con [fonoaudiología infantil](/fonoaudiologia-rivera/) y trabajamos en equipo con [psicomotricidad](/psicomotricidad-rivera/) y otras especialidades cuando hace falta. Atendemos de forma presencial, y online en modalidad particular, también a familias de Tranqueras, Vichadero, Minas de Corrales y Tacuarembó. Podés ver con qué [convenios](/convenios/) trabajamos o [escribirnos](/contacto/) para coordinar una consulta.
 
 ## Fuentes
 

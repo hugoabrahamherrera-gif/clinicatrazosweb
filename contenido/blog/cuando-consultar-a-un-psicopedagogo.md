@@ -97,7 +97,7 @@ Sí: una de las funciones de la evaluación es dar a la escuela información y s
 
 ## Consultá en Clínica Trazos
 
-Si tu hijo está pasando un momento difícil con el aprendizaje, no tiene que atravesarlo solo. En Clínica Trazos, en Rivera, contamos con [psicopedagogía](/psicopedagogia-rivera/) y trabajamos en equipo con fonoaudiología, psicología y otras especialidades, con atención presencial y online. [DATO A CONFIRMAR: si psicopedagogía atiende también a adolescentes de liceo]. Podés ver nuestros [convenios](/convenios/) o [escribirnos](/contacto/) para coordinar una consulta.
+Si tu hijo está pasando un momento difícil con el aprendizaje, no tiene que atravesarlo solo. En Clínica Trazos, en Rivera, contamos con [psicopedagogía](/psicopedagogia-rivera/) y trabajamos en equipo con fonoaudiología, psicología y otras especialidades, con atención presencial para niños y adolescentes, también en el liceo. Podés ver nuestros [convenios](/convenios/) o [escribirnos](/contacto/) para coordinar una consulta.
 
 ## Fuentes
 

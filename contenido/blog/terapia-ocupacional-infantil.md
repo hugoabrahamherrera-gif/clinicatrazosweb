@@ -95,7 +95,7 @@ Depende de cada niño y de los objetivos. Por eso es importante que el plan teng
 
 ## Consultá en Clínica Trazos
 
-Si ves que a tu hijo le cuestan las tareas de todos los días, una evaluación puede ayudarte a entender por qué y qué hacer. En Clínica Trazos, en Rivera, contamos con [terapia ocupacional infantil](/terapia-ocupacional-rivera/) y trabajamos en equipo con otras especialidades, con atención presencial y online. También atendemos con distintos [convenios](/convenios/). [Escribinos](/contacto/) y te orientamos.
+Si ves que a tu hijo le cuestan las tareas de todos los días, una evaluación puede ayudarte a entender por qué y qué hacer. En Clínica Trazos, en Rivera, contamos con [terapia ocupacional infantil](/terapia-ocupacional-rivera/) y trabajamos en equipo con otras especialidades, con atención presencial. También atendemos con distintos [convenios](/convenios/). [Escribinos](/contacto/) y te orientamos.
 
 ## Fuentes
 

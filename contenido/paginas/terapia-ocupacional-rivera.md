@@ -48,7 +48,7 @@ Damos pautas para aplicar en casa y, cuando la familia lo autoriza, nos coordina
 
 ## Modalidad y convenios
 
-Atendemos de forma **presencial en Rivera** y también ofrecemos **atención online** para orientación a familias y seguimiento, cuando el caso lo permite. Trabajamos con distintos convenios, incluidas las Ayudas Extraordinarias de BPS; en la página de [convenios](/convenios/) te contamos cómo funciona cada uno.
+La terapia ocupacional se realiza de forma **presencial en Rivera**, porque el trabajo con el cuerpo, los materiales y el espacio es central en cada sesión. Trabajamos con distintos convenios; en la página de [convenios](/convenios/) te contamos cómo funciona cada uno.
 
 ## Preguntas frecuentes
 
@@ -58,7 +58,7 @@ Desde los primeros meses de vida. En bebés y niños pequeños el trabajo se cen
 
 ### ¿Hace falta una orden médica para consultar?
 
-Para una consulta particular no es necesario. Si vas a usar un convenio, como las Ayudas Extraordinarias de BPS, normalmente se requiere la indicación y el formulario del médico tratante. Te orientamos en los pasos.
+Para una consulta particular no es necesario. Si vas a usar un convenio, puede requerirse la indicación del médico tratante. Te orientamos en los pasos.
 
 ### ¿Cuánto dura el tratamiento?
 

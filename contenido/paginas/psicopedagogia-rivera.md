@@ -42,7 +42,7 @@ Las sesiones buscan desarrollar estrategias de aprendizaje, atención y organiza
 
 ## Modalidad y convenios
 
-Atendemos de forma **presencial en Rivera** y ofrecemos **atención online** para orientación y seguimiento cuando el caso lo permite. Consultá los convenios con los que trabajamos en la página de [convenios](/convenios/).
+Atendemos de forma **presencial en Rivera**, a niños y adolescentes de todos los niveles: escuela y liceo. Consultá los convenios con los que trabajamos en la página de [convenios](/convenios/).
 
 ## Preguntas frecuentes
 
