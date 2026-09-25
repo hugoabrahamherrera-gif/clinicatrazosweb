@@ -46,7 +46,16 @@ en la raíz. Pasos:
 3. En `content.json` cambiar `sitio.url` al dominio nuevo y correr `build.py`.
 4. En Search Console, agregar el dominio nuevo y usar "Cambio de dirección".
 
-## 5. Después del lanzamiento
+## 5. Publicación automática del blog
+
+`herramientas/publicar-blog.yml` publica los artículos los lunes a las 08:00 (Uruguay). Hay que
+instalarlo una vez desde la web de GitHub, porque el token de la compu no tiene permiso `workflow`:
+
+1. En el repo, **Add file → Create new file**, con el nombre `.github/workflows/publicar-blog.yml`.
+2. Pegar el contenido de `herramientas/publicar-blog.yml` y hacer **Commit changes**.
+3. En la compu: `git pull`.
+
+## 6. Después del lanzamiento
 
 - Publicar un artículo por semana, según `contenido/blog/_plan-editorial.md`.
 - Mirar Search Console una vez por mes: qué búsquedas traen visitas y qué páginas conviene reforzar.

@@ -1,0 +1,38 @@
+# Publica los artículos del blog cuando llega su fecha.
+# Corre los lunes 08:00 de Uruguay (11:00 UTC): regenera el sitio con build.py y,
+# si algo cambió (un artículo nuevo, el sitemap), lo commitea y pide a GitHub Pages
+# que vuelva a publicar. También se puede correr a mano desde la pestaña Actions.
+name: Publicar blog
+
+on:
+  schedule:
+    - cron: "0 11 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generar el sitio
+        run: python3 build.py
+      - name: Commit y publicación
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Sin cambios: no hay artículos nuevos para publicar."
+            exit 0
+          fi
+          git commit -m "Publicación automática del blog ($(date -u +%F))"
+          git push
+          # Un push hecho con GITHUB_TOKEN no siempre dispara el build de Pages: se pide explícito.
+          curl -sS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds"
