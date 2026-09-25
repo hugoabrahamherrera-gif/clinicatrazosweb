@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /clinicatrazosweb/contenido/
+Disallow: /clinicatrazosweb/plantillas/
+Disallow: /clinicatrazosweb/mockup/
+
+Sitemap: https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/sitemap.xml

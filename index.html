@@ -1,21 +1,42 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-UY">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clínica Trazos — Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en Rivera</title>
-<meta name="description" content="Clínica Trazos: equipo interdisciplinario en Rivera, Uruguay. Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología para acompañar el desarrollo de cada niño.">
+<title>Clínica Trazos | Terapias infantiles en Rivera, Uruguay</title>
+<meta name="description" content="Clínica infantil en Rivera: Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología. Trabajamos con Ayudas Extraordinarias de BPS.">
+<link rel="canonical" href="https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/">
+<meta name="robots" content="index, follow">
 <meta name="theme-color" content="#FBF9F4">
+<meta name="geo.region" content="UY-RV">
+<meta name="geo.placename" content="Rivera">
+
+<meta property="og:locale" content="es_UY">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Clínica Trazos">
+<meta property="og:title" content="Clínica Trazos | Terapias infantiles en Rivera, Uruguay">
+<meta property="og:description" content="Clínica infantil en Rivera: Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología. Trabajamos con Ayudas Extraordinarias de BPS.">
+<meta property="og:url" content="https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/">
+<meta property="og:image" content="https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/assets/og-imagen.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/clinicatrazosweb/assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/clinicatrazosweb/assets/apple-touch-icon.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font-family: 'Poppins', sans-serif; }
   h1, h2, h3 { text-wrap: balance; }
   a { color: #69662C; text-decoration: none; }
+  img { max-width: 100%; }
 
   .text-link:hover { color: #4F4C20; }
+  .text-link[aria-current="page"] { color: #69662C; font-weight: 600 !important; }
 
   .btn { transition: background-color .15s ease, color .15s ease, border-color .15s ease; }
   .btn-solid:hover { background-color: #4F4C20 !important; }
@@ -30,8 +51,30 @@
   input, textarea { border-color: #D9D3BE; }
   input:focus, textarea:focus { border-color: #69662C; }
 
+  .skip-link { position: absolute; left: -9999px; top: 0; background: #69662C; color: #FFFFFF; padding: 12px 20px; border-radius: 0 0 10px 0; z-index: 1000; }
+  .skip-link:focus { left: 0; }
+
+  .card-link { transition: border-color .15s ease, transform .15s ease; }
+  .card-link:hover { border-color: #69662C !important; transform: translateY(-2px); }
+
+  /* Texto largo de páginas de servicio y artículos del blog */
+  .prose { font-size: 17px; line-height: 1.75; color: #3A3726; }
+  .prose h2 { font-size: 26px; line-height: 1.3; color: #2E2B15; margin: 48px 0 16px; }
+  .prose h3 { font-size: 20px; line-height: 1.4; color: #2E2B15; margin: 32px 0 10px; }
+  .prose p { margin: 0 0 18px; }
+  .prose ul, .prose ol { margin: 0 0 18px; padding-left: 24px; }
+  .prose li { margin-bottom: 8px; }
+  .prose a { text-decoration: underline; text-underline-offset: 3px; }
+  .prose a:hover { color: #4F4C20; }
+  .prose strong { color: #2E2B15; }
+  .prose > :first-child { margin-top: 0; }
+
+  .footer-link { color: #D8D5C2; font-size: 14px; }
+  .footer-link:hover { color: #FFFFFF; }
+
   @media (prefers-reduced-motion: reduce) {
-    .btn { transition: none; }
+    .btn, .card-link { transition: none; }
+    .card-link:hover { transform: none; }
   }
 
   @media (max-width: 900px) {
@@ -44,35 +87,123 @@
     .novedades-grid { grid-template-columns: 1fr !important; }
     .convenios-inner { flex-direction: column; }
     .contacto-grid { grid-template-columns: 1fr !important; }
-    h1 { font-size: 36px !important; }
+    .articulo-grid { grid-template-columns: 1fr !important; }
+    .footer-grid { grid-template-columns: 1fr !important; }
+    h1 { font-size: 34px !important; }
+    .prose { font-size: 16px; }
+  }
+
+  @media (max-width: 440px) {
+    .hero-circulo { width: 80vw !important; height: 80vw !important; }
+    .hero-circulo-interior { width: 66vw !important; height: 66vw !important; }
+    .hero-logo { width: 49vw !important; height: auto !important; }
   }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "@id": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/#clinica",
+  "name": "Clínica Trazos",
+  "description": "Clínica infantil en Rivera: Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología. Trabajamos con Ayudas Extraordinarias de BPS.",
+  "url": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/",
+  "logo": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/assets/logo-444.png",
+  "image": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/assets/og-imagen.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Sarandí 832",
+    "addressLocality": "Rivera",
+    "addressRegion": "Rivera",
+    "postalCode": "40000",
+    "addressCountry": "UY"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Rivera"
+    },
+    {
+      "@type": "City",
+      "name": "Tranqueras"
+    },
+    {
+      "@type": "City",
+      "name": "Minas de Corrales"
+    },
+    {
+      "@type": "City",
+      "name": "Vichadero"
+    },
+    {
+      "@type": "City",
+      "name": "Santana do Livramento"
+    }
+  ],
+  "availableService": [
+    {
+      "@type": "MedicalTherapy",
+      "name": "Terapia Ocupacional",
+      "url": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/terapia-ocupacional-rivera/"
+    },
+    {
+      "@type": "MedicalTherapy",
+      "name": "Psicomotricidad",
+      "url": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/psicomotricidad-rivera/"
+    },
+    {
+      "@type": "MedicalTherapy",
+      "name": "Fonoaudiología",
+      "url": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/fonoaudiologia-rivera/"
+    },
+    {
+      "@type": "MedicalTherapy",
+      "name": "Psicopedagogía",
+      "url": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/psicopedagogia-rivera/"
+    },
+    {
+      "@type": "MedicalTherapy",
+      "name": "Psicología",
+      "url": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/psicologia-infantil-rivera/"
+    }
+  ],
+  "isAcceptingNewPatients": true,
+  "email": "clinicatrazos@gmail.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Clínica Trazos",
+  "url": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/",
+  "inLanguage": "es-UY"
+}
+</script>
 </head>
 <body>
 
-<a href="#inicio" style="position: absolute; left: -9999px; top: 0; background: #69662C; color: #FFFFFF; padding: 12px 20px; border-radius: 0 0 10px 0; z-index: 1000;" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Saltar al contenido principal</a>
+<a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
 
 <div style="width: 100%; background: #FBF9F4; color: #2E2B15;">
 
 <header style="width: 100%; background: #FFFFFF; border-bottom: 1px solid #EDE7D8;">
   <div class="header-inner" style="max-width: 1200px; margin: 0 auto; padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
-    <a href="#inicio" style="display: flex; align-items: center; gap: 12px;">
-      <img src="assets/logo-trazos.png" alt="" width="65" height="64" style="height: 64px; width: 65px; flex-shrink: 0;">
+    <a href="/clinicatrazosweb/" style="display: flex; align-items: center; gap: 12px;" aria-label="Clínica Trazos, ir al inicio">
+      <img src="/clinicatrazosweb/assets/logo-130.png" alt="" width="65" height="64" style="height: 64px; width: 65px; flex-shrink: 0;">
       <span style="font-size: 19px; font-weight: 700; letter-spacing: 0.01em; color: #2E2B15;">Clínica Trazos</span>
     </a>
     <nav class="header-nav" aria-label="Navegación principal" style="display: flex; gap: 32px; align-items: center;">
-      <a href="#inicio" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Inicio</a>
-      <a href="#servicios" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Servicios</a>
-      <a href="#convenios" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Convenios</a>
-      <a href="#novedades" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Novedades</a>
-      <a href="#contacto" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Contacto</a>
+      <a href="/clinicatrazosweb/" class="text-link" aria-current="page" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Inicio</a>
+      <a href="/clinicatrazosweb/#servicios" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Servicios</a>
+      <a href="/clinicatrazosweb/convenios/" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Convenios</a>
+      <a href="/clinicatrazosweb/blog/" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Blog</a>
+      <a href="/clinicatrazosweb/contacto/" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Contacto</a>
     </nav>
-    <a href="#contacto" class="btn btn-solid" style="background: #69662C; color: #FFFFFF; padding: 12px 24px; border-radius: 999px; font-size: 14px; font-weight: 600; flex-shrink: 0;">Agendar consulta</a>
+    <a href="/clinicatrazosweb/contacto/" class="btn btn-solid" style="background: #69662C; color: #FFFFFF; padding: 12px 24px; border-radius: 999px; font-size: 14px; font-weight: 600; flex-shrink: 0;">Agendar consulta</a>
   </div>
 </header>
 
 <main id="contenido-principal">
-
 <section id="inicio" aria-label="Inicio" style="width: 100%; background: #F3EFE2;">
   <div class="hero-inner" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; align-items: center; gap: 64px;">
     <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; min-width: 380px;">
@@ -84,7 +215,7 @@
         <div style="width: 52px; height: 3px; border-radius: 2px; background: #F09367;"></div>
       </div>
       <span style="background: #C2CCAB; color: #2E2B15; padding: 6px 16px; border-radius: 999px; font-size: 13px; font-weight: 600;">Equipo interdisciplinario</span>
-      <h1 style="margin: 0; font-size: 44px; line-height: 1.15; font-weight: 700; color: #2E2B15;">Acompañamos el desarrollo de cada niño, a su ritmo</h1>
+      <h1 style="margin: 0; font-size: 44px; line-height: 1.15; font-weight: 700; color: #2E2B15;">Acompañamos el desarrollo de cada niño en Rivera, a su ritmo</h1>
       <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A4736; max-width: 480px;">Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en un mismo equipo, trabajando junto a la familia en cada paso.</p>
       <div style="display: flex; gap: 12px; flex-wrap: wrap;">
         <div style="background: #FFFFFF; border: 1.5px solid #69662C; border-radius: 999px; padding: 10px 18px; display: flex; align-items: center; gap: 8px;">
@@ -102,9 +233,9 @@
       </div>
     </div>
     <div class="hero-media" style="flex: 1; display: flex; justify-content: center; align-items: center; position: relative; height: 420px; min-width: 320px;">
-      <div style="width: 360px; height: 360px; border-radius: 50%; background: #FDD0BD; display: flex; align-items: center; justify-content: center; position: relative;">
-        <div style="width: 296px; height: 296px; border-radius: 50%; background: #FFFFFF; box-shadow: 0 24px 48px rgba(46,43,21,0.16); display: flex; align-items: center; justify-content: center;">
-          <img src="assets/logo-trazos.png" alt="Clínica Trazos" width="222" height="220" style="width: 222px; height: 220px;">
+      <div class="hero-circulo" style="width: 360px; height: 360px; border-radius: 50%; background: #FDD0BD; display: flex; align-items: center; justify-content: center; position: relative;">
+        <div class="hero-circulo-interior" style="width: 296px; height: 296px; border-radius: 50%; background: #FFFFFF; box-shadow: 0 24px 48px rgba(46,43,21,0.16); display: flex; align-items: center; justify-content: center;">
+          <img src="/clinicatrazosweb/assets/logo-444.png" alt="Logo de Clínica Trazos" width="222" height="220" class="hero-logo" style="width: 222px; height: 220px;">
         </div>
         <div style="position: absolute; bottom: -4px; left: -8px; background: #FFFFFF; border-radius: 16px; padding: 14px 20px; box-shadow: 0 12px 24px rgba(46,43,21,0.14); display: flex; align-items: center; gap: 10px;">
           <div aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; background: #F09367; flex-shrink: 0;"></div>
@@ -122,45 +253,50 @@
       <h2 style="margin: 0; font-size: 34px; font-weight: 700; color: #2E2B15;">Un abordaje integral para cada etapa</h2>
     </div>
     <div class="servicios-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
-      <div style="background: #FBF9F4; border: 1px solid #EDE7D8; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px;">
+      <a href="/clinicatrazosweb/terapia-ocupacional-rivera/" class="card-link" style="background: #FBF9F4; border: 1px solid #EDE7D8; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px; color: inherit;">
         <div aria-hidden="true" style="width: 56px; height: 56px; border-radius: 16px; background: #E4E8D9; display: flex; align-items: center; justify-content: center; color: #69662C;">
           <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="6"></circle><circle cx="15" cy="12" r="6"></circle></svg>
         </div>
         <h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #2E2B15;">Terapia Ocupacional</h3>
         <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A4736;">Favorecemos la autonomía en las actividades de la vida diaria, el juego y el aprendizaje.</p>
-      </div>
+        <span style="margin-top: auto; font-size: 14px; font-weight: 600; color: #69662C;">Terapia Ocupacional en Rivera →</span>
+      </a>
 
-      <div style="background: #FBF9F4; border: 1px solid #EDE7D8; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px;">
+      <a href="/clinicatrazosweb/psicomotricidad-rivera/" class="card-link" style="background: #FBF9F4; border: 1px solid #EDE7D8; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px; color: inherit;">
         <div aria-hidden="true" style="width: 56px; height: 56px; border-radius: 16px; background: #FBE3D6; display: flex; align-items: center; justify-content: center; color: #B85C3E;">
           <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"></circle><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="13" x2="8" y2="19"></line><line x1="12" y1="13" x2="16" y2="19"></line><line x1="12" y1="10" x2="8" y2="13"></line><line x1="12" y1="10" x2="16" y2="13"></line></svg>
         </div>
         <h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #2E2B15;">Psicomotricidad</h3>
         <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A4736;">Trabajamos el movimiento, el equilibrio y la coordinación como base del aprendizaje.</p>
-      </div>
+        <span style="margin-top: auto; font-size: 14px; font-weight: 600; color: #69662C;">Psicomotricidad en Rivera →</span>
+      </a>
 
-      <div style="background: #FBF9F4; border: 1px solid #EDE7D8; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px;">
+      <a href="/clinicatrazosweb/fonoaudiologia-rivera/" class="card-link" style="background: #FBF9F4; border: 1px solid #EDE7D8; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px; color: inherit;">
         <div aria-hidden="true" style="width: 56px; height: 56px; border-radius: 16px; background: #FCEFD2; display: flex; align-items: center; justify-content: center; color: #8A6A1F;">
           <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="10" rx="3"></rect><path d="M8 15L6 19L10 17Z"></path><circle cx="9" cy="10" r="0.8"></circle><circle cx="12" cy="10" r="0.8"></circle><circle cx="15" cy="10" r="0.8"></circle></svg>
         </div>
         <h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #2E2B15;">Fonoaudiología</h3>
         <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A4736;">Estimulamos el lenguaje, el habla y la comunicación desde la primera infancia.</p>
-      </div>
+        <span style="margin-top: auto; font-size: 14px; font-weight: 600; color: #69662C;">Fonoaudiología en Rivera →</span>
+      </a>
 
-      <div style="background: #FBF9F4; border: 1px solid #EDE7D8; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px;">
+      <a href="/clinicatrazosweb/psicopedagogia-rivera/" class="card-link" style="background: #FBF9F4; border: 1px solid #EDE7D8; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px; color: inherit;">
         <div aria-hidden="true" style="width: 56px; height: 56px; border-radius: 16px; background: #F5D9CB; display: flex; align-items: center; justify-content: center; color: #A85A3A;">
           <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7L4 6V17L12 18Z"></path><path d="M12 7L20 6V17L12 18Z"></path><line x1="12" y1="7" x2="12" y2="18"></line></svg>
         </div>
         <h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #2E2B15;">Psicopedagogía</h3>
         <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A4736;">Acompañamos los procesos de aprendizaje, atención y desempeño escolar.</p>
-      </div>
+        <span style="margin-top: auto; font-size: 14px; font-weight: 600; color: #69662C;">Psicopedagogía en Rivera →</span>
+      </a>
 
-      <div style="background: #FBF9F4; border: 1px solid #EDE7D8; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px;">
+      <a href="/clinicatrazosweb/psicologia-infantil-rivera/" class="card-link" style="background: #FBF9F4; border: 1px solid #EDE7D8; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px; color: inherit;">
         <div aria-hidden="true" style="width: 56px; height: 56px; border-radius: 16px; background: #E7D9D2; display: flex; align-items: center; justify-content: center; color: #7A4A38;">
           <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"></circle><circle cx="12" cy="12" r="2.5"></circle><line x1="12" y1="3" x2="12" y2="5.5"></line><line x1="12" y1="18.5" x2="12" y2="21"></line></svg>
         </div>
         <h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #2E2B15;">Psicología</h3>
         <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A4736;">Sostenemos el bienestar emocional del niño y orientamos a la familia en el proceso.</p>
-      </div>
+        <span style="margin-top: auto; font-size: 14px; font-weight: 600; color: #69662C;">Psicología en Rivera →</span>
+      </a>
 
       <div style="background: #69662C; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px; justify-content: center;">
         <h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #FFFFFF;">¿No sabés qué servicio necesitás?</h3>
@@ -178,6 +314,7 @@
       <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #8A5240;">Convenios</span>
       <h2 style="margin: 0; font-size: 30px; font-weight: 700; color: #2E2B15;">Trabajamos con distintos convenios</h2>
       <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A4736; max-width: 440px;">Para que el acceso al tratamiento no sea una barrera. Consultanos por tu situación puntual.</p>
+      <a href="/clinicatrazosweb/convenios/" class="text-link" style="font-size: 15px; font-weight: 600; color: #69662C;">Cómo acceder con Ayudas Extraordinarias de BPS →</a>
     </div>
     <div style="flex: 1; min-width: 320px; display: flex; flex-wrap: wrap; align-content: center; gap: 12px;">
       <div style="background: #FFFFFF; border: 1.5px solid #69662C; border-radius: 999px; padding: 14px 22px; display: flex; align-items: center; gap: 10px;">
@@ -200,55 +337,7 @@
   </div>
 </section>
 
-<section id="novedades" aria-label="Novedades" style="width: 100%; background: #FFFFFF;">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 96px 32px;">
-    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; gap: 24px; flex-wrap: wrap;">
-      <div style="display: flex; flex-direction: column; gap: 12px;">
-        <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #8A5240;">Novedades</span>
-        <h2 style="margin: 0; font-size: 30px; font-weight: 700; color: #2E2B15;">Últimas noticias de la clínica</h2>
-      </div>
-      <a href="#novedades" class="text-link" style="font-size: 15px; font-weight: 600; color: #69662C;">Ver todas las novedades →</a>
-    </div>
-    <div class="novedades-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
-      <div style="border: 1px solid #EDE7D8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
-        <div style="height: 160px; background: #F5D9CB; display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 13px; color: #8A5240; font-weight: 500;">[Imagen de la novedad]</span>
-        </div>
-        <div style="padding: 24px; display: flex; flex-direction: column; gap: 10px;">
-          <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #8A6A1F;">Guías para familias</span>
-          <h3 style="margin: 0; font-size: 17px; font-weight: 600; color: #2E2B15; line-height: 1.4;">Cómo preparamos la primera consulta</h3>
-          <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #4A4736;">Qué esperar del primer encuentro con el equipo y cómo llegar con más tranquilidad.</p>
-          <span style="font-size: 13px; color: #8A5240; margin-top: 4px;">[Fecha]</span>
-        </div>
-      </div>
 
-      <div style="border: 1px solid #EDE7D8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
-        <div style="height: 160px; background: #C2CCAB; display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 13px; color: #3F4A2B; font-weight: 500;">[Imagen de la novedad]</span>
-        </div>
-        <div style="padding: 24px; display: flex; flex-direction: column; gap: 10px;">
-          <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #69662C;">Desarrollo infantil</span>
-          <h3 style="margin: 0; font-size: 17px; font-weight: 600; color: #2E2B15; line-height: 1.4;">La importancia de la estimulación temprana</h3>
-          <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #4A4736;">Por qué actuar a tiempo hace la diferencia en el desarrollo de niños y niñas.</p>
-          <span style="font-size: 13px; color: #8A5240; margin-top: 4px;">[Fecha]</span>
-        </div>
-      </div>
-
-      <div style="border: 1px solid #EDE7D8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
-        <div style="height: 160px; background: #FCEFD2; display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 13px; color: #8A6A1F; font-weight: 500;">[Imagen de la novedad]</span>
-        </div>
-        <div style="padding: 24px; display: flex; flex-direction: column; gap: 10px;">
-          <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #B85C3E;">Novedades de la clínica</span>
-          <h3 style="margin: 0; font-size: 17px; font-weight: 600; color: #2E2B15; line-height: 1.4;">Nuevos horarios de atención</h3>
-          <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #4A4736;">Ampliamos los horarios disponibles para facilitar la coordinación de turnos.</p>
-          <span style="font-size: 13px; color: #8A5240; margin-top: 4px;">[Fecha]</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 <section id="contacto" aria-label="Contacto" style="width: 100%; background: #2E2B15;">
   <div class="contacto-grid" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px;">
@@ -264,16 +353,8 @@
           <span style="font-size: 15px; color: #FFFFFF;">Av. Sarandí 832, Rivera, Uruguay</span>
         </div>
         <div style="display: flex; align-items: center; gap: 14px;">
-          <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#F09367" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4H9L11 9L8.5 10.5C9.5 12.8 11.2 14.5 13.5 15.5L15 13L20 15V19C20 20.1 19.1 21 18 21C10.8 21 5 15.2 5 8C5 6.9 5 4 5 4Z"></path></svg>
-          <span style="font-size: 15px; color: #FFFFFF;">[+598 XXX XXX]</span>
-        </div>
-        <div style="display: flex; align-items: center; gap: 14px;">
           <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#F09367" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7L12 13L21 7"></path></svg>
-          <span style="font-size: 15px; color: #FFFFFF;">clinicatrazos@gmail.com</span>
-        </div>
-        <div style="display: flex; align-items: center; gap: 14px;">
-          <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#F09367" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"></circle><line x1="12" y1="12" x2="12" y2="7"></line><line x1="12" y1="12" x2="16" y2="14"></line></svg>
-          <span style="font-size: 15px; color: #FFFFFF;">[Horario de atención]</span>
+          <span style="font-size: 15px; color: #FFFFFF;"><a href="mailto:clinicatrazos@gmail.com" style="color: #FFFFFF; text-decoration: underline; text-underline-offset: 3px;">clinicatrazos@gmail.com</a></span>
         </div>
       </div>
 
@@ -314,10 +395,31 @@
 </main>
 
 <footer style="width: 100%; background: #211F10;">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 40px 32px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-    <div style="display: flex; align-items: center; gap: 10px;">
+  <div class="footer-grid" style="max-width: 1200px; margin: 0 auto; padding: 56px 32px 24px; display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 40px;">
+    <div style="display: flex; flex-direction: column; gap: 12px;">
       <span style="font-size: 18px; font-weight: 700; letter-spacing: 2px; color: #FFFFFF;">TRAZOS</span>
+      <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #D8D5C2;">Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en Rivera.</p>
+      <address style="font-style: normal; font-size: 14px; line-height: 1.8; color: #D8D5C2;">
+        Av. Sarandí 832, Rivera, Uruguay<br>
+        <a class="footer-link" href="mailto:clinicatrazos@gmail.com">clinicatrazos@gmail.com</a>
+      </address>
     </div>
+    <nav aria-label="Servicios" style="display: flex; flex-direction: column; gap: 10px;">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #F09367;">Servicios</span>
+      <a class="footer-link" href="/clinicatrazosweb/terapia-ocupacional-rivera/">Terapia Ocupacional</a>
+      <a class="footer-link" href="/clinicatrazosweb/psicomotricidad-rivera/">Psicomotricidad</a>
+      <a class="footer-link" href="/clinicatrazosweb/fonoaudiologia-rivera/">Fonoaudiología</a>
+      <a class="footer-link" href="/clinicatrazosweb/psicopedagogia-rivera/">Psicopedagogía</a>
+      <a class="footer-link" href="/clinicatrazosweb/psicologia-infantil-rivera/">Psicología</a>
+    </nav>
+    <nav aria-label="La clínica" style="display: flex; flex-direction: column; gap: 10px;">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #F09367;">La clínica</span>
+      <a class="footer-link" href="/clinicatrazosweb/convenios/">Convenios y BPS</a>
+      <a class="footer-link" href="/clinicatrazosweb/blog/">Blog para familias</a>
+      <a class="footer-link" href="/clinicatrazosweb/contacto/">Contacto y ubicación</a>
+    </nav>
+  </div>
+  <div style="max-width: 1200px; margin: 0 auto; padding: 20px 32px 32px; border-top: 1px solid #3A3720;">
     <span style="font-size: 13px; color: #A8A48A;">© 2026 Clínica Trazos — Rivera, Uruguay</span>
   </div>
 </footer>

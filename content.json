@@ -1,21 +1,39 @@
 {
+  "sitio": {
+    "url": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb",
+    "_nota": "Cuando haya dominio propio, cambiar solo esta URL (ej. https://clinicatrazos.com.uy) y volver a correr build.py"
+  },
   "site_title": "Clínica Trazos",
   "meta_tagline": "Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en Rivera",
-  "meta_description": "Clínica Trazos: equipo interdisciplinario en Rivera, Uruguay. Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología para acompañar el desarrollo de cada niño.",
-  "logo_mark": "assets/logo-trazos.png",
+  "meta_description": "Clínica infantil en Rivera: Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología. Trabajamos con Ayudas Extraordinarias de BPS.",
   "footer_wordmark": "TRAZOS",
   "cta_header": "Agendar consulta",
   "nav": [
-    { "label": "Inicio", "href": "#inicio" },
-    { "label": "Servicios", "href": "#servicios" },
-    { "label": "Convenios", "href": "#convenios" },
-    { "label": "Novedades", "href": "#novedades" },
-    { "label": "Contacto", "href": "#contacto" }
+    {
+      "label": "Inicio",
+      "href": "/"
+    },
+    {
+      "label": "Servicios",
+      "href": "/#servicios"
+    },
+    {
+      "label": "Convenios",
+      "href": "/convenios/"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog/"
+    },
+    {
+      "label": "Contacto",
+      "href": "/contacto/"
+    }
   ],
   "hero": {
     "place": "Rivera",
     "badge": "Equipo interdisciplinario",
-    "title": "Acompañamos el desarrollo de cada niño, a su ritmo",
+    "title": "Acompañamos el desarrollo de cada niño en Rivera, a su ritmo",
     "subtitle": "Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en un mismo equipo, trabajando junto a la familia en cada paso.",
     "modalidad_presencial": "Atención presencial",
     "modalidad_online": "Atención online",
@@ -32,35 +50,40 @@
         "bg": "#E4E8D9",
         "fg": "#69662C",
         "title": "Terapia Ocupacional",
-        "desc": "Favorecemos la autonomía en las actividades de la vida diaria, el juego y el aprendizaje."
+        "desc": "Favorecemos la autonomía en las actividades de la vida diaria, el juego y el aprendizaje.",
+        "pagina": "terapia-ocupacional-rivera"
       },
       {
         "icon": "psicomotricidad",
         "bg": "#FBE3D6",
         "fg": "#B85C3E",
         "title": "Psicomotricidad",
-        "desc": "Trabajamos el movimiento, el equilibrio y la coordinación como base del aprendizaje."
+        "desc": "Trabajamos el movimiento, el equilibrio y la coordinación como base del aprendizaje.",
+        "pagina": "psicomotricidad-rivera"
       },
       {
         "icon": "fono",
         "bg": "#FCEFD2",
         "fg": "#8A6A1F",
         "title": "Fonoaudiología",
-        "desc": "Estimulamos el lenguaje, el habla y la comunicación desde la primera infancia."
+        "desc": "Estimulamos el lenguaje, el habla y la comunicación desde la primera infancia.",
+        "pagina": "fonoaudiologia-rivera"
       },
       {
         "icon": "psicopedagogia",
         "bg": "#F5D9CB",
         "fg": "#A85A3A",
         "title": "Psicopedagogía",
-        "desc": "Acompañamos los procesos de aprendizaje, atención y desempeño escolar."
+        "desc": "Acompañamos los procesos de aprendizaje, atención y desempeño escolar.",
+        "pagina": "psicopedagogia-rivera"
       },
       {
         "icon": "psicologia",
         "bg": "#E7D9D2",
         "fg": "#7A4A38",
         "title": "Psicología",
-        "desc": "Sostenemos el bienestar emocional del niño y orientamos a la familia en el proceso."
+        "desc": "Sostenemos el bienestar emocional del niño y orientamos a la familia en el proceso.",
+        "pagina": "psicologia-infantil-rivera"
       }
     ],
     "cta_title": "¿No sabés qué servicio necesitás?",
@@ -72,45 +95,28 @@
     "title": "Trabajamos con distintos convenios",
     "subtitle": "Para que el acceso al tratamiento no sea una barrera. Consultanos por tu situación puntual.",
     "items": [
-      { "label": "Ayudas extraordinarias de BPS", "color": "#69662C" },
-      { "label": "Particular", "color": "#C98271" },
-      { "label": "Tutelar Policial", "color": "#F09367" },
-      { "label": "Tutelar Militar", "color": "#8A6A1F" }
+      {
+        "label": "Ayudas extraordinarias de BPS",
+        "color": "#69662C"
+      },
+      {
+        "label": "Particular",
+        "color": "#C98271"
+      },
+      {
+        "label": "Tutelar Policial",
+        "color": "#F09367"
+      },
+      {
+        "label": "Tutelar Militar",
+        "color": "#8A6A1F"
+      }
     ]
   },
   "novedades": {
-    "eyebrow": "Novedades",
-    "title": "Últimas noticias de la clínica",
-    "ver_todas": "Ver todas las novedades →",
-    "posts": [
-      {
-        "bg": "#F5D9CB",
-        "img_color": "#8A5240",
-        "cat_color": "#8A6A1F",
-        "category": "Guías para familias",
-        "title": "Cómo preparamos la primera consulta",
-        "excerpt": "Qué esperar del primer encuentro con el equipo y cómo llegar con más tranquilidad.",
-        "date": "[Fecha]"
-      },
-      {
-        "bg": "#C2CCAB",
-        "img_color": "#3F4A2B",
-        "cat_color": "#69662C",
-        "category": "Desarrollo infantil",
-        "title": "La importancia de la estimulación temprana",
-        "excerpt": "Por qué actuar a tiempo hace la diferencia en el desarrollo de niños y niñas.",
-        "date": "[Fecha]"
-      },
-      {
-        "bg": "#FCEFD2",
-        "img_color": "#8A6A1F",
-        "cat_color": "#B85C3E",
-        "category": "Novedades de la clínica",
-        "title": "Nuevos horarios de atención",
-        "excerpt": "Ampliamos los horarios disponibles para facilitar la coordinación de turnos.",
-        "date": "[Fecha]"
-      }
-    ]
+    "eyebrow": "Blog para familias",
+    "title": "Guías para acompañar el desarrollo",
+    "ver_todas": "Ver todos los artículos →"
   },
   "contacto": {
     "eyebrow": "Contacto",
@@ -123,9 +129,25 @@
     "whatsapp_digits": "",
     "form_title": "Escribinos",
     "form_button": "Enviar mensaje",
-    "form_email": "clinicatrazos@gmail.com"
+    "form_email": "clinicatrazos@gmail.com",
+    "calle": "Av. Sarandí 832",
+    "ciudad": "Rivera",
+    "departamento": "Rivera",
+    "codigo_postal": "40000",
+    "zona_de_atencion": [
+      "Rivera",
+      "Tranqueras",
+      "Minas de Corrales",
+      "Vichadero",
+      "Santana do Livramento"
+    ],
+    "latitud": "",
+    "longitud": "",
+    "horario_schema": [],
+    "perfiles": []
   },
   "footer": {
     "copyright": "© 2026 Clínica Trazos — Rivera, Uruguay"
-  }
+  },
+  "seo_titulo_inicio": "Clínica Trazos | Terapias infantiles en Rivera, Uruguay"
 }

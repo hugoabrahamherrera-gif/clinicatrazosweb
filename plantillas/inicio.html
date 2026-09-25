@@ -1,74 +1,3 @@
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{site_title}} — {{meta_tagline}}</title>
-<meta name="description" content="{{meta_description}}">
-<meta name="theme-color" content="#FBF9F4">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-<style>
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: 'Poppins', sans-serif; }
-  h1, h2, h3 { text-wrap: balance; }
-  a { color: #69662C; text-decoration: none; }
-
-  .text-link:hover { color: #4F4C20; }
-
-  .btn { transition: background-color .15s ease, color .15s ease, border-color .15s ease; }
-  .btn-solid:hover { background-color: #4F4C20 !important; }
-  .btn-solid-inverse:hover { background-color: #EFEBDD !important; }
-  .btn-outline:hover { background-color: #2E2B15 !important; color: #FFFFFF !important; }
-
-  input, textarea, .btn, a { outline-offset: 2px; }
-  input:focus-visible, textarea:focus-visible, .btn:focus-visible, a:focus-visible {
-    outline: 2px solid #69662C;
-    outline-offset: 2px;
-  }
-  input, textarea { border-color: #D9D3BE; }
-  input:focus, textarea:focus { border-color: #69662C; }
-
-  @media (prefers-reduced-motion: reduce) {
-    .btn { transition: none; }
-  }
-
-  @media (max-width: 900px) {
-    .header-inner { flex-wrap: wrap; row-gap: 12px; }
-    .header-nav { order: 3; width: 100%; justify-content: center; flex-wrap: wrap; gap: 16px !important; }
-    .hero-inner { flex-direction: column; }
-    .hero-inner > div { min-width: 0 !important; width: 100%; }
-    .hero-media { height: auto !important; padding: 24px 0; }
-    .servicios-grid { grid-template-columns: 1fr !important; }
-    .novedades-grid { grid-template-columns: 1fr !important; }
-    .convenios-inner { flex-direction: column; }
-    .contacto-grid { grid-template-columns: 1fr !important; }
-    h1 { font-size: 36px !important; }
-  }
-</style>
-</head>
-<body>
-
-<a href="#inicio" style="position: absolute; left: -9999px; top: 0; background: #69662C; color: #FFFFFF; padding: 12px 20px; border-radius: 0 0 10px 0; z-index: 1000;" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Saltar al contenido principal</a>
-
-<div style="width: 100%; background: #FBF9F4; color: #2E2B15;">
-
-<header style="width: 100%; background: #FFFFFF; border-bottom: 1px solid #EDE7D8;">
-  <div class="header-inner" style="max-width: 1200px; margin: 0 auto; padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
-    <a href="#inicio" style="display: flex; align-items: center; gap: 12px;">
-      <img src="{{logo_mark}}" alt="" width="65" height="64" style="height: 64px; width: 65px; flex-shrink: 0;">
-      <span style="font-size: 19px; font-weight: 700; letter-spacing: 0.01em; color: #2E2B15;">{{site_title}}</span>
-    </a>
-    <nav class="header-nav" aria-label="Navegación principal" style="display: flex; gap: 32px; align-items: center;">
-{{NAV_LINKS}}
-    </nav>
-    <a href="#contacto" class="btn btn-solid" style="background: #69662C; color: #FFFFFF; padding: 12px 24px; border-radius: 999px; font-size: 14px; font-weight: 600; flex-shrink: 0;">{{cta_header}}</a>
-  </div>
-</header>
-
-<main id="contenido-principal">
-
 <section id="inicio" aria-label="Inicio" style="width: 100%; background: #F3EFE2;">
   <div class="hero-inner" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; align-items: center; gap: 64px;">
     <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; min-width: 380px;">
@@ -98,9 +27,9 @@
       </div>
     </div>
     <div class="hero-media" style="flex: 1; display: flex; justify-content: center; align-items: center; position: relative; height: 420px; min-width: 320px;">
-      <div style="width: 360px; height: 360px; border-radius: 50%; background: #FDD0BD; display: flex; align-items: center; justify-content: center; position: relative;">
-        <div style="width: 296px; height: 296px; border-radius: 50%; background: #FFFFFF; box-shadow: 0 24px 48px rgba(46,43,21,0.16); display: flex; align-items: center; justify-content: center;">
-          <img src="{{logo_mark}}" alt="{{site_title}}" width="222" height="220" style="width: 222px; height: 220px;">
+      <div class="hero-circulo" style="width: 360px; height: 360px; border-radius: 50%; background: #FDD0BD; display: flex; align-items: center; justify-content: center; position: relative;">
+        <div class="hero-circulo-interior" style="width: 296px; height: 296px; border-radius: 50%; background: #FFFFFF; box-shadow: 0 24px 48px rgba(46,43,21,0.16); display: flex; align-items: center; justify-content: center;">
+          <img src="{{BASE}}/assets/logo-444.png" alt="Logo de {{site_title}}" width="222" height="220" class="hero-logo" style="width: 222px; height: 220px;">
         </div>
         <div style="position: absolute; bottom: -4px; left: -8px; background: #FFFFFF; border-radius: 16px; padding: 14px 20px; box-shadow: 0 12px 24px rgba(46,43,21,0.14); display: flex; align-items: center; gap: 10px;">
           <div aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; background: #F09367; flex-shrink: 0;"></div>
@@ -135,6 +64,7 @@
       <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #8A5240;">{{convenios_eyebrow}}</span>
       <h2 style="margin: 0; font-size: 30px; font-weight: 700; color: #2E2B15;">{{convenios_title}}</h2>
       <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A4736; max-width: 440px;">{{convenios_subtitle}}</p>
+      <a href="{{BASE}}/convenios/" class="text-link" style="font-size: 15px; font-weight: 600; color: #69662C;">Cómo acceder con Ayudas Extraordinarias de BPS →</a>
     </div>
     <div style="flex: 1; min-width: 320px; display: flex; flex-wrap: wrap; align-content: center; gap: 12px;">
 {{CONVENIOS_PILLS}}
@@ -142,20 +72,20 @@
   </div>
 </section>
 
-<section id="novedades" aria-label="Novedades" style="width: 100%; background: #FFFFFF;">
+{{BLOG_INICIO_ABRE}}<section id="novedades" aria-label="Blog" style="width: 100%; background: #FFFFFF;">
   <div style="max-width: 1200px; margin: 0 auto; padding: 96px 32px;">
     <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; gap: 24px; flex-wrap: wrap;">
       <div style="display: flex; flex-direction: column; gap: 12px;">
         <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #8A5240;">{{novedades_eyebrow}}</span>
         <h2 style="margin: 0; font-size: 30px; font-weight: 700; color: #2E2B15;">{{novedades_title}}</h2>
       </div>
-      <a href="#novedades" class="text-link" style="font-size: 15px; font-weight: 600; color: #69662C;">{{novedades_ver_todas}}</a>
+      <a href="{{BASE}}/blog/" class="text-link" style="font-size: 15px; font-weight: 600; color: #69662C;">{{novedades_ver_todas}}</a>
     </div>
     <div class="novedades-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
 {{NOVEDADES_CARDS}}
     </div>
   </div>
-</section>
+</section>{{BLOG_INICIO_CIERRA}}
 
 <section id="contacto" aria-label="Contacto" style="width: 100%; background: #2E2B15;">
   <div class="contacto-grid" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px;">
@@ -166,22 +96,7 @@
       <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C9C7B4; max-width: 420px;">{{contacto_subtitle}}</p>
 
       <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 8px;">
-        <div style="display: flex; align-items: center; gap: 14px;">
-          <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#F09367" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C12 21 5 14 5 9A7 7 0 0 1 19 9C19 14 12 21 12 21Z"></path><circle cx="12" cy="9" r="2.4"></circle></svg>
-          <span style="font-size: 15px; color: #FFFFFF;">{{contacto_direccion}}</span>
-        </div>
-        <div style="display: flex; align-items: center; gap: 14px;">
-          <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#F09367" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4H9L11 9L8.5 10.5C9.5 12.8 11.2 14.5 13.5 15.5L15 13L20 15V19C20 20.1 19.1 21 18 21C10.8 21 5 15.2 5 8C5 6.9 5 4 5 4Z"></path></svg>
-          <span style="font-size: 15px; color: #FFFFFF;">{{contacto_telefono}}</span>
-        </div>
-        <div style="display: flex; align-items: center; gap: 14px;">
-          <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#F09367" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7L12 13L21 7"></path></svg>
-          <span style="font-size: 15px; color: #FFFFFF;">{{contacto_email}}</span>
-        </div>
-        <div style="display: flex; align-items: center; gap: 14px;">
-          <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#F09367" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"></circle><line x1="12" y1="12" x2="12" y2="7"></line><line x1="12" y1="12" x2="16" y2="14"></line></svg>
-          <span style="font-size: 15px; color: #FFFFFF;">{{contacto_horario}}</span>
-        </div>
+{{CONTACTO_ITEMS}}
       </div>
 
       <div style="border-radius: 16px; overflow: hidden; margin-top: 8px; line-height: 0;">
@@ -217,19 +132,3 @@
 
   </div>
 </section>
-
-</main>
-
-<footer style="width: 100%; background: #211F10;">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 40px 32px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <span style="font-size: 18px; font-weight: 700; letter-spacing: 2px; color: #FFFFFF;">{{footer_wordmark}}</span>
-    </div>
-    <span style="font-size: 13px; color: #A8A48A;">{{footer_copyright}}</span>
-  </div>
-</footer>
-
-</div>
-{{WHATSAPP_BUTTON}}
-</body>
-</html>

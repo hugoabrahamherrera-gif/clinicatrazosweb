@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{titulo}}</title>
+<meta name="description" content="{{descripcion}}">
+<link rel="canonical" href="{{url_canonica}}">
+<meta name="robots" content="{{robots}}">
+<meta name="theme-color" content="#FBF9F4">
+<meta name="geo.region" content="UY-RV">
+<meta name="geo.placename" content="Rivera">
+
+<meta property="og:locale" content="es_UY">
+<meta property="og:type" content="{{og_tipo}}">
+<meta property="og:site_name" content="{{site_title}}">
+<meta property="og:title" content="{{titulo}}">
+<meta property="og:description" content="{{descripcion}}">
+<meta property="og:url" content="{{url_canonica}}">
+<meta property="og:image" content="{{og_imagen}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="{{BASE}}/assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="{{BASE}}/assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Poppins', sans-serif; }
+  h1, h2, h3 { text-wrap: balance; }
+  a { color: #69662C; text-decoration: none; }
+  img { max-width: 100%; }
+
+  .text-link:hover { color: #4F4C20; }
+  .text-link[aria-current="page"] { color: #69662C; font-weight: 600 !important; }
+
+  .btn { transition: background-color .15s ease, color .15s ease, border-color .15s ease; }
+  .btn-solid:hover { background-color: #4F4C20 !important; }
+  .btn-solid-inverse:hover { background-color: #EFEBDD !important; }
+  .btn-outline:hover { background-color: #2E2B15 !important; color: #FFFFFF !important; }
+
+  input, textarea, .btn, a { outline-offset: 2px; }
+  input:focus-visible, textarea:focus-visible, .btn:focus-visible, a:focus-visible {
+    outline: 2px solid #69662C;
+    outline-offset: 2px;
+  }
+  input, textarea { border-color: #D9D3BE; }
+  input:focus, textarea:focus { border-color: #69662C; }
+
+  .skip-link { position: absolute; left: -9999px; top: 0; background: #69662C; color: #FFFFFF; padding: 12px 20px; border-radius: 0 0 10px 0; z-index: 1000; }
+  .skip-link:focus { left: 0; }
+
+  .card-link { transition: border-color .15s ease, transform .15s ease; }
+  .card-link:hover { border-color: #69662C !important; transform: translateY(-2px); }
+
+  /* Texto largo de páginas de servicio y artículos del blog */
+  .prose { font-size: 17px; line-height: 1.75; color: #3A3726; }
+  .prose h2 { font-size: 26px; line-height: 1.3; color: #2E2B15; margin: 48px 0 16px; }
+  .prose h3 { font-size: 20px; line-height: 1.4; color: #2E2B15; margin: 32px 0 10px; }
+  .prose p { margin: 0 0 18px; }
+  .prose ul, .prose ol { margin: 0 0 18px; padding-left: 24px; }
+  .prose li { margin-bottom: 8px; }
+  .prose a { text-decoration: underline; text-underline-offset: 3px; }
+  .prose a:hover { color: #4F4C20; }
+  .prose strong { color: #2E2B15; }
+  .prose > :first-child { margin-top: 0; }
+
+  .footer-link { color: #D8D5C2; font-size: 14px; }
+  .footer-link:hover { color: #FFFFFF; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .btn, .card-link { transition: none; }
+    .card-link:hover { transform: none; }
+  }
+
+  @media (max-width: 900px) {
+    .header-inner { flex-wrap: wrap; row-gap: 12px; }
+    .header-nav { order: 3; width: 100%; justify-content: center; flex-wrap: wrap; gap: 16px !important; }
+    .hero-inner { flex-direction: column; }
+    .hero-inner > div { min-width: 0 !important; width: 100%; }
+    .hero-media { height: auto !important; padding: 24px 0; }
+    .servicios-grid { grid-template-columns: 1fr !important; }
+    .novedades-grid { grid-template-columns: 1fr !important; }
+    .convenios-inner { flex-direction: column; }
+    .contacto-grid { grid-template-columns: 1fr !important; }
+    .articulo-grid { grid-template-columns: 1fr !important; }
+    .footer-grid { grid-template-columns: 1fr !important; }
+    h1 { font-size: 34px !important; }
+    .prose { font-size: 16px; }
+  }
+
+  @media (max-width: 440px) {
+    .hero-circulo { width: 80vw !important; height: 80vw !important; }
+    .hero-circulo-interior { width: 66vw !important; height: 66vw !important; }
+    .hero-logo { width: 49vw !important; height: auto !important; }
+  }
+</style>
+{{JSONLD}}
+</head>
+<body>
+
+<a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+<div style="width: 100%; background: #FBF9F4; color: #2E2B15;">
+
+<header style="width: 100%; background: #FFFFFF; border-bottom: 1px solid #EDE7D8;">
+  <div class="header-inner" style="max-width: 1200px; margin: 0 auto; padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+    <a href="{{BASE}}/" style="display: flex; align-items: center; gap: 12px;" aria-label="{{site_title}}, ir al inicio">
+      <img src="{{BASE}}/assets/logo-130.png" alt="" width="65" height="64" style="height: 64px; width: 65px; flex-shrink: 0;">
+      <span style="font-size: 19px; font-weight: 700; letter-spacing: 0.01em; color: #2E2B15;">{{site_title}}</span>
+    </a>
+    <nav class="header-nav" aria-label="Navegación principal" style="display: flex; gap: 32px; align-items: center;">
+{{NAV_LINKS}}
+    </nav>
+    <a href="{{BASE}}/contacto/" class="btn btn-solid" style="background: #69662C; color: #FFFFFF; padding: 12px 24px; border-radius: 999px; font-size: 14px; font-weight: 600; flex-shrink: 0;">{{cta_header}}</a>
+  </div>
+</header>
+
+<main id="contenido-principal">
+{{CONTENIDO}}
+</main>
+
+<footer style="width: 100%; background: #211F10;">
+  <div class="footer-grid" style="max-width: 1200px; margin: 0 auto; padding: 56px 32px 24px; display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 40px;">
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <span style="font-size: 18px; font-weight: 700; letter-spacing: 2px; color: #FFFFFF;">{{footer_wordmark}}</span>
+      <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #D8D5C2;">{{meta_tagline}}.</p>
+      <address style="font-style: normal; font-size: 14px; line-height: 1.8; color: #D8D5C2;">
+        {{contacto_direccion}}<br>
+{{FOOTER_CONTACTO}}
+      </address>
+    </div>
+    <nav aria-label="Servicios" style="display: flex; flex-direction: column; gap: 10px;">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #F09367;">Servicios</span>
+{{FOOTER_SERVICIOS}}
+    </nav>
+    <nav aria-label="La clínica" style="display: flex; flex-direction: column; gap: 10px;">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #F09367;">La clínica</span>
+      <a class="footer-link" href="{{BASE}}/convenios/">Convenios y BPS</a>
+      <a class="footer-link" href="{{BASE}}/blog/">Blog para familias</a>
+      <a class="footer-link" href="{{BASE}}/contacto/">Contacto y ubicación</a>
+    </nav>
+  </div>
+  <div style="max-width: 1200px; margin: 0 auto; padding: 20px 32px 32px; border-top: 1px solid #3A3720;">
+    <span style="font-size: 13px; color: #A8A48A;">{{footer_copyright}}</span>
+  </div>
+</footer>
+
+</div>
+{{WHATSAPP_BUTTON}}
+</body>
+</html>
