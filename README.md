@@ -25,7 +25,7 @@ abrí <http://localhost:8765/clinicatrazosweb/>.
 
 Cada artículo es un `.md` con un bloque de datos al principio (`title`, `slug`, `description`,
 `keyword`, `categoria`, `servicio`, `fecha`). **Se publican solo los que tienen `fecha` de hoy o
-anterior**: para programar un artículo, poné una fecha futura y corré `build.py` ese día.
+anterior y ningún `[DATO A CONFIRMAR]`**: para programar un artículo, poné una fecha futura y corré `build.py` ese día.
 Para revisar todos, incluidos los programados, en local: `python3 build.py --borradores`
 (no publiques ese resultado).
 

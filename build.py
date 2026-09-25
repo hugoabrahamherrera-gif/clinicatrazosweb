@@ -463,7 +463,9 @@ def main():
     for p in cargar_md(BLOG_DIR):
         p["fecha"] = dt.date.fromisoformat(p.get("fecha", HOY.isoformat()))
         p.setdefault("categoria", "Guías para familias")
-        if p["fecha"] > HOY and not INCLUIR_BORRADORES:
+        pendiente = "[DATO A CONFIRMAR" in p["cuerpo"]
+        if (p["fecha"] > HOY or pendiente) and not INCLUIR_BORRADORES:
+            p["motivo"] = "tiene [DATO A CONFIRMAR]" if pendiente else "fecha futura"
             programados.append(p)
             continue
         posts.append(p)
@@ -660,9 +662,9 @@ def main():
     print(f"Listo: {len(archivos)} archivos generados para {sitio_url}/")
     print(f"  Páginas en el sitemap: {len(sitemap)}  ·  Artículos publicados: {len(posts)}")
     if programados:
-        print(f"  Artículos programados (fecha futura, no publicados): {len(programados)}")
+        print(f"  Artículos NO publicados: {len(programados)}")
         for p in sorted(programados, key=lambda p: p["fecha"]):
-            print(f"    {p['fecha']}  {p['title']}")
+            print(f"    {p['fecha']}  {p['title']}  ({p['motivo']})")
     if AVISOS:
         print("\nAtención:")
         for a in dict.fromkeys(AVISOS):
