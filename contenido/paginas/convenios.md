@@ -1,5 +1,5 @@
 ---
-title: Ayudas Extraordinarias BPS en Rivera y convenios | Clínica Trazos
+title: Ayudas Extraordinarias BPS en Rivera | Clínica Trazos
 slug: convenios
 description: Ayudas Extraordinarias de BPS (AYEX) en Rivera: qué son, quién accede y el trámite paso a paso. Convenios Tutelar Policial, Militar y particular.
 keyword: ayudas extraordinarias BPS Rivera
@@ -34,7 +34,7 @@ Según la información oficial de BPS, pueden acceder, entre otros:
 
 Los requisitos y los montos los define BPS y pueden cambiar.
 
-**Clínica Trazos está en proceso de habilitación ante BPS** para atender con Ayudas Extraordinarias en psicomotricidad y fonoaudiología. Cuando la habilitación esté completa, la atención por AYEX no va a tener costo adicional para la familia. Mientras tanto, podés empezar en forma particular. Antes de iniciar el trámite, revisá siempre la [información oficial de BPS sobre la Ayuda Extraordinaria](https://www.bps.gub.uy/3555/ayuda-extraordinaria.html).
+**Clínica Trazos está en proceso de habilitación ante BPS** para atender con Ayudas Extraordinarias en psicología, psicomotricidad, fonoaudiología, psicopedagogía y maestra especializada. Nutrición no está incluida en esta habilitación. Cuando la habilitación esté completa, la atención por AYEX no va a tener costo adicional para la familia. Mientras tanto, podés empezar en forma particular. Antes de iniciar el trámite, revisá siempre la [información oficial de BPS sobre la Ayuda Extraordinaria](https://www.bps.gub.uy/3555/ayuda-extraordinaria.html).
 
 ## Cómo es el trámite, paso a paso
 
@@ -53,7 +53,7 @@ Si tu familia tiene cobertura de **Tutelar Policial** o **Tutelar Militar**, con
 
 ### ¿Qué tratamientos cubre la Ayuda Extraordinaria de BPS?
 
-Cubre tratamientos en institutos de rehabilitación habilitados, como fonoaudiología, psicomotricidad o fisiatría, según lo que apruebe el equipo técnico de BPS para cada niño. En Clínica Trazos, la habilitación en trámite es para psicomotricidad y fonoaudiología.
+Cubre tratamientos en institutos de rehabilitación habilitados, como fonoaudiología, psicomotricidad o fisiatría, según lo que apruebe el equipo técnico de BPS para cada niño. En Clínica Trazos, la habilitación en trámite es para psicología, psicomotricidad, fonoaudiología, psicopedagogía y maestra especializada.
 
 ### ¿Cuánto tarda la aprobación de la AYEX?
 

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="es-UY">
 <head>
+<script>document.documentElement.classList.add("js")</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Psicomotricidad infantil en Rivera | Clínica Trazos</title>
@@ -25,17 +26,47 @@
 <link rel="icon" href="/clinicatrazosweb/assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/clinicatrazosweb/assets/apple-touch-icon.png">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="preload" href="/clinicatrazosweb/assets/fuentes/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/clinicatrazosweb/assets/fuentes/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+  @font-face { font-family: 'Poppins'; font-weight: 400; font-style: normal; font-display: swap; src: url('/clinicatrazosweb/assets/fuentes/poppins-400.woff2') format('woff2'); }
+  @font-face { font-family: 'Poppins'; font-weight: 500; font-style: normal; font-display: swap; src: url('/clinicatrazosweb/assets/fuentes/poppins-500.woff2') format('woff2'); }
+  @font-face { font-family: 'Poppins'; font-weight: 600; font-style: normal; font-display: swap; src: url('/clinicatrazosweb/assets/fuentes/poppins-600.woff2') format('woff2'); }
+  @font-face { font-family: 'Poppins'; font-weight: 700; font-style: normal; font-display: swap; src: url('/clinicatrazosweb/assets/fuentes/poppins-700.woff2') format('woff2'); }
+  html { scroll-padding-top: 104px; scroll-behavior: smooth; }
   * { box-sizing: border-box; }
   body { margin: 0; font-family: 'Poppins', sans-serif; }
   h1, h2, h3 { text-wrap: balance; }
   a { color: #69662C; text-decoration: none; }
   img { max-width: 100%; }
 
+  .text-link { font-size: 15px; font-weight: 500; color: #2E2B15; }
   .text-link:hover { color: #4F4C20; }
+
+  .site-header { position: sticky; top: 0; z-index: 90; width: 100%; background: #FFFFFF; border-bottom: 1px solid #EDE7D8; }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 10px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .header-logo { display: flex; align-items: center; gap: 12px; }
+  .header-logo img { height: 56px; width: 57px; flex-shrink: 0; }
+  .header-nav { display: flex; gap: 32px; align-items: center; }
+  .header-cta { background: #69662C; color: #FFFFFF; padding: 12px 24px; border-radius: 999px; font-size: 14px; font-weight: 600; flex-shrink: 0; }
+  .menu-btn { display: none; background: none; border: 1.5px solid #69662C; border-radius: 12px; width: 46px; height: 46px; padding: 0; color: #2E2B15; cursor: pointer; align-items: center; justify-content: center; }
+  .menu-btn:focus-visible { outline: 2px solid #69662C; outline-offset: 2px; }
+  .nav-item { position: relative; display: flex; align-items: center; }
+  .nav-item > .text-link { padding: 10px 0; }
+  .submenu { display: none; position: absolute; top: 100%; left: -16px; min-width: 240px; flex-direction: column; background: #FFFFFF; border: 1px solid #EDE7D8; border-radius: 14px; padding: 8px; box-shadow: 0 16px 32px rgba(46,43,21,0.14); }
+  .submenu a { padding: 10px 12px; border-radius: 8px; font-size: 14px; font-weight: 500; color: #2E2B15; }
+  .submenu a:hover { background: #F3EFE2; }
+  .nav-item:hover .submenu, .nav-item:focus-within .submenu { display: flex; }
+  .barra-movil { display: none; }
+  .aside-cta { position: sticky; top: 96px; }
+
+  .toc { background: #F3EFE2; border-radius: 16px; padding: 20px 24px; margin: 0 0 32px; }
+  .toc p { margin: 0 0 8px; font-size: 14px; font-weight: 700; color: #2E2B15; }
+  .toc ol { margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.5; }
+  .toc li { margin-bottom: 6px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chips a { background: #FBF9F4; border: 1px solid #D9D3BE; border-radius: 999px; padding: 10px 18px; font-size: 14px; font-weight: 600; color: #2E2B15; }
+  .chips a:hover { border-color: #69662C; }
   .text-link[aria-current="page"] { color: #69662C; font-weight: 600 !important; }
 
   .btn { transition: background-color .15s ease, color .15s ease, border-color .15s ease; }
@@ -73,13 +104,29 @@
   .footer-link:hover { color: #FFFFFF; }
 
   @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
     .btn, .card-link { transition: none; }
     .card-link:hover { transform: none; }
   }
 
   @media (max-width: 900px) {
-    .header-inner { flex-wrap: wrap; row-gap: 12px; }
-    .header-nav { order: 3; width: 100%; justify-content: center; flex-wrap: wrap; gap: 16px !important; }
+    html { scroll-padding-top: 84px; }
+    .header-inner { flex-wrap: wrap; padding: 8px 20px; row-gap: 0; }
+    .header-logo img { height: 48px; width: 49px; }
+    .header-cta { display: none; }
+    .menu-btn { display: flex; }
+    .js .header-nav { display: none; }
+    .header-nav { order: 3; width: 100%; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 0 12px; max-height: calc(100vh - 70px); overflow-y: auto; }
+    .js .header-nav.abierto { display: flex; }
+    .header-nav .text-link { display: block; padding: 12px 4px; font-size: 16px; }
+    .nav-item { display: block; }
+    .submenu { display: flex; position: static; border: 0; box-shadow: none; padding: 0 0 4px 12px; min-width: 0; }
+    .submenu a { padding: 10px 4px; font-size: 15px; }
+    .barra-movil { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 80; background: #FFFFFF; border-top: 1px solid #EDE7D8; padding: 10px 20px; }
+    .barra-movil a { display: block; text-align: center; background: #69662C; color: #FFFFFF; padding: 13px; border-radius: 999px; font-size: 15px; font-weight: 600; }
+    .boton-whatsapp { bottom: 84px !important; right: 16px !important; }
+    footer { padding-bottom: 72px; }
+    .aside-cta { position: static; }
     .hero-inner { flex-direction: column; }
     .hero-inner > div { min-width: 0 !important; width: 100%; }
     .hero-media { height: auto !important; padding: 24px 0; }
@@ -122,13 +169,39 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalTherapy",
+  "@type": "Service",
   "name": "Psicomotricidad",
+  "serviceType": "Psicomotricidad",
   "description": "Psicomotricidad para niños en Rivera: movimiento, equilibrio, coordinación y expresión emocional. Evaluación y tratamiento presencial.",
   "url": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/psicomotricidad-rivera/",
   "provider": {
-    "@id": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/#clinica"
-  }
+    "@type": "MedicalClinic",
+    "@id": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/#clinica",
+    "name": "Clínica Trazos",
+    "url": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Rivera"
+    },
+    {
+      "@type": "City",
+      "name": "Tranqueras"
+    },
+    {
+      "@type": "City",
+      "name": "Minas de Corrales"
+    },
+    {
+      "@type": "City",
+      "name": "Vichadero"
+    },
+    {
+      "@type": "City",
+      "name": "Santana do Livramento"
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -178,20 +251,23 @@
 
 <div style="width: 100%; background: #FBF9F4; color: #2E2B15;">
 
-<header style="width: 100%; background: #FFFFFF; border-bottom: 1px solid #EDE7D8;">
-  <div class="header-inner" style="max-width: 1200px; margin: 0 auto; padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
-    <a href="/clinicatrazosweb/" style="display: flex; align-items: center; gap: 12px;" aria-label="Clínica Trazos, ir al inicio">
-      <img src="/clinicatrazosweb/assets/logo-130.png" alt="" width="65" height="64" style="height: 64px; width: 65px; flex-shrink: 0;">
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/clinicatrazosweb/" class="header-logo" aria-label="Clínica Trazos, ir al inicio">
+      <img src="/clinicatrazosweb/assets/logo-130.webp" alt="" width="65" height="64">
       <span style="font-size: 19px; font-weight: 700; letter-spacing: 0.01em; color: #2E2B15;">Clínica Trazos</span>
     </a>
-    <nav class="header-nav" aria-label="Navegación principal" style="display: flex; gap: 32px; align-items: center;">
-      <a href="/clinicatrazosweb/" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Inicio</a>
-      <a href="/clinicatrazosweb/#servicios" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Servicios</a>
-      <a href="/clinicatrazosweb/convenios/" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Convenios</a>
-      <a href="/clinicatrazosweb/blog/" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Blog</a>
-      <a href="/clinicatrazosweb/contacto/" class="text-link" style="font-size: 15px; font-weight: 500; color: #2E2B15;">Contacto</a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+    </button>
+    <nav id="menu-principal" class="header-nav" aria-label="Navegación principal">
+      <a href="/clinicatrazosweb/" class="text-link">Inicio</a>
+      <div class="nav-item"><a href="/clinicatrazosweb/servicios/" class="text-link" aria-current="page">Servicios</a><div class="submenu"><a href="/clinicatrazosweb/terapia-ocupacional-rivera/">Terapia Ocupacional</a><a href="/clinicatrazosweb/psicomotricidad-rivera/">Psicomotricidad</a><a href="/clinicatrazosweb/fonoaudiologia-rivera/">Fonoaudiología</a><a href="/clinicatrazosweb/psicopedagogia-rivera/">Psicopedagogía</a><a href="/clinicatrazosweb/psicologia-infantil-rivera/">Psicología</a></div></div>
+      <a href="/clinicatrazosweb/convenios/" class="text-link">Convenios</a>
+      <a href="/clinicatrazosweb/blog/" class="text-link">Blog</a>
+      <a href="/clinicatrazosweb/contacto/" class="text-link">Contacto</a>
     </nav>
-    <a href="/clinicatrazosweb/contacto/" class="btn btn-solid" style="background: #69662C; color: #FFFFFF; padding: 12px 24px; border-radius: 999px; font-size: 14px; font-weight: 600; flex-shrink: 0;">Agendar consulta</a>
+    <a href="/clinicatrazosweb/contacto/" class="btn btn-solid header-cta">Agendar consulta</a>
   </div>
 </header>
 
@@ -235,14 +311,31 @@
 <h3 id="se-puede-hacer-psicomotricidad-por-bps-en-rivera">¿Se puede hacer psicomotricidad por BPS en Rivera?</h3>
 <p>Sí, si el niño es beneficiario de las Ayudas Extraordinarias de BPS y el tratamiento se hace en un instituto habilitado. Clínica Trazos está en proceso de habilitación; consultanos y te contamos en qué etapa está y cómo orientarte con el trámite.</p>
     </div>
-    <aside style="position: sticky; top: 24px; background: #69662C; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 14px; color: #FFFFFF;">
+    <aside class="aside-cta" style="background: #69662C; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 14px; color: #FFFFFF;">
       <h2 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF;">¿Querés hacer una consulta?</h2>
       <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #E4E4D5;">Te orientamos según la edad y la situación de tu hijo o hija. </p>
       <a href="/clinicatrazosweb/contacto/" class="btn btn-solid-inverse" style="background: #FFFFFF; color: #69662C; padding: 12px 20px; border-radius: 999px; font-weight: 600; font-size: 14px; align-self: flex-start;">Agendar consulta</a>
       <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.6; color: #E4E4D5;">Av. Sarandí 832, Rivera, Uruguay</p>
     </aside>
   </div>
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px 56px;">
+    <h2 style="font-size: 24px; color: #2E2B15; margin: 0 0 20px;">Otras especialidades del equipo</h2>
+    <div class="chips"><a href="/clinicatrazosweb/terapia-ocupacional-rivera/">Terapia Ocupacional</a><a href="/clinicatrazosweb/fonoaudiologia-rivera/">Fonoaudiología</a><a href="/clinicatrazosweb/psicopedagogia-rivera/">Psicopedagogía</a><a href="/clinicatrazosweb/psicologia-infantil-rivera/">Psicología</a></div>
+  </div>  <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px 72px;">
+    <h2 style="font-size: 24px; color: #2E2B15; margin: 0 0 24px;">Artículos relacionados</h2>
+    <div class="novedades-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+      <a href="/clinicatrazosweb/blog/psicomotricidad-infantil/" class="card-link" style="border: 1px solid #EDE7D8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; background: #FFFFFF; color: inherit;">
+        <div aria-hidden="true" style="height: 8px; background: #C2CCAB;"></div>
+        <div style="padding: 24px; display: flex; flex-direction: column; gap: 10px; flex: 1;">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #3F4A2B;">Desarrollo infantil</span>
+          <h3 style="margin: 0; font-size: 18px; font-weight: 600; color: #2E2B15; line-height: 1.4;">Psicomotricidad infantil: qué es y cuándo consultar</h3>
+          <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #4A4736;">Psicomotricidad infantil: qué trabaja el psicomotricista, en qué se diferencia de otras terapias y qué señales son motivo de consulta. Guía para familias.</p>
+          <time datetime="2026-10-12" style="font-size: 13px; color: #6B5A40; margin-top: auto;">12 de octubre de 2026</time>
+        </div>
+      </a>
 
+    </div>
+  </div>
 </section>
 </main>
 
@@ -268,6 +361,7 @@
       <span style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #F09367;">La clínica</span>
       <a class="footer-link" href="/clinicatrazosweb/convenios/">Convenios y BPS</a>
       <a class="footer-link" href="/clinicatrazosweb/blog/">Blog para familias</a>
+      <a class="footer-link" href="/clinicatrazosweb/servicios/">Todos los servicios</a>
       <a class="footer-link" href="/clinicatrazosweb/contacto/">Contacto y ubicación</a>
     </nav>
   </div>
@@ -277,6 +371,31 @@
 </footer>
 
 </div>
+<div class="barra-movil"><a href="/clinicatrazosweb/contacto/">Agendar consulta</a></div>
 
+<script>
+(function () {
+  var btn = document.querySelector('.menu-btn'), nav = document.getElementById('menu-principal');
+  function poner(abierto) {
+    nav.classList.toggle('abierto', abierto);
+    btn.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+    btn.setAttribute('aria-label', abierto ? 'Cerrar menú' : 'Abrir menú');
+  }
+  btn.addEventListener('click', function () { poner(!nav.classList.contains('abierto')); });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) poner(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.classList.contains('abierto')) { poner(false); btn.focus(); }
+  });
+  var form = document.getElementById('form-contacto');
+  if (form) form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var d = new FormData(form), lineas = ['Consulta desde el sitio web', ''];
+    d.forEach(function (v, k) { if (v) lineas.push(k + ': ' + v); });
+    var texto = lineas.join('\n'), wa = form.dataset.whatsapp;
+    if (wa) window.open('https://wa.me/' + wa + '?text=' + encodeURIComponent(texto), '_blank', 'noopener');
+    else location.href = 'mailto:' + form.dataset.email + '?subject=' + encodeURIComponent('Consulta desde el sitio web') + '&body=' + encodeURIComponent(texto);
+  });
+})();
+</script>
 </body>
 </html>

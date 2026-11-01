@@ -86,7 +86,7 @@ Organizar las fechas con tiempo evita cortes en el tratamiento. Anotá cuándo v
 
 El tratamiento tiene que hacerse en un **instituto habilitado por BPS**. BPS publica un listado de institutos habilitados de Montevideo y del interior, ordenado por departamento, en su página de ayuda extraordinaria.
 
-Clínica Trazos está **en proceso de habilitación ante BPS** para atender con Ayudas Extraordinarias en psicomotricidad y fonoaudiología. Mientras tanto, podés empezar en forma particular. Si ya tenés la ayuda aprobada o estás por iniciarla, [escribinos](/contacto/) y te orientamos sobre los papeles que tiene que completar la clínica, como los informes de evolución.
+Clínica Trazos está **en proceso de habilitación ante BPS** para atender con Ayudas Extraordinarias en psicología, psicomotricidad, fonoaudiología, psicopedagogía y maestra especializada. Nutrición no está incluida en esta habilitación. Mientras tanto, podés empezar en forma particular. Si ya tenés la ayuda aprobada o estás por iniciarla, [escribinos](/contacto/) y te orientamos sobre los papeles que tiene que completar la clínica, como los informes de evolución.
 
 ## Preguntas frecuentes
 

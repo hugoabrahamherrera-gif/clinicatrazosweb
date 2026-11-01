@@ -12,12 +12,14 @@
 
       <a href="mailto:{{contacto_form_email}}?subject={{asunto_email}}" class="btn btn-solid-inverse" style="align-self: flex-start; background: #FFFFFF; color: #2E2B15; padding: 14px 28px; border-radius: 999px; font-size: 15px; font-weight: 600;">Escribinos un email</a>
 
+      <a href="{{contacto_como_llegar}}" target="_blank" rel="noopener" style="color: #FFFFFF; font-size: 15px; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">Cómo llegar en Google Maps →</a>
+
       <div style="border-radius: 16px; overflow: hidden; margin-top: 8px; line-height: 0;">
         <iframe src="{{contacto_mapa_embed_url}}" width="100%" height="220" style="border: 0; display: block;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de {{site_title}}"></iframe>
       </div>
     </div>
 
-    <form action="mailto:{{contacto_form_email}}" method="post" enctype="text/plain" style="background: #FBF9F4; border-radius: 20px; padding: 40px; display: flex; flex-direction: column; gap: 18px; height: fit-content;">
+    <form id="form-contacto" data-email="{{contacto_form_email}}" data-whatsapp="{{contacto_whatsapp}}" style="background: #FBF9F4; border-radius: 20px; padding: 40px; display: flex; flex-direction: column; gap: 18px; height: fit-content;">
       <h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #2E2B15;">{{contacto_form_title}}</h3>
 
       <div style="display: flex; flex-direction: column; gap: 6px;">
@@ -36,11 +38,17 @@
       </div>
 
       <div style="display: flex; flex-direction: column; gap: 6px;">
+        <label for="edad" style="font-size: 13px; font-weight: 600; color: #2E2B15;">Edad del niño o niña</label>
+        <input id="edad" name="Edad" type="text" inputmode="numeric" placeholder="Ej.: 5 años" style="border: 1px solid #D9D3BE; border-radius: 10px; padding: 12px 14px; font-size: 14px; font-family: 'Poppins', sans-serif; color: #2E2B15;">
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 6px;">
         <label for="mensaje" style="font-size: 13px; font-weight: 600; color: #2E2B15;">Mensaje</label>
-        <textarea id="mensaje" name="Mensaje" rows="4" placeholder="Contanos brevemente tu consulta" style="border: 1px solid #D9D3BE; border-radius: 10px; padding: 12px 14px; font-size: 14px; font-family: 'Poppins', sans-serif; color: #2E2B15; resize: none;"></textarea>
+        <textarea id="mensaje" name="Mensaje" rows="4" required placeholder="Contanos brevemente tu consulta" style="border: 1px solid #D9D3BE; border-radius: 10px; padding: 12px 14px; font-size: 14px; font-family: 'Poppins', sans-serif; color: #2E2B15; resize: none;"></textarea>
       </div>
 
       <button type="submit" class="btn btn-solid" style="background: #69662C; color: #FFFFFF; border: none; border-radius: 999px; padding: 14px; font-size: 15px; font-weight: 600; font-family: 'Poppins', sans-serif; cursor: pointer;">{{contacto_form_button}}</button>
+      <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #4A4736;">{{contacto_form_nota}}</p>
     </form>
 
   </div>

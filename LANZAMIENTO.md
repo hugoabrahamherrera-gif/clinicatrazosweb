@@ -4,6 +4,24 @@ El código ya resuelve el SEO técnico: páginas por servicio, títulos, descrip
 estructurados, sitemap y velocidad. Lo que sigue depende de datos o de cuentas de la clínica, y
 es lo que más pesa para aparecer en Google Maps y en las búsquedas locales.
 
+## 0. Revisión del 2026-11-01: decisiones antes de lanzar
+
+**El sitio ya es público** en la dirección de github.io, aunque Google todavía no lo muestra para "Clínica Trazos". Hoy publicar = `git push` de `main`.
+
+1. [ ] **Publicidad en salud (Ley 18.211 art. 20, Decreto 272/011).** Sin autorización previa del MSP, la publicidad se limita a datos identificatorios, títulos y especialidades registrados ante el MSP. Lo que exceda eso requiere autorización; las infracciones van de 30 a 500 UR y el MSP puede suspender la publicidad. Consultar con el asesor o el MSP si los textos de servicios y el blog entran en esa autorización. No es asesoramiento legal.
+2. [ ] **Dominio propio antes de lanzar** (`clinicatrazos.com.uy` no tenía DNS el 2026-11-01; confirmar en nic.uy). Sin dominio, `robots.txt` no funciona: Google solo lo lee en la raíz.
+3. [ ] **Teléfono, WhatsApp y horario** (la clínica ya opera): pesan para el Perfil de Empresa y el contacto en celular.
+4. [ ] **Revisión profesional de los 6 artículos** y dato `revisado_por:` en cada uno (nombre y título registrado).
+5. [ ] **Página de equipo** con nombres y títulos, con consentimiento de cada profesional.
+6. [ ] **Nutrición y Maestra especializada** no tienen página. Faltan definir alcance y datos.
+7. [ ] **Confirmar Terapia Ocupacional y BPS:** no figura en la habilitación informada. El sitio no afirma nada.
+8. [ ] **WordPress `riveraclc.wordpress.com`:** sigue mostrando "próximamente" con el nombre de la clínica. Ponerlo privado o borrarlo.
+9. [ ] **Instalar el workflow del blog** (sección 5): sin él los artículos no salen solos. Ninguno se publicó en septiembre ni octubre.
+10. [ ] Después del primer push: comprobar que `README.md`, `build.py` y `contenido/` den 404 (se ocultan con `_config.yml`).
+11. [ ] Cuando BPS apruebe: cambiar "en proceso de habilitación" en todas las páginas (`grep -rn "habilitaci" contenido content.json`).
+
+**Siguiente etapa:** páginas en portugués con hreflang (solo para lo que atienden profesionales de Livramento) y artículos 7 a 12 del plan editorial.
+
 ## 1. Antes de publicar (bloqueante)
 
 - [ ] **Teléfono** en `content.json` → `contacto.telefono`. Sin teléfono, Google no puede mostrar el botón "Llamar".

@@ -1,6 +1,8 @@
 {
   "sitio": {
     "url": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb",
+    "revision": "2026-11-01",
+    "_nota_revision": "Fecha de la última revisión real de las páginas: se usa en el sitemap. Cambiarla solo cuando el contenido cambie de verdad.",
     "_nota": "Cuando haya dominio propio, cambiar solo esta URL (ej. https://clinicatrazos.com.uy) y volver a correr build.py"
   },
   "site_title": "Clínica Trazos",
@@ -15,7 +17,7 @@
     },
     {
       "label": "Servicios",
-      "href": "/#servicios"
+      "href": "/servicios/"
     },
     {
       "label": "Convenios",
@@ -39,7 +41,7 @@
     "modalidad_online": "Online: fono y psicología",
     "cta_primary": "Agendar consulta",
     "cta_secondary": "Ver servicios",
-    "badge_media": "5 especialidades, un solo equipo"
+    "badge_media": "Varias especialidades, un solo equipo"
   },
   "servicios": {
     "eyebrow": "Nuestros servicios",

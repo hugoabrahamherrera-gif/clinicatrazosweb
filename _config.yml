@@ -1,0 +1,12 @@
+# GitHub Pages: el sitio ya viene generado por build.py. Esto solo evita que se
+# publiquen los archivos internos del repo (borradores, plantillas, notas, código).
+exclude:
+  - README.md
+  - LANZAMIENTO.md
+  - build.py
+  - content.json
+  - contenido
+  - plantillas
+  - herramientas
+  - mockup
+  - assets/manual-de-marca-trazos.pdf

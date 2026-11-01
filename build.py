@@ -236,6 +236,7 @@ def clinica_ld(c, sitio_url, servicios):
             for s in servicios
         ],
         "isAcceptingNewPatients": True,
+        "hasMap": f"https://www.google.com/maps/search/?api=1&query={quote(ct['direccion'])}",
     }
     if not es_dato_pendiente(ct.get("email")):
         d["email"] = ct["email"]
@@ -250,20 +251,33 @@ def clinica_ld(c, sitio_url, servicios):
     return d
 
 
-def build_nav(items, base, actual):
+def build_nav(items, base, actual, servicios):
     lineas = []
     for item in items:
         href = base + item["href"]
         marca = ' aria-current="page"' if item["href"] == actual else ""
-        lineas.append(f'      <a href="{href}" class="text-link"{marca} style="font-size: 15px; font-weight: 500; color: #2E2B15;">{item["label"]}</a>')
+        enlace = f'<a href="{href}" class="text-link"{marca}>{item["label"]}</a>'
+        if item["href"] == "/servicios/":
+            sub = "".join(f'<a href="{base}/{s["pagina"]}/">{s["title"]}</a>' for s in servicios)
+            enlace = f'<div class="nav-item">{enlace}<div class="submenu">{sub}</div></div>'
+        lineas.append("      " + enlace)
     return "\n".join(lineas)
+
+
+def titulo_seo(titulo, sufijo=" | Clínica Trazos"):
+    """Agrega la marca solo si el título completo entra en lo que muestra Google (~60 caracteres)."""
+    return titulo + sufijo if len(titulo + sufijo) <= 60 else titulo
+
+
+def clinica_ref(c, sitio_url):
+    return {"@type": "MedicalClinic", "@id": sitio_url + "/#clinica", "name": c["site_title"], "url": sitio_url + "/"}
 
 
 def build_whatsapp_button(digits):
     digits = (digits or "").strip()
     if not digits:
         return ""
-    return f'''<a href="https://wa.me/{digits}" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" style="position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(0,0,0,0.25); z-index: 100;">
+    return f'''<a href="https://wa.me/{digits}" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" class="boton-whatsapp" style="position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(0,0,0,0.25); z-index: 100;">
   <svg viewBox="0 0 24 24" width="30" height="30" fill="#FFFFFF" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.08c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1.01-2.4.26-.28.57-.35.76-.35h.55c.17 0 .41-.03.63.48.24.57.81 1.99.88 2.13.07.14.11.31.02.5-.09.19-.14.31-.28.47-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.92 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.19-.28.37-.23.62-.14.26.09 1.63.77 1.91.91.28.14.47.21.53.33.07.13.07.71-.17 1.39z"></path></svg>
 </a>'''
 
@@ -321,7 +335,7 @@ def pagina_completa(base_tpl, c, base, sitio_url, *, ruta, titulo, descripcion, 
     out = base_tpl
     out = out.replace("{{CONTENIDO}}", contenido)
     out = out.replace("{{JSONLD}}", "\n".join(jsonld(x) for x in lds))
-    out = out.replace("{{NAV_LINKS}}", build_nav(c["nav"], base, nav_actual))
+    out = out.replace("{{NAV_LINKS}}", build_nav(c["nav"], base, nav_actual, c["servicios"]["items"]))
     out = out.replace("{{FOOTER_SERVICIOS}}", "\n".join(
         f'      <a class="footer-link" href="{base}/{s["pagina"]}/">{s["title"]}</a>' for s in c["servicios"]["items"]))
     out = out.replace("{{FOOTER_CONTACTO}}", footer_contacto(c["contacto"]))
@@ -340,6 +354,9 @@ def contacto_bloque(c, en_pagina_contacto=False):
         "contacto_form_title": ct["form_title"], "contacto_form_button": ct["form_button"],
         "contacto_form_email": ct["form_email"], "site_title": c["site_title"],
         "asunto_email": quote("Consulta desde el sitio web"),
+        "contacto_whatsapp": (ct.get("whatsapp_digits") or "").strip(),
+        "contacto_form_nota": "Al enviar se abre tu WhatsApp con el mensaje listo." if (ct.get("whatsapp_digits") or "").strip() else "Al enviar se abre tu programa de correo con el mensaje listo.",
+        "contacto_como_llegar": f"https://www.google.com/maps/search/?api=1&amp;query={quote(ct['direccion'])}",
     }.items():
         b = b.replace("{{" + k + "}}", v)
     if en_pagina_contacto:
@@ -422,7 +439,7 @@ def cabecera_interior(eyebrow, h1, intro, migas, base):
 
 
 def aside_cta(c, base, texto_extra=""):
-    return f'''<aside style="position: sticky; top: 24px; background: #69662C; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 14px; color: #FFFFFF;">
+    return f'''<aside class="aside-cta" style="background: #69662C; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 14px; color: #FFFFFF;">
       <h2 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF;">¿Querés hacer una consulta?</h2>
       <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #E4E4D5;">Te orientamos según la edad y la situación de tu hijo o hija. {texto_extra}</p>
       <a href="{base}/contacto/" class="btn btn-solid-inverse" style="background: #FFFFFF; color: #69662C; padding: 12px 20px; border-radius: 999px; font-weight: 600; font-size: 14px; align-self: flex-start;">{c["cta_header"]}</a>
@@ -481,6 +498,7 @@ def main():
     base = urlparse(sitio_url).path.rstrip("/")  # "/clinicatrazosweb" en GitHub Pages, "" con dominio propio
     base_tpl = (PLANTILLAS / "base.html").read_text(encoding="utf-8")
     servicios = c["servicios"]["items"]
+    revision = dt.date.fromisoformat(c["sitio"]["revision"])
     archivos = {}  # ruta relativa -> contenido
     sitemap = []   # (ruta, lastmod)
 
@@ -532,12 +550,40 @@ def main():
         inicio = re.sub(r"\{\{BLOG_INICIO_ABRE\}\}.*?\{\{BLOG_INICIO_CIERRA\}\}", "", inicio, flags=re.S)
     home_lds = [
         clinica_ld(c, sitio_url, servicios),
-        {"@context": "https://schema.org", "@type": "WebSite", "name": c["site_title"], "url": sitio_url + "/", "inLanguage": "es-UY"},
+        {"@context": "https://schema.org", "@type": "WebSite", "name": c["site_title"], "url": sitio_url + "/", "inLanguage": "es-UY", "publisher": {"@id": sitio_url + "/#clinica"}},
     ]
     archivos["index.html"] = pagina_completa(
         base_tpl, c, base, sitio_url, ruta="/", titulo=c["seo_titulo_inicio"],
         descripcion=c["meta_description"], contenido=inicio, lds=home_lds, nav_actual="/")
-    sitemap.append(("/", HOY))
+    sitemap.append(("/", revision))
+
+    # ---- Servicios (índice de especialidades)
+    migas_serv = [("Inicio", "/"), ("Servicios", "/servicios/")]
+    cuerpo_serv = f'''<section style="width: 100%; background: #FFFFFF;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 72px 32px;">
+    <h2 style="margin: 0 0 32px; font-size: 30px; font-weight: 700; color: #2E2B15;">{c["servicios"]["title"]}</h2>
+    <div class="servicios-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+{build_servicios_cards(servicios, base)}
+      <div style="background: #69662C; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px; justify-content: center;">
+        <h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #FFFFFF;">{c["servicios"]["cta_title"]}</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #E4E4D5;">{c["servicios"]["cta_text"]}</p>
+        <a href="{base}/contacto/" class="btn btn-solid-inverse" style="background: #FFFFFF; color: #69662C; padding: 12px 20px; border-radius: 999px; font-weight: 600; font-size: 14px; align-self: flex-start;">{c["servicios"]["cta_button"]}</a>
+      </div>
+    </div>
+  </div>
+</section>'''
+    archivos["servicios/index.html"] = pagina_completa(
+        base_tpl, c, base, sitio_url, ruta="/servicios/",
+        titulo=titulo_seo("Terapias para niños en Rivera"),
+        descripcion="Terapia ocupacional, psicomotricidad, fonoaudiología, psicopedagogía y psicología para niños y adolescentes en Rivera, en un mismo equipo.",
+        contenido=cabecera_interior("Servicios", "Terapias para niños y adolescentes en Rivera", c["hero"]["subtitle"], migas_serv, base) + "\n" + cuerpo_serv,
+        lds=[breadcrumb_ld(sitio_url, migas_serv), {
+            "@context": "https://schema.org", "@type": "ItemList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": i + 1, "name": s["title"], "url": sitio_url + f"/{s['pagina']}/"}
+                for i, s in enumerate(servicios)],
+        }], nav_actual="/servicios/")
+    sitemap.append(("/servicios/", revision))
 
     # ---- Páginas (servicios, convenios, contacto)
     por_servicio = {s["pagina"]: s for s in servicios}
@@ -549,8 +595,14 @@ def main():
         serv = por_servicio.get(pg["slug"])
         relacionados = [p for p in posts if p.get("servicio") and pg["slug"].startswith(p["servicio"])][:3]
         extra = ""
+        if serv:
+            otros = "".join(f'<a href="{base}/{o["pagina"]}/">{o["title"]}</a>' for o in servicios if o["pagina"] != serv["pagina"])
+            extra += f'''  <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px 56px;">
+    <h2 style="font-size: 24px; color: #2E2B15; margin: 0 0 20px;">Otras especialidades del equipo</h2>
+    <div class="chips">{otros}</div>
+  </div>'''
         if relacionados:
-            extra = f'''  <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px 72px;">
+            extra += f'''  <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px 72px;">
     <h2 style="font-size: 24px; color: #2E2B15; margin: 0 0 24px;">Artículos relacionados</h2>
     <div class="novedades-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
 {"".join(tarjeta_post(p, base) for p in relacionados)}
@@ -569,11 +621,13 @@ def main():
         if serv:
             lds.append({
                 "@context": "https://schema.org",
-                "@type": "MedicalTherapy",
+                "@type": "Service",
                 "name": serv["title"],
+                "serviceType": serv["title"],
                 "description": pg["description"],
                 "url": sitio_url + ruta,
-                "provider": {"@id": sitio_url + "/#clinica"},
+                "provider": clinica_ref(c, sitio_url),
+                "areaServed": [{"@type": "City", "name": z} for z in c["contacto"].get("zona_de_atencion", [])],
             })
         if pg["slug"] == "contacto":
             lds.append(clinica_ld(c, sitio_url, servicios))
@@ -581,8 +635,8 @@ def main():
             lds.append(faq_ld(faq))
         archivos[f"{pg['slug']}/index.html"] = pagina_completa(
             base_tpl, c, base, sitio_url, ruta=ruta, titulo=pg["title"], descripcion=pg["description"],
-            contenido=contenido, lds=lds, nav_actual=ruta)
-        sitemap.append((ruta, HOY))
+            contenido=contenido, lds=lds, nav_actual="/servicios/" if serv else ruta)
+        sitemap.append((ruta, dt.date.fromisoformat(pg["actualizado"]) if pg.get("actualizado") else revision))
         if pg["slug"] != "contacto" and contar_palabras(pg["cuerpo"]) < 300:
             AVISOS.append(f"{pg['archivo']}: solo {contar_palabras(pg['cuerpo'])} palabras (poco contenido para posicionar)")
 
@@ -618,9 +672,24 @@ def main():
         migas = migas_blog + [(p["title"], ruta)]
         serv = por_servicio.get(next((s["pagina"] for s in servicios if s["pagina"].startswith(p.get("servicio", "-"))), ""), None)
         texto_serv = f'Conocé cómo trabajamos <a href="{base}/{serv["pagina"]}/" style="color: #FFFFFF; text-decoration: underline;">{serv["title"].lower()}</a> en la clínica.' if serv else ""
-        meta = f'<p style="margin: 0 0 32px; font-size: 14px; color: #6B5A40;">Por {html.escape(p.get("autor", "Equipo Clínica Trazos"))} · <time datetime="{p["fecha"].isoformat()}">{fecha_legible(p["fecha"])}</time></p>'
+        revisor = f' · Revisado por {html.escape(p["revisado_por"])}' if p.get("revisado_por") else ""
+        meta = f'<p style="margin: 0 0 32px; font-size: 14px; color: #6B5A40;">Por {html.escape(p.get("autor", "Equipo Clínica Trazos"))}{revisor} · <time datetime="{p["fecha"].isoformat()}">{fecha_legible(p["fecha"])}</time></p>'
+        h2s = [v for t, v in bloques if t == "h2"]
+        toc = ""
+        if len(h2s) >= 3:
+            toc = '<nav class="toc" aria-label="En esta guía"><p>En esta guía</p><ol>' + "".join(
+                f'<li><a href="#{slugify(h)}">{inline_md(h, base)}</a></li>' for h in h2s) + "</ol></nav>"
+        afines = sorted((o for o in posts if o is not p), key=lambda o: (o.get("servicio") != p.get("servicio"), -o["fecha"].toordinal()))[:3]
+        leer_mas = ""
+        if afines:
+            leer_mas = f'''  <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px 72px;">
+    <h2 style="font-size: 24px; color: #2E2B15; margin: 0 0 24px;">Seguí leyendo</h2>
+    <div class="novedades-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+{"".join(tarjeta_post(o, base) for o in afines)}
+    </div>
+  </div>'''
         contenido = cabecera_interior(p["categoria"], p["title"], "", migas, base)
-        contenido += "\n" + cuerpo_con_aside(meta + bloques_a_html(bloques, base), aside_cta(c, base, texto_serv))
+        contenido += "\n" + cuerpo_con_aside(meta + toc + bloques_a_html(bloques, base), aside_cta(c, base, texto_serv), leer_mas)
         lds = [
             breadcrumb_ld(sitio_url, migas),
             {
@@ -634,16 +703,16 @@ def main():
                 "mainEntityOfPage": sitio_url + ruta,
                 "image": sitio_url + "/assets/og-imagen.png",
                 "author": {"@type": "Organization", "name": c["site_title"], "url": sitio_url + "/"},
-                "publisher": {"@id": sitio_url + "/#clinica"},
+                "publisher": clinica_ref(c, sitio_url),
                 "keywords": ", ".join(x for x in [p.get("keyword", "")] + p.get("keywords_secundarias", "").split(",") if x.strip()),
             },
         ]
         if faq:
             lds.append(faq_ld(faq))
         archivos[f"blog/{p['slug']}/index.html"] = pagina_completa(
-            base_tpl, c, base, sitio_url, ruta=ruta, titulo=f"{p['title']} | Clínica Trazos",
+            base_tpl, c, base, sitio_url, ruta=ruta, titulo=titulo_seo(p["title"]),
             descripcion=p["description"], contenido=contenido, lds=lds, og_tipo="article", nav_actual="/blog/")
-        sitemap.append((ruta, p["fecha"]))
+        sitemap.append((ruta, dt.date.fromisoformat(p["actualizado"]) if p.get("actualizado") else p["fecha"]))
 
     # ---- 404
     contenido404 = cabecera_interior("Error 404", "No encontramos esta página",
