@@ -22,6 +22,9 @@ es lo que más pesa para aparecer en Google Maps y en las búsquedas locales.
 
 **Siguiente etapa:** páginas en portugués con hreflang (solo para lo que atienden profesionales de Livramento) y artículos 7 a 12 del plan editorial.
 
+**Perfil de Empresa (revisado el 2026-11-01):** la ficha "Clinica Trazos" ya existe en Google, con dirección y teléfono correctos, pero sin horario ni sitio web. No la administran las cuentas abiertas en este Chrome. Cargar: nombre `Clínica Trazos`, horario lunes a viernes 15:00-20:00 y sábados 09:00-14:00, y el sitio web.
+**Datos a corregir fuera de la web:** el cartel de la inauguración dice Sarandí 839 (lo correcto es 832) y una publicación de Instagram dice 092 722 228 (lo correcto es 229).
+
 ## 1. Antes de publicar (bloqueante)
 
 - [ ] **Teléfono** en `content.json` → `contacto.telefono`. Sin teléfono, Google no puede mostrar el botón "Llamar".

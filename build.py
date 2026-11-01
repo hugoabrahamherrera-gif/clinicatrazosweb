@@ -221,7 +221,7 @@ def clinica_ld(c, sitio_url, servicios):
         "description": c["meta_description"],
         "url": sitio_url + "/",
         "logo": sitio_url + "/assets/logo-444.png",
-        "image": sitio_url + "/assets/og-imagen.png",
+        "image": [sitio_url + "/assets/og-imagen.png"] + [sitio_url + f"/assets/fotos/{n}.webp" for n in ("logo-en-el-muro", "sala-psicomotricidad", "consultorio")],
         "address": {
             "@type": "PostalAddress",
             "streetAddress": ct["calle"],

@@ -128,6 +128,7 @@
     .boton-whatsapp { bottom: 84px !important; right: 16px !important; }
     footer { padding-bottom: 72px; }
     .aside-cta { position: static; }
+    .fotos-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important; }
     .hero-inner { flex-direction: column; }
     .hero-inner > div { min-width: 0 !important; width: 100%; }
     .hero-media { height: auto !important; padding: 24px 0; }
@@ -156,7 +157,12 @@
   "description": "Clínica en Rivera: Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología para niños y adolescentes, y Nutrición para todas las edades.",
   "url": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/",
   "logo": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/assets/logo-444.png",
-  "image": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/assets/og-imagen.png",
+  "image": [
+    "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/assets/og-imagen.png",
+    "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/assets/fotos/logo-en-el-muro.webp",
+    "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/assets/fotos/sala-psicomotricidad.webp",
+    "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb/assets/fotos/consultorio.webp"
+  ],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Av. Sarandí 832",
@@ -237,6 +243,10 @@
       "opens": "09:00",
       "closes": "14:00"
     }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/clinicatrazos/",
+    "https://www.facebook.com/p/Cl%C3%ADnica-Trazos-61590208635873/"
   ]
 }
 </script>
@@ -408,6 +418,21 @@
         <div aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #8A6A1F; flex-shrink: 0;"></div>
         <span style="font-size: 14px; font-weight: 600; color: #2E2B15;">Tutelar Militar</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="clinica" aria-label="Conocé la clínica" style="width: 100%; background: #FFFFFF;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 80px 32px;">
+    <div style="max-width: 640px; margin: 0 0 40px; display: flex; flex-direction: column; gap: 12px;">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #8A5240;">Conocé la clínica</span>
+      <h2 style="margin: 0; font-size: 30px; font-weight: 700; color: #2E2B15;">Grandes historias empiezan con pequeños trazos</h2>
+    </div>
+    <div class="fotos-grid" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px;">
+      <img src="/clinicatrazosweb/assets/fotos/logo-en-el-muro.webp" alt="Logo de Clínica Trazos en el muro, con la frase Grandes historias empiezan con pequeños trazos" width="960" height="720" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 16px; display: block;">
+      <img src="/clinicatrazosweb/assets/fotos/sala-psicomotricidad.webp" alt="Sala de psicomotricidad con colchonetas y bloques de colores" width="960" height="720" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 16px; display: block;">
+      <img src="/clinicatrazosweb/assets/fotos/consultorio.webp" alt="Consultorio con mesa, sillas, estantes con juegos y pizarra" width="960" height="720" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 16px; display: block;">
+      <img src="/clinicatrazosweb/assets/fotos/material-de-trabajo.webp" alt="Rompecabezas de madera y material didáctico sobre una mesa" width="960" height="720" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 16px; display: block;">
     </div>
   </div>
 </section>
