@@ -41,7 +41,7 @@ INCLUIR_BORRADORES = "--borradores" in sys.argv
 GENERADAS_REGISTRO = ROOT / ".generadas.json"
 
 ICONS = {
-    "to": '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="6"></circle><circle cx="15" cy="12" r="6"></circle></svg>',
+    "nutricion": '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8C10 6.5 5 6.5 5 12C5 17 8 21 10 21C11 21 11.3 20.5 12 20.5C12.7 20.5 13 21 14 21C16 21 19 17 19 12C19 6.5 14 6.5 12 8Z"></path><path d="M12 8C12 6 13 4 15 3"></path></svg>',
     "psicomotricidad": '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"></circle><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="13" x2="8" y2="19"></line><line x1="12" y1="13" x2="16" y2="19"></line><line x1="12" y1="10" x2="8" y2="13"></line><line x1="12" y1="10" x2="16" y2="13"></line></svg>',
     "fono": '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="10" rx="3"></rect><path d="M8 15L6 19L10 17Z"></path><circle cx="9" cy="10" r="0.8"></circle><circle cx="12" cy="10" r="0.8"></circle><circle cx="15" cy="10" r="0.8"></circle></svg>',
     "psicopedagogia": '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7L4 6V17L12 18Z"></path><path d="M12 7L20 6V17L12 18Z"></path><line x1="12" y1="7" x2="12" y2="18"></line></svg>',
@@ -339,6 +339,8 @@ def pagina_completa(base_tpl, c, base, sitio_url, *, ruta, titulo, descripcion, 
     out = out.replace("{{FOOTER_SERVICIOS}}", "\n".join(
         f'      <a class="footer-link" href="{base}/{s["pagina"]}/">{s["title"]}</a>' for s in c["servicios"]["items"]))
     out = out.replace("{{FOOTER_CONTACTO}}", footer_contacto(c["contacto"]))
+    tel = c["contacto"].get("telefono")
+    out = out.replace("{{BARRA_TEL}}", "" if es_dato_pendiente(tel) else f'<a class="barra-tel" href="tel:{re.sub(r"[^0-9+]", "", tel)}">Llamar</a>')
     out = out.replace("{{WHATSAPP_BUTTON}}", build_whatsapp_button(c["contacto"].get("whatsapp_digits", "")))
     for k, v in tokens.items():
         out = out.replace("{{" + k + "}}", v)
@@ -443,7 +445,7 @@ def aside_cta(c, base, texto_extra=""):
       <h2 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF;">¿Querés hacer una consulta?</h2>
       <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #E4E4D5;">Te orientamos según la edad y la situación de tu hijo o hija. {texto_extra}</p>
       <a href="{base}/contacto/" class="btn btn-solid-inverse" style="background: #FFFFFF; color: #69662C; padding: 12px 20px; border-radius: 999px; font-weight: 600; font-size: 14px; align-self: flex-start;">{c["cta_header"]}</a>
-      <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.6; color: #E4E4D5;">{html.escape(c["contacto"]["direccion"])}</p>
+      <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.6; color: #E4E4D5;">{html.escape(c["contacto"]["direccion"])}<br>{html.escape(c["contacto"]["horario"])}</p>
     </aside>'''
 
 
@@ -574,9 +576,9 @@ def main():
 </section>'''
     archivos["servicios/index.html"] = pagina_completa(
         base_tpl, c, base, sitio_url, ruta="/servicios/",
-        titulo=titulo_seo("Terapias para niños en Rivera"),
-        descripcion="Terapia ocupacional, psicomotricidad, fonoaudiología, psicopedagogía y psicología para niños y adolescentes en Rivera, en un mismo equipo.",
-        contenido=cabecera_interior("Servicios", "Terapias para niños y adolescentes en Rivera", c["hero"]["subtitle"], migas_serv, base) + "\n" + cuerpo_serv,
+        titulo=titulo_seo("Terapias y nutrición en Rivera"),
+        descripcion="Psicomotricidad, fonoaudiología, psicopedagogía y psicología para niños y adolescentes, y nutrición para todas las edades, en Rivera.",
+        contenido=cabecera_interior("Servicios", "Terapias y nutrición en Rivera", c["hero"]["subtitle"], migas_serv, base) + "\n" + cuerpo_serv,
         lds=[breadcrumb_ld(sitio_url, migas_serv), {
             "@context": "https://schema.org", "@type": "ItemList",
             "itemListElement": [

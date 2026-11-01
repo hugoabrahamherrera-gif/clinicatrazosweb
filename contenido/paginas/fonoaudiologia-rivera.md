@@ -13,7 +13,7 @@ intro: Acompañamos el desarrollo del lenguaje, el habla y la comunicación desd
 
 La **fonoaudiología** se ocupa de la comunicación humana: el lenguaje (entender y expresarse), el habla (pronunciar los sonidos), la voz, la audición y también la deglución (cómo el niño mastica y traga). La fonoaudióloga infantil evalúa cómo se está desarrollando cada una de estas áreas y, si encuentra dificultades, diseña un tratamiento adaptado a la edad y a la forma de ser de cada niño.
 
-En Clínica Trazos, en Rivera, la fonoaudiología trabaja en equipo con [psicopedagogía](/psicopedagogia-rivera/), [psicomotricidad](/psicomotricidad-rivera/), terapia ocupacional y psicología, porque el lenguaje está muy ligado al aprendizaje, al juego y a lo emocional.
+En Clínica Trazos, en Rivera, la fonoaudiología trabaja en equipo con [psicopedagogía](/psicopedagogia-rivera/), [psicomotricidad](/psicomotricidad-rivera/) y psicología, porque el lenguaje está muy ligado al aprendizaje, al juego y a lo emocional.
 
 ## ¿Cuándo consultar con una fonoaudióloga?
 

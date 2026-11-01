@@ -13,7 +13,7 @@ intro: Acompañamos a niños y niñas que tienen dificultades para aprender, con
 
 La **psicopedagogía** estudia cómo aprende cada niño y qué puede estar interfiriendo cuando el aprendizaje no fluye. La psicopedagoga evalúa la lectura, la escritura, el cálculo, la atención, la memoria y la organización, pero también cómo se siente el niño frente a la escuela y la tarea. A partir de ahí diseña un tratamiento para que pueda aprender con más recursos y más confianza.
 
-En Clínica Trazos, en Rivera, la psicopedagogía trabaja junto a [fonoaudiología](/fonoaudiologia-rivera/), [psicología](/psicologia-infantil-rivera/), psicomotricidad y terapia ocupacional. Muchas dificultades de aprendizaje tienen más de una causa, y mirarlas en equipo ayuda a encontrar la mejor forma de acompañar.
+En Clínica Trazos, en Rivera, la psicopedagogía trabaja junto a [fonoaudiología](/fonoaudiologia-rivera/), [psicología](/psicologia-infantil-rivera/) y psicomotricidad. Muchas dificultades de aprendizaje tienen más de una causa, y mirarlas en equipo ayuda a encontrar la mejor forma de acompañar.
 
 ## Señales para consultar
 
@@ -42,9 +42,13 @@ Las sesiones buscan desarrollar estrategias de aprendizaje, atención y organiza
 
 ## Modalidad y convenios
 
-Atendemos de forma **presencial en Rivera**, a niños y adolescentes de todos los niveles: escuela y liceo. Clínica Trazos está **en proceso de habilitación ante BPS** para atender psicopedagogía con Ayudas Extraordinarias; mientras tanto, podés empezar en forma particular. Consultá los demás convenios en la página de [convenios](/convenios/).
+Atendemos de forma **presencial en Rivera**, a niños y adolescentes de todos los niveles: escuela y liceo. Clínica Trazos está **en proceso de habilitación ante BPS** para atender psicopedagogía con Ayudas Extraordinarias; mientras tanto, podés empezar en forma particular. El tratamiento lo puede realizar una psicopedagoga o una maestra especializada: BPS admite ambas profesiones. Consultá los demás convenios en la página de [convenios](/convenios/).
 
 ## Preguntas frecuentes
+
+### ¿Qué es una maestra especializada?
+
+Es una maestra con formación en dificultades de aprendizaje, que realiza un trabajo de apoyo similar al de la psicopedagoga. BPS admite ambas profesiones para este tratamiento.
 
 ### ¿Qué diferencia hay entre psicopedagoga y psicóloga?
 

@@ -6,8 +6,8 @@
     "_nota": "Cuando haya dominio propio, cambiar solo esta URL (ej. https://clinicatrazos.com.uy) y volver a correr build.py"
   },
   "site_title": "Clínica Trazos",
-  "meta_tagline": "Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en Rivera",
-  "meta_description": "Clínica infantil en Rivera: Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología para niños y adolescentes. Presencial y online.",
+  "meta_tagline": "Psicomotricidad, Fonoaudiología, Psicopedagogía, Psicología y Nutrición en Rivera",
+  "meta_description": "Clínica en Rivera: Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología para niños y adolescentes, y Nutrición para todas las edades.",
   "footer_wordmark": "TRAZOS",
   "cta_header": "Agendar consulta",
   "nav": [
@@ -36,7 +36,7 @@
     "place": "Rivera",
     "badge": "Equipo interdisciplinario",
     "title": "Acompañamos el desarrollo de cada niño en Rivera, a su ritmo",
-    "subtitle": "Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en un mismo equipo, trabajando junto a la familia en cada paso.",
+    "subtitle": "Psicomotricidad, Fonoaudiología, Psicopedagogía, Psicología y Nutrición en un mismo equipo, trabajando junto a la familia en cada paso.",
     "modalidad_presencial": "Atención presencial",
     "modalidad_online": "Online: fono y psicología",
     "cta_primary": "Agendar consulta",
@@ -47,14 +47,6 @@
     "eyebrow": "Nuestros servicios",
     "title": "Un abordaje integral para cada etapa",
     "items": [
-      {
-        "icon": "to",
-        "bg": "#E4E8D9",
-        "fg": "#69662C",
-        "title": "Terapia Ocupacional",
-        "desc": "Favorecemos la autonomía en las actividades de la vida diaria, el juego y el aprendizaje.",
-        "pagina": "terapia-ocupacional-rivera"
-      },
       {
         "icon": "psicomotricidad",
         "bg": "#FBE3D6",
@@ -86,6 +78,14 @@
         "title": "Psicología",
         "desc": "Sostenemos el bienestar emocional del niño y orientamos a la familia en el proceso.",
         "pagina": "psicologia-infantil-rivera"
+      },
+      {
+        "icon": "nutricion",
+        "bg": "#E4E8D9",
+        "fg": "#69662C",
+        "title": "Nutrición",
+        "desc": "Acompañamos la alimentación de niños, adolescentes y adultos, con pautas posibles para cada familia.",
+        "pagina": "nutricion-rivera"
       }
     ],
     "cta_title": "¿No sabés qué servicio necesitás?",
@@ -125,9 +125,9 @@
     "title": "Conversemos sobre tu consulta",
     "subtitle": "Escribinos y te ayudamos a coordinar la primera cita con el especialista adecuado.",
     "direccion": "Av. Sarandí 832, Rivera, Uruguay",
-    "telefono": "[+598 XXX XXX]",
+    "telefono": "+598 92 722 229",
     "email": "clinicatrazos@gmail.com",
-    "horario": "[Horario de atención]",
+    "horario": "Lunes a viernes de 15:00 a 20:00 · Sábados de 09:00 a 14:00",
     "whatsapp_digits": "",
     "form_title": "Escribinos",
     "form_button": "Enviar mensaje",
@@ -145,7 +145,26 @@
     ],
     "latitud": "",
     "longitud": "",
-    "horario_schema": [],
+    "horario_schema": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "15:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "14:00"
+      }
+    ],
     "perfiles": []
   },
   "footer": {

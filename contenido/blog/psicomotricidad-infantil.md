@@ -80,7 +80,7 @@ Es común que las familias duden entre especialidades, porque se complementan. D
 
 - La **psicomotricidad** trabaja el cuerpo en movimiento, en relación con lo emocional y lo vincular.
 - La [fonoaudiología](/fonoaudiologia-rivera/) se ocupa del lenguaje, el habla, la voz y la audición.
-- La [terapia ocupacional](/terapia-ocupacional-rivera/) se centra en la autonomía en las actividades de todos los días: vestirse, comer, jugar, las tareas escolares.
+- La terapia ocupacional se centra en la autonomía en las actividades de todos los días: vestirse, comer, jugar, las tareas escolares. Por ahora, Clínica Trazos no ofrece terapia ocupacional.
 
 Según la Facultad de Medicina, el psicomotricista trabaja junto a psicólogos, psiquiatras, neuropediatras, pediatras, maestros, fonoaudiólogos, fisioterapeutas y asistentes sociales. No tenés que saber de antemano qué especialidad corresponde: una primera consulta sirve justamente para orientarte.
 

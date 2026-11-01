@@ -122,8 +122,9 @@
     .nav-item { display: block; }
     .submenu { display: flex; position: static; border: 0; box-shadow: none; padding: 0 0 4px 12px; min-width: 0; }
     .submenu a { padding: 10px 4px; font-size: 15px; }
-    .barra-movil { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 80; background: #FFFFFF; border-top: 1px solid #EDE7D8; padding: 10px 20px; }
-    .barra-movil a { display: block; text-align: center; background: #69662C; color: #FFFFFF; padding: 13px; border-radius: 999px; font-size: 15px; font-weight: 600; }
+    .barra-movil { display: flex; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 80; background: #FFFFFF; border-top: 1px solid #EDE7D8; padding: 10px 20px; }
+    .barra-movil a { display: block; flex: 1; text-align: center; background: #69662C; color: #FFFFFF; padding: 13px; border-radius: 999px; font-size: 15px; font-weight: 600; }
+    .barra-movil .barra-tel { flex: 0 0 34%; background: #FFFFFF; color: #2E2B15; border: 1.5px solid #69662C; }
     .boton-whatsapp { bottom: 84px !important; right: 16px !important; }
     footer { padding-bottom: 72px; }
     .aside-cta { position: static; }
@@ -262,7 +263,7 @@
     </button>
     <nav id="menu-principal" class="header-nav" aria-label="Navegación principal">
       <a href="/clinicatrazosweb/" class="text-link">Inicio</a>
-      <div class="nav-item"><a href="/clinicatrazosweb/servicios/" class="text-link" aria-current="page">Servicios</a><div class="submenu"><a href="/clinicatrazosweb/terapia-ocupacional-rivera/">Terapia Ocupacional</a><a href="/clinicatrazosweb/psicomotricidad-rivera/">Psicomotricidad</a><a href="/clinicatrazosweb/fonoaudiologia-rivera/">Fonoaudiología</a><a href="/clinicatrazosweb/psicopedagogia-rivera/">Psicopedagogía</a><a href="/clinicatrazosweb/psicologia-infantil-rivera/">Psicología</a></div></div>
+      <div class="nav-item"><a href="/clinicatrazosweb/servicios/" class="text-link" aria-current="page">Servicios</a><div class="submenu"><a href="/clinicatrazosweb/psicomotricidad-rivera/">Psicomotricidad</a><a href="/clinicatrazosweb/fonoaudiologia-rivera/">Fonoaudiología</a><a href="/clinicatrazosweb/psicopedagogia-rivera/">Psicopedagogía</a><a href="/clinicatrazosweb/psicologia-infantil-rivera/">Psicología</a><a href="/clinicatrazosweb/nutricion-rivera/">Nutrición</a></div></div>
       <a href="/clinicatrazosweb/convenios/" class="text-link">Convenios</a>
       <a href="/clinicatrazosweb/blog/" class="text-link">Blog</a>
       <a href="/clinicatrazosweb/contacto/" class="text-link">Contacto</a>
@@ -314,12 +315,12 @@
       <h2 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF;">¿Querés hacer una consulta?</h2>
       <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #E4E4D5;">Te orientamos según la edad y la situación de tu hijo o hija. </p>
       <a href="/clinicatrazosweb/contacto/" class="btn btn-solid-inverse" style="background: #FFFFFF; color: #69662C; padding: 12px 20px; border-radius: 999px; font-weight: 600; font-size: 14px; align-self: flex-start;">Agendar consulta</a>
-      <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.6; color: #E4E4D5;">Av. Sarandí 832, Rivera, Uruguay</p>
+      <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.6; color: #E4E4D5;">Av. Sarandí 832, Rivera, Uruguay<br>Lunes a viernes de 15:00 a 20:00 · Sábados de 09:00 a 14:00</p>
     </aside>
   </div>
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px 56px;">
     <h2 style="font-size: 24px; color: #2E2B15; margin: 0 0 20px;">Otras especialidades del equipo</h2>
-    <div class="chips"><a href="/clinicatrazosweb/terapia-ocupacional-rivera/">Terapia Ocupacional</a><a href="/clinicatrazosweb/psicomotricidad-rivera/">Psicomotricidad</a><a href="/clinicatrazosweb/fonoaudiologia-rivera/">Fonoaudiología</a><a href="/clinicatrazosweb/psicopedagogia-rivera/">Psicopedagogía</a></div>
+    <div class="chips"><a href="/clinicatrazosweb/psicomotricidad-rivera/">Psicomotricidad</a><a href="/clinicatrazosweb/fonoaudiologia-rivera/">Fonoaudiología</a><a href="/clinicatrazosweb/psicopedagogia-rivera/">Psicopedagogía</a><a href="/clinicatrazosweb/nutricion-rivera/">Nutrición</a></div>
   </div>
 </section>
 </main>
@@ -328,19 +329,20 @@
   <div class="footer-grid" style="max-width: 1200px; margin: 0 auto; padding: 56px 32px 24px; display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 40px;">
     <div style="display: flex; flex-direction: column; gap: 12px;">
       <span style="font-size: 18px; font-weight: 700; letter-spacing: 2px; color: #FFFFFF;">TRAZOS</span>
-      <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #D8D5C2;">Terapia Ocupacional, Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología en Rivera.</p>
+      <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #D8D5C2;">Psicomotricidad, Fonoaudiología, Psicopedagogía, Psicología y Nutrición en Rivera.</p>
       <address style="font-style: normal; font-size: 14px; line-height: 1.8; color: #D8D5C2;">
         Av. Sarandí 832, Rivera, Uruguay<br>
+        <a class="footer-link" href="tel:+59892722229">+598 92 722 229</a><br>
         <a class="footer-link" href="mailto:clinicatrazos@gmail.com">clinicatrazos@gmail.com</a>
       </address>
     </div>
     <nav aria-label="Servicios" style="display: flex; flex-direction: column; gap: 10px;">
       <span style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #F09367;">Servicios</span>
-      <a class="footer-link" href="/clinicatrazosweb/terapia-ocupacional-rivera/">Terapia Ocupacional</a>
       <a class="footer-link" href="/clinicatrazosweb/psicomotricidad-rivera/">Psicomotricidad</a>
       <a class="footer-link" href="/clinicatrazosweb/fonoaudiologia-rivera/">Fonoaudiología</a>
       <a class="footer-link" href="/clinicatrazosweb/psicopedagogia-rivera/">Psicopedagogía</a>
       <a class="footer-link" href="/clinicatrazosweb/psicologia-infantil-rivera/">Psicología</a>
+      <a class="footer-link" href="/clinicatrazosweb/nutricion-rivera/">Nutrición</a>
     </nav>
     <nav aria-label="La clínica" style="display: flex; flex-direction: column; gap: 10px;">
       <span style="font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #F09367;">La clínica</span>
@@ -356,7 +358,7 @@
 </footer>
 
 </div>
-<div class="barra-movil"><a href="/clinicatrazosweb/contacto/">Agendar consulta</a></div>
+<div class="barra-movil"><a class="barra-tel" href="tel:+59892722229">Llamar</a><a href="/clinicatrazosweb/contacto/">Agendar consulta</a></div>
 
 <script>
 (function () {

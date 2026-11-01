@@ -122,8 +122,9 @@
     .nav-item { display: block; }
     .submenu { display: flex; position: static; border: 0; box-shadow: none; padding: 0 0 4px 12px; min-width: 0; }
     .submenu a { padding: 10px 4px; font-size: 15px; }
-    .barra-movil { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 80; background: #FFFFFF; border-top: 1px solid #EDE7D8; padding: 10px 20px; }
-    .barra-movil a { display: block; text-align: center; background: #69662C; color: #FFFFFF; padding: 13px; border-radius: 999px; font-size: 15px; font-weight: 600; }
+    .barra-movil { display: flex; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 80; background: #FFFFFF; border-top: 1px solid #EDE7D8; padding: 10px 20px; }
+    .barra-movil a { display: block; flex: 1; text-align: center; background: #69662C; color: #FFFFFF; padding: 13px; border-radius: 999px; font-size: 15px; font-weight: 600; }
+    .barra-movil .barra-tel { flex: 0 0 34%; background: #FFFFFF; color: #2E2B15; border: 1.5px solid #69662C; }
     .boton-whatsapp { bottom: 84px !important; right: 16px !important; }
     footer { padding-bottom: 72px; }
     .aside-cta { position: static; }
@@ -202,7 +203,7 @@
 </footer>
 
 </div>
-<div class="barra-movil"><a href="{{BASE}}/contacto/">{{cta_header}}</a></div>
+<div class="barra-movil">{{BARRA_TEL}}<a href="{{BASE}}/contacto/">{{cta_header}}</a></div>
 {{WHATSAPP_BUTTON}}
 <script>
 (function () {

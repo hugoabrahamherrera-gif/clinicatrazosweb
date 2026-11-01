@@ -10,11 +10,11 @@ es lo que más pesa para aparecer en Google Maps y en las búsquedas locales.
 
 1. [ ] **Publicidad en salud (Ley 18.211 art. 20, Decreto 272/011).** Sin autorización previa del MSP, la publicidad se limita a datos identificatorios, títulos y especialidades registrados ante el MSP. Lo que exceda eso requiere autorización; las infracciones van de 30 a 500 UR y el MSP puede suspender la publicidad. Consultar con el asesor o el MSP si los textos de servicios y el blog entran en esa autorización. No es asesoramiento legal.
 2. [ ] **Dominio propio antes de lanzar** (`clinicatrazos.com.uy` no tenía DNS el 2026-11-01; confirmar en nic.uy). Sin dominio, `robots.txt` no funciona: Google solo lo lee en la raíz.
-3. [ ] **Teléfono, WhatsApp y horario** (la clínica ya opera): pesan para el Perfil de Empresa y el contacto en celular.
+3. [ ] **WhatsApp:** teléfono y horario ya están cargados. Falta confirmar si el mismo número atiende WhatsApp; si es así, poner `59892722229` en `contacto.whatsapp_digits`.
 4. [ ] **Revisión profesional de los 6 artículos** y dato `revisado_por:` en cada uno (nombre y título registrado).
 5. [ ] **Página de equipo** con nombres y títulos, con consentimiento de cada profesional.
-6. [ ] **Nutrición y Maestra especializada** no tienen página. Faltan definir alcance y datos.
-7. [ ] **Confirmar Terapia Ocupacional y BPS:** no figura en la habilitación informada. El sitio no afirma nada.
+6. [ ] **Revisar la página de Nutrición** con la nutricionista antes de publicar.
+7. [ ] **Terapia Ocupacional no se ofrece hoy:** salió del sitio. Sus textos quedan guardados en `contenido/paginas/_terapia-ocupacional-rivera.md` y `contenido/blog/_terapia-ocupacional-infantil.md`. Para volver a publicarla: sacar el `_` del nombre, revisar los textos y sumarla a `servicios.items` en `content.json`.
 8. [ ] **WordPress `riveraclc.wordpress.com`:** sigue mostrando "próximamente" con el nombre de la clínica. Ponerlo privado o borrarlo.
 9. [ ] **Instalar el workflow del blog** (sección 5): sin él los artículos no salen solos. Ninguno se publicó en septiembre ni octubre.
 10. [ ] Después del primer push: comprobar que `README.md`, `build.py` y `contenido/` den 404 (se ocultan con `_config.yml`).
@@ -45,7 +45,7 @@ Es la ficha que aparece en Google Maps y a la derecha de los resultados cuando a
 "fonoaudióloga Rivera". Pesa más que el sitio web para las búsquedas "cerca de mí".
 
 1. Crear o reclamar la ficha en <https://business.google.com>.
-2. Categoría principal: **Centro de terapia infantil** o **Terapeuta ocupacional**, según lo que
+2. Categoría principal: **Centro de terapia infantil** o la categoría más cercana, según lo que
    ofrezca Google. Categorías secundarias: Logopeda, Psicólogo infantil, Psicopedagogo.
 3. Nombre exacto: `Clínica Trazos` (igual que en el sitio). Dirección: `Av. Sarandí 832, Rivera`.
    El mismo teléfono que en el sitio.

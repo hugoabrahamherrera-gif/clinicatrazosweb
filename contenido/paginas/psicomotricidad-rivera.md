@@ -13,7 +13,7 @@ intro: A través del cuerpo y el juego acompañamos el desarrollo motor, emocion
 
 La **psicomotricidad** es una disciplina que entiende al cuerpo, las emociones y el pensamiento como una unidad. En la infancia, el movimiento y el juego son la base para aprender, vincularse con otros y expresar lo que se siente. Cuando esa base presenta dificultades, el tratamiento psicomotor ayuda a que el niño organice su cuerpo, gane confianza y pueda disfrutar de moverse y jugar.
 
-En Uruguay la psicomotricidad tiene una larga tradición como formación universitaria. En Clínica Trazos la integramos a un equipo interdisciplinario en Rivera, junto a [terapia ocupacional](/terapia-ocupacional-rivera/), [fonoaudiología](/fonoaudiologia-rivera/), psicopedagogía y psicología.
+En Uruguay la psicomotricidad tiene una larga tradición como formación universitaria. En Clínica Trazos la integramos a un equipo interdisciplinario en Rivera, junto a [fonoaudiología](/fonoaudiologia-rivera/), psicopedagogía y psicología.
 
 ## Motivos frecuentes de consulta
 
