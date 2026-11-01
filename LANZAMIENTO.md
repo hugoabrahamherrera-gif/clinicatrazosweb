@@ -11,7 +11,7 @@ es lo que más pesa para aparecer en Google Maps y en las búsquedas locales.
 1. [ ] **Publicidad en salud (Ley 18.211 art. 20, Decreto 272/011).** Sin autorización previa del MSP, la publicidad se limita a datos identificatorios, títulos y especialidades registrados ante el MSP. Lo que exceda eso requiere autorización; las infracciones van de 30 a 500 UR y el MSP puede suspender la publicidad. Consultar con el asesor o el MSP si los textos de servicios y el blog entran en esa autorización. No es asesoramiento legal.
 2. [ ] **Dominio propio antes de lanzar** (`clinicatrazos.com.uy` no tenía DNS el 2026-11-01; confirmar en nic.uy). Sin dominio, `robots.txt` no funciona: Google solo lo lee en la raíz.
 3. [x] **Teléfono, WhatsApp y horario** cargados el 2026-11-01.
-4. [ ] **Revisión profesional de los 6 artículos** y dato `revisado_por:` en cada uno (nombre y título registrado).
+4. [ ] **Blog en pausa** (`sitio.blog_activo: false`): publicar recién tras la revisión profesional de los artículos, con `revisado_por:` en cada uno (nombre y título registrado).
 5. [ ] **Página de equipo** con nombres y títulos, con consentimiento de cada profesional.
 6. [ ] **Revisar la página de Nutrición** con la nutricionista antes de publicar.
 7. [ ] **Terapia Ocupacional no se ofrece hoy:** salió del sitio. Sus textos quedan guardados en `contenido/paginas/_terapia-ocupacional-rivera.md` y `contenido/blog/_terapia-ocupacional-infantil.md`. Para volver a publicarla: sacar el `_` del nombre, revisar los textos y sumarla a `servicios.items` en `content.json`.

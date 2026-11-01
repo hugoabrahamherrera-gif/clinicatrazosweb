@@ -3,7 +3,9 @@
     "url": "https://hugoabrahamherrera-gif.github.io/clinicatrazosweb",
     "revision": "2026-11-01",
     "_nota_revision": "Fecha de la última revisión real de las páginas: se usa en el sitemap. Cambiarla solo cuando el contenido cambie de verdad.",
-    "_nota": "Cuando haya dominio propio, cambiar solo esta URL (ej. https://clinicatrazos.com.uy) y volver a correr build.py"
+    "_nota": "Cuando haya dominio propio, cambiar solo esta URL (ej. https://clinicatrazos.com.uy) y volver a correr build.py",
+    "blog_activo": false,
+    "_nota_blog": "En false no se publica ningún artículo. Pasar a true cuando un profesional los revise y volver a correr build.py."
   },
   "site_title": "Clínica Trazos",
   "meta_tagline": "Psicomotricidad, Fonoaudiología, Psicopedagogía, Psicología y Nutrición en Rivera",

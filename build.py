@@ -341,6 +341,7 @@ def pagina_completa(base_tpl, c, base, sitio_url, *, ruta, titulo, descripcion, 
     out = out.replace("{{FOOTER_CONTACTO}}", footer_contacto(c["contacto"]))
     tel = c["contacto"].get("telefono")
     out = out.replace("{{BARRA_TEL}}", "" if es_dato_pendiente(tel) else f'<a class="barra-tel" href="tel:{re.sub(r"[^0-9+]", "", tel)}">Llamar</a>')
+    out = out.replace("{{FOOTER_BLOG}}", f'<a class="footer-link" href="{base}/blog/">Blog para familias</a>' if any(n["href"] == "/blog/" for n in c["nav"]) else "")
     out = out.replace("{{WHATSAPP_BUTTON}}", build_whatsapp_button(c["contacto"].get("whatsapp_digits", "")))
     for k, v in tokens.items():
         out = out.replace("{{" + k + "}}", v)
@@ -511,12 +512,15 @@ def main():
         p["fecha"] = dt.date.fromisoformat(p.get("fecha", HOY.isoformat()))
         p.setdefault("categoria", "Guías para familias")
         pendiente = "[DATO A CONFIRMAR" in p["cuerpo"]
-        if (p["fecha"] > HOY or pendiente) and not INCLUIR_BORRADORES:
-            p["motivo"] = "tiene [DATO A CONFIRMAR]" if pendiente else "fecha futura"
+        en_pausa = not c["sitio"].get("blog_activo", True)
+        if (p["fecha"] > HOY or pendiente or en_pausa) and not INCLUIR_BORRADORES:
+            p["motivo"] = "blog en pausa (sitio.blog_activo)" if en_pausa else "tiene [DATO A CONFIRMAR]" if pendiente else "fecha futura"
             programados.append(p)
             continue
         posts.append(p)
     posts.sort(key=lambda p: p["fecha"], reverse=True)
+    if not posts:
+        c["nav"] = [n for n in c["nav"] if n["href"] != "/blog/"]
 
     # ---- Portada
     inicio = (PLANTILLAS / "inicio.html").read_text(encoding="utf-8")
