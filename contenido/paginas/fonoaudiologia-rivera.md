@@ -1,7 +1,7 @@
 ---
 title: Fonoaudiología infantil en Rivera | Clínica Trazos
 slug: fonoaudiologia-rivera
-description: Fonoaudióloga para niños en Rivera: lenguaje, habla, pronunciación, tartamudez y alimentación. Atención presencial y online particular.
+description: Fonoaudióloga para niños en Rivera: lenguaje, habla, pronunciación, tartamudez y alimentación. Atención presencial en Clínica Trazos.
 keyword: fonoaudióloga Rivera
 eyebrow: Fonoaudiología
 miga: Fonoaudiología
@@ -60,6 +60,3 @@ Algunos errores de pronunciación son normales en los primeros años. Si persist
 
 Sí. La fonoaudióloga evalúa la fluidez del habla y orienta a la familia. En niños pequeños, muchas disfluencias son transitorias, pero es importante evaluarlas para saber cómo acompañarlas.
 
-### ¿Atienden online?
-
-Sí, la fonoaudiología se ofrece también online, en modalidad particular. Según la edad del niño y el motivo de consulta, te recomendamos qué modalidad conviene.

@@ -94,13 +94,9 @@ Hay niños que hablan más tarde y después se ponen al día, pero no conviene d
 
 Hablarlo con el pediatra siempre es buena idea, porque puede indicar una prueba de audición y mirar el desarrollo en general. Si querés consultar en Clínica Trazos, escribinos y te contamos cómo coordinar la primera consulta y qué papeles conviene traer según tu cobertura.
 
-### ¿El fonoaudiólogo atiende online?
-
-En Clínica Trazos, la fonoaudiología se ofrece de forma presencial y también online, en modalidad particular. Qué modalidad conviene depende de la edad del niño y del motivo de consulta, y eso se define con el profesional.
-
 ## Consultá en Clínica Trazos
 
-Si tenés dudas sobre cómo habla tu hijo, consultar a tiempo te da información y tranquilidad. En Clínica Trazos, en Rivera, contamos con [fonoaudiología infantil](/fonoaudiologia-rivera/) y trabajamos en equipo con [psicomotricidad](/psicomotricidad-rivera/) y otras especialidades cuando hace falta. Atendemos de forma presencial, y online en modalidad particular, también a familias de Tranqueras, Vichadero, Minas de Corrales y Tacuarembó. Podés ver con qué [convenios](/convenios/) trabajamos o [escribirnos](/contacto/) para coordinar una consulta.
+Si tenés dudas sobre cómo habla tu hijo, consultar a tiempo te da información y tranquilidad. En Clínica Trazos, en Rivera, contamos con [fonoaudiología infantil](/fonoaudiologia-rivera/) y trabajamos en equipo con [psicomotricidad](/psicomotricidad-rivera/) y otras especialidades cuando hace falta. Atendemos de forma presencial, también a familias de Tranqueras, Vichadero, Minas de Corrales y Tacuarembó. Podés ver con qué [convenios](/convenios/) trabajamos o [escribirnos](/contacto/) para coordinar una consulta.
 
 ## Fuentes
 

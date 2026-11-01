@@ -11,7 +11,7 @@ intro:
 
 ## Estamos en el centro de Rivera
 
-Clínica Trazos está en **Av. Sarandí 832, Rivera, Uruguay**. Atendemos a familias de Rivera y de localidades cercanas como Tranqueras, Minas de Corrales y Vichadero, y también de Santana do Livramento. Para quienes viven lejos, [fonoaudiología](/fonoaudiologia-rivera/) y [psicología](/psicologia-infantil-rivera/) también atienden **online**, en modalidad particular.
+Clínica Trazos está en **Av. Sarandí 832, Rivera, Uruguay**. Atendemos a familias de Rivera y de localidades cercanas como Tranqueras, Minas de Corrales y Vichadero, y también de Santana do Livramento. [Psicología](/psicologia-infantil-rivera/) y [nutrición](/nutricion-rivera/) también atienden **online**, en modalidad particular.
 
 ## Cómo coordinar la primera consulta
 
@@ -33,7 +33,7 @@ Para una consulta particular, no. Para los convenios, como las Ayudas Extraordin
 
 ### ¿Atienden a niños de otras ciudades?
 
-Sí. Atendemos de forma presencial en Rivera a familias de toda la zona, y fonoaudiología y psicología también atienden online en modalidad particular.
+Sí. Atendemos de forma presencial en Rivera a familias de toda la zona, y psicología y nutrición también atienden online en modalidad particular.
 
 ### ¿Qué edades atienden?
 

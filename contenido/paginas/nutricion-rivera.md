@@ -1,7 +1,7 @@
 ---
 title: Nutricionista en Rivera | Clínica Trazos
 slug: nutricion-rivera
-description: Nutricionista en Rivera para todas las edades: niños, adolescentes y adultos. Consulta presencial en Clínica Trazos, Av. Sarandí 832.
+description: Nutricionista en Rivera para todas las edades: niños, adolescentes y adultos. Consulta presencial y online particular en Clínica Trazos.
 keyword: nutricionista Rivera
 eyebrow: Nutrición
 miga: Nutrición
@@ -39,9 +39,9 @@ Definimos objetivos concretos y un plan posible para tu vida diaria, sin solucio
 
 En las consultas siguientes revisamos cómo te fue y ajustamos el plan cuando hace falta.
 
-## Modalidad y convenios
+## Modalidad
 
-La consulta de nutrición es **presencial en Rivera**. Nutrición no está incluida en la habilitación ante BPS para las Ayudas Extraordinarias. Para conocer las modalidades de atención, [escribinos](/contacto/).
+La consulta de nutrición es **presencial en Rivera** y también **online**, en modalidad particular. Para coordinar, [escribinos](/contacto/).
 
 ## Preguntas frecuentes
 
@@ -52,7 +52,3 @@ Atendemos a todas las edades: niños, adolescentes y adultos.
 ### ¿Necesito una derivación médica?
 
 Para una consulta particular, no. Si tenés una indicación de tu médico, traela a la primera consulta.
-
-### ¿La Ayuda Extraordinaria de BPS cubre nutrición?
-
-En Clínica Trazos, nutrición no está incluida en la habilitación ante BPS. En la página de [convenios](/convenios/) te contamos qué especialidades sí lo están.
