@@ -1,7 +1,7 @@
 ---
 title: Ayuda extraordinaria BPS: qué es y cómo pedirla
 slug: ayuda-extraordinaria-bps
-description: Ayuda extraordinaria BPS (AYEX): quién puede pedirla, qué papeles necesitás y cómo se renueva. Guía para familias de Rivera, con links oficiales.
+description: Ayuda extraordinaria BPS (AYEX): quién puede pedirla, qué papeles necesitás y cómo se renueva. Guía para Rivera, con links oficiales.
 keyword: ayuda extraordinaria BPS
 keywords_secundarias: AYEX BPS, requisitos ayuda extraordinaria, renovación ayuda extraordinaria, BPS Rivera
 categoria: Convenios y trámites
@@ -27,13 +27,12 @@ BPS también menciona programas recreativos o deportivos entre lo que puede fina
 BPS indica que pueden acceder las personas con discapacidad o alteraciones en su desarrollo, previa comprobación de su equipo técnico, que además cumplan alguna de estas condiciones:
 
 - Ser hijo o menor a cargo de un trabajador de la actividad privada, hasta los 18 años.
-- Ser hijo de un funcionario de BPS, hasta los 18 años.
-- Ser hijo de un funcionario público (Ley 19.924).
-- Cobrar una pensión por invalidez.
-- Cobrar una pensión por violencia doméstica o por delitos violentos (leyes 18.850 y 19.039).
-- Ser paciente del Crenadecer.
-- Participar en programas del Mides como Uruguay Crece Contigo o Cercanías.
-- Estar en el Sistema de Protección de 24 horas del INAU.
+- Ser hijo o menor a cargo de un funcionario del BPS, hasta los 18 años.
+- Ser hijo de un funcionario del sector público (Ley 19.924), hasta los 18 años.
+- Ser beneficiario de pensión por invalidez, de pensión para hijos de víctimas fallecidas por violencia doméstica (Ley 18.850) o de pensión para hijos de víctimas de delitos violentos (Ley 19.039).
+- Ser paciente de la Unidad de Atención Ambulatoria, Crenadecer.
+- Ser beneficiario de programas de proximidad del Mides (Uruguay Crece Contigo, Cercanías), hasta los 18 años.
+- Estar en el Sistema de Protección de 24 horas del INAU, hasta los 18 años.
 
 Si tu situación no encaja claramente en ninguna de estas categorías, **consultá requisitos vigentes en BPS** antes de iniciar el trámite. La lista oficial es la que manda.
 
@@ -70,7 +69,7 @@ Para dudas, BPS atiende en el **0800 1997 desde teléfono fijo** o marcando aste
 
 La AYEX cubre un monto mensual para el instituto y, cuando corresponde, otro para el transporte o los boletos del acompañante. BPS define esos montos y los actualiza varias veces por año, así que la referencia siempre es la [página oficial de BPS](https://www.bps.gub.uy/3555/ayuda-extraordinaria.html).
 
-Algunos institutos cobran una diferencia a cargo de la familia. En Clínica Trazos, la atención por AYEX **no va a tener costo adicional** para la familia.
+Algunos institutos cobran una diferencia. En Clínica Trazos, la atención por AYEX **no va a tener costo adicional**.
 
 ## Renovación, cambio de tratamiento y cambio de instituto
 
@@ -112,7 +111,7 @@ Sí. BPS tiene un trámite de cambio de proveedor para pasar a otro instituto o 
 
 ## Te acompañamos con el trámite
 
-Los trámites pueden ser lo que más cuesta al empezar un tratamiento. En Clínica Trazos, en Rivera, estamos en proceso de habilitación para atender con [Ayudas Extraordinarias de BPS](/convenios/), ya trabajamos con otros convenios, y podemos orientarte sobre qué informes necesita cada etapa. Si querés saber si tu hijo podría empezar, por ejemplo, [psicomotricidad](/psicomotricidad-rivera/) o [fonoaudiología](/fonoaudiologia-rivera/), [consultanos](/contacto/). La decisión final sobre la ayuda siempre la toma BPS.
+Los trámites pueden ser lo que más cuesta al empezar un tratamiento. En Clínica Trazos, en Rivera, estamos en proceso de habilitación para atender con [Ayudas Extraordinarias de BPS](/convenios/), ya trabajamos con otros convenios, y podemos orientarte sobre qué informes necesita cada etapa. Si querés saber cómo empezar, por ejemplo, [psicomotricidad](/psicomotricidad-rivera/) o [fonoaudiología](/fonoaudiologia-rivera/), [consultanos](/contacto/). La decisión final sobre la ayuda siempre la toma BPS.
 
 ## Fuentes
 

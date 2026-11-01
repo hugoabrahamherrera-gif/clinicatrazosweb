@@ -9,7 +9,7 @@
   },
   "site_title": "Clínica Trazos",
   "meta_tagline": "Psicomotricidad, Fonoaudiología, Psicopedagogía, Psicología y Nutrición en Rivera",
-  "meta_description": "Clínica en Rivera: Psicomotricidad, Fonoaudiología, Psicopedagogía y Psicología para niños y adolescentes, y Nutrición para todas las edades.",
+  "meta_description": "Clínica en Rivera para niños, adolescentes y adultos: Psicomotricidad, Fonoaudiología, Psicopedagogía, Psicología y Nutrición.",
   "footer_wordmark": "TRAZOS",
   "cta_header": "Agendar consulta",
   "nav": [
@@ -37,8 +37,8 @@
   "hero": {
     "place": "Rivera",
     "badge": "Equipo interdisciplinario",
-    "title": "Acompañamos el desarrollo de cada niño en Rivera, a su ritmo",
-    "subtitle": "Psicomotricidad, Fonoaudiología, Psicopedagogía, Psicología y Nutrición en un mismo equipo, trabajando junto a la familia en cada paso.",
+    "title": "Acompañamos a niños, adolescentes y adultos en Rivera, a su ritmo",
+    "subtitle": "Psicomotricidad, Fonoaudiología, Psicopedagogía, Psicología y Nutrición en un mismo equipo, junto a cada persona y su familia.",
     "modalidad_presencial": "Atención presencial",
     "modalidad_online": "Online: psicología y nutrición",
     "cta_primary": "Agendar consulta",
@@ -54,7 +54,7 @@
         "bg": "#FBE3D6",
         "fg": "#B85C3E",
         "title": "Psicomotricidad",
-        "desc": "Trabajamos el movimiento, el equilibrio y la coordinación como base del aprendizaje.",
+        "desc": "Trabajamos el movimiento, el equilibrio y la coordinación en cada etapa de la vida.",
         "pagina": "psicomotricidad-rivera"
       },
       {
@@ -62,7 +62,7 @@
         "bg": "#FCEFD2",
         "fg": "#8A6A1F",
         "title": "Fonoaudiología",
-        "desc": "Estimulamos el lenguaje, el habla y la comunicación desde la primera infancia.",
+        "desc": "Trabajamos el lenguaje, el habla y la comunicación, desde la primera infancia hasta la adultez.",
         "pagina": "fonoaudiologia-rivera"
       },
       {
@@ -78,7 +78,7 @@
         "bg": "#E7D9D2",
         "fg": "#7A4A38",
         "title": "Psicología",
-        "desc": "Sostenemos el bienestar emocional del niño y orientamos a la familia en el proceso.",
+        "desc": "Sostenemos el bienestar emocional de niños, adolescentes y adultos.",
         "pagina": "psicologia-infantil-rivera"
       },
       {
@@ -91,7 +91,7 @@
       }
     ],
     "cta_title": "¿No sabés qué servicio necesitás?",
-    "cta_text": "Escribinos y te orientamos según la edad y la situación del niño o niña.",
+    "cta_text": "Escribinos y te orientamos según la edad y la situación de cada persona.",
     "cta_button": "Contactanos"
   },
   "convenios": {
@@ -134,6 +134,8 @@
     "form_title": "Escribinos",
     "form_button": "Enviar mensaje",
     "form_email": "clinicatrazos@gmail.com",
+    "maps_url": "https://maps.app.goo.gl/6fPW8oLh4Gzxbpjo7",
+    "maps_cid": "11742428712914722339",
     "calle": "Av. Sarandí 832",
     "ciudad": "Rivera",
     "departamento": "Rivera",
@@ -145,8 +147,8 @@
       "Vichadero",
       "Santana do Livramento"
     ],
-    "latitud": "",
-    "longitud": "",
+    "latitud": "-30.9043024",
+    "longitud": "-55.5432344",
     "horario_schema": [
       {
         "@type": "OpeningHoursSpecification",
@@ -175,5 +177,5 @@
   "footer": {
     "copyright": "© 2026 Clínica Trazos — Rivera, Uruguay"
   },
-  "seo_titulo_inicio": "Clínica Trazos | Terapias infantiles en Rivera, Uruguay"
+  "seo_titulo_inicio": "Clínica Trazos | Terapias para niños y adultos en Rivera"
 }

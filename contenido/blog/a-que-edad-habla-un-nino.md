@@ -64,7 +64,7 @@ También es normal que mezcle palabras de los dos idiomas en una misma frase: es
 
 ## ¿Qué hace el fonoaudiólogo?
 
-En Uruguay, el Licenciado en Fonoaudiología es el profesional universitario que trabaja la comunicación humana en las áreas del lenguaje, el habla, la voz, la audición, la función vestibular y la fonoestomatología (todo lo que tiene que ver con la boca y funciones como la deglución), según el perfil de egreso de la Facultad de Medicina de la Udelar.
+En Uruguay, el Licenciado en Fonoaudiología es el profesional universitario que trabaja la comunicación humana en las áreas del lenguaje, el habla, la voz y la audición, según el perfil de egreso de la Facultad de Medicina de la Udelar.
 
 Con niños, el trabajo suele empezar con una entrevista a la familia para conocer la historia del niño y lo que les preocupa. Después viene la observación del niño, casi siempre jugando, y la aplicación de pruebas según la edad. Con esa información, el profesional te explica qué vio y te propone un plan: a veces alcanza con orientaciones para casa y a veces conviene hacer tratamiento. Si hace falta, también puede sugerir la consulta con otros profesionales, como el otorrino o el psicomotricista.
 

@@ -236,7 +236,7 @@ def clinica_ld(c, sitio_url, servicios):
             for s in servicios
         ],
         "isAcceptingNewPatients": True,
-        "hasMap": f"https://www.google.com/maps/search/?api=1&query={quote(ct['direccion'])}",
+        "hasMap": ct["maps_url"],
     }
     if not es_dato_pendiente(ct.get("email")):
         d["email"] = ct["email"]
@@ -359,7 +359,7 @@ def contacto_bloque(c, en_pagina_contacto=False):
         "asunto_email": quote("Consulta desde el sitio web"),
         "contacto_whatsapp": (ct.get("whatsapp_digits") or "").strip(),
         "contacto_form_nota": "Al enviar se abre tu WhatsApp con el mensaje listo." if (ct.get("whatsapp_digits") or "").strip() else "Al enviar se abre tu programa de correo con el mensaje listo.",
-        "contacto_como_llegar": f"https://www.google.com/maps/search/?api=1&amp;query={quote(ct['direccion'])}",
+        "contacto_como_llegar": ct["maps_url"],
     }.items():
         b = b.replace("{{" + k + "}}", v)
     if en_pagina_contacto:
@@ -367,7 +367,7 @@ def contacto_bloque(c, en_pagina_contacto=False):
         b = re.sub(r'\s*<span[^>]*>' + re.escape(ct["eyebrow"]) + r'</span>', "", b, count=1)
         b = b.replace("padding: 96px 32px;", "padding: 56px 32px 96px;", 1)
     b = b.replace("{{CONTACTO_ITEMS}}", contacto_items(ct))
-    return b.replace("{{contacto_mapa_embed_url}}", f"https://www.google.com/maps?q={quote(ct['direccion'])}&amp;output=embed")
+    return b.replace("{{contacto_mapa_embed_url}}", f"https://www.google.com/maps?cid={ct['maps_cid']}&amp;output=embed")
 
 
 # ---------------------------------------------------------------- Portada
@@ -444,7 +444,7 @@ def cabecera_interior(eyebrow, h1, intro, migas, base):
 def aside_cta(c, base, texto_extra=""):
     return f'''<aside class="aside-cta" style="background: #69662C; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 14px; color: #FFFFFF;">
       <h2 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF;">¿Querés hacer una consulta?</h2>
-      <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #E4E4D5;">Te orientamos según la edad y la situación de tu hijo o hija. {texto_extra}</p>
+      <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #E4E4D5;">Te orientamos según la edad y la situación de cada persona. {texto_extra}</p>
       <a href="{base}/contacto/" class="btn btn-solid-inverse" style="background: #FFFFFF; color: #69662C; padding: 12px 20px; border-radius: 999px; font-weight: 600; font-size: 14px; align-self: flex-start;">{c["cta_header"]}</a>
       <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.6; color: #E4E4D5;">{html.escape(c["contacto"]["direccion"])}<br>{html.escape(c["contacto"]["horario"])}</p>
     </aside>'''
@@ -581,7 +581,7 @@ def main():
     archivos["servicios/index.html"] = pagina_completa(
         base_tpl, c, base, sitio_url, ruta="/servicios/",
         titulo=titulo_seo("Terapias y nutrición en Rivera"),
-        descripcion="Psicomotricidad, fonoaudiología, psicopedagogía y psicología para niños y adolescentes, y nutrición para todas las edades, en Rivera.",
+        descripcion="Psicomotricidad, fonoaudiología, psicopedagogía, psicología y nutrición para niños, adolescentes y adultos en Rivera.",
         contenido=cabecera_interior("Servicios", "Terapias y nutrición en Rivera", c["hero"]["subtitle"], migas_serv, base) + "\n" + cuerpo_serv,
         lds=[breadcrumb_ld(sitio_url, migas_serv), {
             "@context": "https://schema.org", "@type": "ItemList",

@@ -1,17 +1,17 @@
 ---
-title: Psicóloga infantil en Rivera | Clínica Trazos
+title: Psicóloga en Rivera: niños y adultos | Clínica Trazos
 slug: psicologia-infantil-rivera
-description: Psicología infantil en Rivera: acompañamos emociones, conducta, miedos y cambios familiares, con orientación a madres y padres. Presencial y online.
-keyword: psicóloga infantil Rivera
+description: Psicología en Rivera para niños, adolescentes y adultos: emociones, conducta, ansiedad y vínculos, con orientación a las familias. Presencial y online.
+keyword: psicóloga Rivera
 eyebrow: Psicología
-miga: Psicología infantil
-h1: Psicología infantil en Rivera
-intro: Sostenemos el bienestar emocional de cada niño y niña, y orientamos a la familia para acompañarlos en cada etapa.
+miga: Psicología
+h1: Psicología en Rivera
+intro: Sostenemos el bienestar emocional de niños, adolescentes y adultos, y orientamos a las familias en cada etapa.
 ---
 
-## ¿Qué hace una psicóloga infantil?
+## ¿Qué hace una psicóloga?
 
-La **psicología infantil** acompaña a niños y niñas cuando algo de lo emocional, del comportamiento o de los vínculos les está generando malestar a ellos o a su familia. La psicóloga evalúa qué está pasando y ofrece un espacio de tratamiento adaptado a la edad, en el que el juego, el dibujo y la palabra son las principales herramientas.
+La **psicología** acompaña a las personas cuando algo de lo emocional, del comportamiento o de los vínculos les está generando malestar. La psicóloga evalúa qué está pasando y ofrece un espacio de tratamiento adaptado a cada edad: con los niños, el juego y el dibujo son las principales herramientas; con adolescentes y adultos, la palabra.
 
 En Clínica Trazos, en Rivera, la psicología forma parte de un equipo interdisciplinario. Esto es especialmente útil cuando lo emocional se cruza con dificultades de [aprendizaje](/psicopedagogia-rivera/), de lenguaje o de desarrollo, que muchas veces van de la mano.
 
@@ -23,28 +23,33 @@ En Clínica Trazos, en Rivera, la psicología forma parte de un equipo interdisc
 - Situaciones familiares difíciles: separación, mudanza, llegada de un hermano, duelo.
 - Dificultades para relacionarse con otros niños o situaciones de acoso escolar.
 - Acompañamiento emocional de niños con diagnósticos del desarrollo y de sus familias.
+- En adultos: ansiedad, estrés, duelos, cambios de vida o dificultades en los vínculos.
 
-No hace falta que la situación sea "grave" para consultar. Muchas veces una orientación a tiempo alivia a toda la familia.
+No hace falta que la situación sea "grave" para consultar. Muchas veces una orientación a tiempo alivia mucho.
 
 ## Cómo trabajamos
 
-### Primera entrevista con la familia
+### Primera entrevista
 
-El primer encuentro suele ser con madres, padres o referentes, para conocer la historia del niño, el motivo de consulta y cómo es su vida cotidiana.
+Con niños y adolescentes, el primer encuentro suele ser con madres, padres o referentes. Con adultos, es con la propia persona. Conocemos su historia, el motivo de consulta y cómo es su vida cotidiana.
 
-### Evaluación y proceso con el niño
+### Evaluación y proceso
 
-A través del juego y de técnicas adecuadas a la edad, la psicóloga conoce al niño y comprende qué le está pasando. Luego se define si corresponde un proceso terapéutico y con qué frecuencia.
+Con técnicas adecuadas a cada edad, la psicóloga comprende qué le está pasando a la persona. Luego se define si corresponde un proceso terapéutico y con qué frecuencia.
 
 ### Orientación a la familia
 
-Los adultos son parte central del proceso. Ofrecemos espacios de orientación para acompañar al niño en casa y, cuando es útil, coordinamos con la escuela y con otros profesionales del equipo.
+Cuando atendemos a niños y adolescentes, madres y padres son parte central del proceso. Ofrecemos espacios de orientación para acompañarlos en casa y, cuando es útil, coordinamos con la escuela y con otros profesionales del equipo.
 
 ## Modalidad
 
-Atendemos a niños y adolescentes de todas las edades, de forma **presencial en Rivera** y también **online en modalidad particular**, lo que puede facilitar la orientación a madres y padres o el seguimiento de algunos procesos. Clínica Trazos está **en proceso de habilitación ante BPS** para atender psicología con Ayudas Extraordinarias; mientras tanto, podés empezar en forma particular. Consultá los demás convenios en la página de [convenios](/convenios/).
+Atendemos a niños, adolescentes y adultos, de forma **presencial en Rivera** y también **online en modalidad particular**, lo que puede facilitar el seguimiento de algunos procesos. Clínica Trazos está **en proceso de habilitación ante BPS** para atender psicología con Ayudas Extraordinarias; mientras tanto, podés empezar en forma particular. Consultá los demás convenios en la página de [convenios](/convenios/).
 
 ## Preguntas frecuentes
+
+### ¿Atienden a adultos?
+
+Sí. Atendemos a niños, adolescentes y adultos.
 
 ### ¿A partir de qué edad un niño puede ir a la psicóloga?
 
@@ -60,4 +65,4 @@ Depende de la edad y del proceso. Siempre hay espacios con la familia, y a veces
 
 ### ¿La consulta es confidencial?
 
-Sí. Lo que se trabaja en el espacio terapéutico es confidencial, dentro de los límites que establece la ética profesional para proteger al niño. Se lo explicamos a la familia desde el inicio.
+Sí. Lo que se trabaja en el espacio terapéutico es confidencial, dentro de los límites que establece la ética profesional. Lo explicamos desde el inicio.
