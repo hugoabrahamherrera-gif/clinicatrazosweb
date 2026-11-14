@@ -34,7 +34,7 @@ Los datos de salud son datos sensibles. Solo acceden a ellos el personal y los p
 
 ## Cómo protegemos los datos
 
-Aplicamos medidas de seguridad para resguardar la información y evitar accesos no autorizados. Solo accede a ella el personal de la clínica, según la tarea de cada persona.
+Aplicamos medidas de seguridad para resguardar la información y evitar accesos no autorizados.
 
 ## Con quién compartimos datos
 
