@@ -26,26 +26,15 @@ Este sitio es informativo. No tiene registro de usuarios, no usa cookies propias
 
 ## Datos de pacientes y familias
 
-Cuando una persona se atiende en la clínica registramos:
+Para brindar la atención registramos datos de identificación y contacto del paciente y de su adulto responsable, información vinculada al tratamiento y datos administrativos necesarios para la gestión de la clínica.
 
-- Datos de identificación del paciente: nombre, cédula, fecha de nacimiento, dirección, escuela y grado.
-- Datos del adulto responsable: nombre, parentesco y teléfono.
-- Datos del tratamiento: especialidad, profesional, días y horarios, asistencia, evaluaciones e informes.
-- Datos administrativos: convenio, pagos, recibos, contratos y documentos que la familia entrega.
-
-Los usamos solo para organizar y brindar la atención, coordinar horarios, emitir recibos, constancias y contratos, y cumplir con las obligaciones de la clínica ante los organismos que correspondan.
+Los usamos solo para organizar y brindar la atención y para cumplir con las obligaciones de la clínica ante los organismos que correspondan.
 
 Los datos de salud son datos sensibles. Solo acceden a ellos el personal y los profesionales de la clínica que los necesitan para su tarea, que están obligados a guardar secreto profesional.
 
-## Sistema de gestión interno
+## Cómo protegemos los datos
 
-La clínica usa un sistema de gestión propio, de uso exclusivo de su personal y sus profesionales. No está abierto al público.
-
-- **Ingreso con Google:** el personal entra con su cuenta de Google. De esa cuenta el sistema usa únicamente la dirección de correo, para comprobar que la persona está autorizada. No lee correos, contactos, archivos ni ningún otro dato de la cuenta de quien ingresa.
-- **Dónde se guardan los datos:** en servicios de Google (Google Cloud y Google Drive) contratados por la clínica, con acceso restringido por usuario y permisos.
-- **Correos del sistema:** el sistema envía avisos internos al equipo (ingresos, cambios de horario, agenda) desde la cuenta de la clínica.
-
-El uso que el sistema hace de la información recibida de las API de Google cumple con la [Política de Datos de Usuario de los Servicios de API de Google](https://developers.google.com/terms/api-services-user-data-policy), incluidos los requisitos de uso limitado.
+Aplicamos medidas de seguridad para resguardar la información y evitar accesos no autorizados. Solo accede a ella el personal de la clínica, según la tarea de cada persona.
 
 ## Con quién compartimos datos
 
